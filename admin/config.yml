@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
-      - {label: "Imagem", name: "image", widget: "image", media_library: config: multiple: true , required: false}
+      - {label: “Images”, name: “images”, widget: “list”, summary: “{{fields.image}}”, field: { label: “Image”, name: “image”, widget: “image” },}
     # PAGES
   - name: "page"
     label: "Page"
