@@ -1,18 +1,141 @@
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if page.section == "home" %}
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-  {% else %}
-    <title>{{ page.title }}</title>
-    {% if page.meta_description %}
-      <meta name="description" content="{{ page.meta_description }}">
-    {% endif %}
-  {% endif %}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {% if jekyll.environment == 'production' and site.analytics %}
-    {% include analytics.html %}
-  {% endif %}
-  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!--====== Title ======-->
+    <title>DRIVECLEAN | Empresa de Detalhe Automóvel | Agualva</title>
+    
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="DRIVECLEAN | Empresa de Detalhe Automóvel | Agualva">
+    <link rel="canonical" href="https://driveclean.pt/" />
+    <meta name="description"
+        content="Driveclean é uma empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015. Profissionais na área do detalhe e cuidado automóvel, estamos disponíveis para.">
+    <meta name="keywords"
+        content="Driveclean, driveclean, drive clean, driveclean detalhe, detalhe automóvel lisboa, detalhe automóvel, Car, Car detail, detailing, Lavagem de carros, limpeza interior automóvel, automóvel, Polimento, pintura automóvel, ppf, Paint protection film, restauro, desinfeção, proteção cerâmica ">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://driveclean.pt/">
+    <meta property="og:title" content="DRIVECLEAN | Car Detail Company">
+    <meta property="og:description"
+        content="Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos clientes nos seus projetos.">
+    <meta property="og:image" content="https://driveclean.pt/website-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://driveclean.pt/">
+    <meta property="twitter:title" content="DRIVECLEAN | Car Detail Company">
+    <meta property="twitter:description"
+        content="Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos clientes nos seus projetos.">
+    <meta property="twitter:image" content="https://driveclean.pt/website-preview.png">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
+<!--====== HEADER PART START ======-->
+
+<header class="header-area">
+    <div class="header-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="navigation">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            <!-- logo -->
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button> <!-- navbar toggler -->
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                        <ul class="sub-menu">
+                                            <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
+                                            <li><a class="nav-link" href="index.html#portfolio">Portfólio </a></li>
+                                            <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                            </li>
+                                            <li><a class="nav-link" href="index.html#overview">Overview </a></li>
+                                            <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html#services">Serviços </a>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html#pricing">Preços </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link">Social</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="https://www.instagram.com/drivecleandetalheauto/">Instagram</a>
+                                            </li>
+                                            <li><a
+                                                    href="https://www.facebook.com/drivecleandetalheautomovel/">Facebook</a>
+                                            </li>
+                                            <li><a
+                                                    href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop">Youtube</a>
+                                            </li>
+                                            <li><a href="https://www.tiktok.com/@drivecleandetalheauto">TikTok</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+                            </div> <!-- navbar collapse -->
+
+                            <div class="navbar-btn d-none d-sm-block">
+                                <a class="main-btn" href="tel:+351965530081">965 530 081 / 214 335 387</a>
+                            </div>
+                        </nav>
+                    </div> <!-- navigation -->
+                </div>
+            </div> <!-- row -->
+        </div>
+    </div>
+</header>
+
+<!--====== HEADER PART ENDS ======-->
