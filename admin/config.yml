@@ -32,10 +32,10 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Categories", name: "categories", widget: "string", required: false}
       - label: "Gallery"
-          name: "galleryImages"
-          widget: "list"
-          summary: '{{fields.image}}'
-          field: {label: Image, name: image, widget: image}
+        name: "galleryImages"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
     # PAGES
   - name: "page"
     label: "Page"
