@@ -52,12 +52,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
     #CABEÇALHO 
-  - label: "Cabeçalho"
-    name: "header"
+  - name: 'config'
+    label: 'Cabeçalho'
+    editor:
+      preview: false
     files:
-      - label: "About Page"
-        name: "about"
-        file: "site/content/header.yml"
-        fields:
-          - {label: contacto, name: contact, widget: string}
-          - {label: Contacto principal, name: defaul_contact, widget: string}
+    - label: 'Header'
+      name: 'header'
+      file: '_data/header.yml'
+      fields:
+        - {label: "Contactos", name: "contact", widget: "string"}
+        - {label: "Contacto principal", name: "default_contact", widget: "string"}
