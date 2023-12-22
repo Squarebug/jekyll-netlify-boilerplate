@@ -6,7 +6,6 @@ date: 2023-12-22 16:46:10
 galleryImages:
   - /assets/img/uploads/website-preview.png
 ---
-# E﻿ste é o titulo 
 
 #### e﻿ste é o subtitulo
 
