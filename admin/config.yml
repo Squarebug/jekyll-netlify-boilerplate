@@ -57,7 +57,8 @@ collections: # A list of collections the CMS should be able to edit
     folder: "header"
     sort: "title:asc"
     create: true
-    slug: "{{slug}}"
+    slug: "header"
     fields: 
       - {label: "Contacto", name: "header", widget: "hidden", default: "page"}   
-      - {label: "Contacto", name: "contact", widget: "string"}   
+      - {label: "Texto contacto", name: "contact", widget: "string"}
+      - {label: "Contacto principal", name: "default contact", widget: "string"}

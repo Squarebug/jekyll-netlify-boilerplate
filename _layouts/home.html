@@ -1,1312 +1,1566 @@
----
-layout: default
----
-{% include head.html %}
-{% include header.html %}
+<!doctype html>
+<html lang="pt-PT">
 
-<h2>{{ page.title }}</h2>
-
-  {% include page-intro.html %}
-
-  {{ content }}
-
-
-  <!--====== HERO PART START ======-->
-
-  <section class="hero-area">
-    <div class="section__bg"></div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="hero-content">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <h1 class="title animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0ms">
-                        Driveclean<br>
-                        Especialistas no Detalhe Automóvel 
-                        
-                    </h1>
-                    <h2 style="color: #fff;" class="animated wow fadeInLeft" data-wow-duration="3000ms"
-                        data-wow-delay="300ms">Melhorar-Proteger-Manter</h2>
-                    <a class="main-btn main-btn-2 animated wow fadeInDown" data-wow-duration="2000ms"
-                        data-wow-delay="100ms" href="contact.html">Pedir orçamento</a>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="hero-play">
-                    <a class="video-popup" href="https://www.youtube.com/watch?v=lwCwJ8u4DXQ"><i
-                            class="fas fa-play"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--====== HERO PART ENDS ======-->
-
-<!--====== SUB ITEM PART START ======-->
-
-<section class="sub-item-area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="sub-item">
-                    <div class="icon">
-                        <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M320 256c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C256 227.3 284.7 256 320 256zM160 288c-35.35 0-64 28.65-64 64c0 35.35 28.65 64 64 64h192c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64H160zM384 64c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32s-32 14.33-32 32C352 49.67 366.3 64 384 64zM208 96C234.5 96 256 74.51 256 48S234.5 0 208 0S160 21.49 160 48S181.5 96 208 96zM416 192c0 27.82-12.02 52.68-30.94 70.21C421.7 275.7 448 310.7 448 352c0 53.02-42.98 96-96 96H160c-53.02 0-96-42.98-96-96s42.98-96 96-96h88.91C233.6 238.1 224 216.7 224 192H96C42.98 192 0 234.1 0 288v128c0 53.02 42.98 96 96 96h320c53.02 0 96-42.98 96-96V288C512 234.1 469 192 416 192z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Tratamento & Cuidado Automóvel</h3>
-                    <span>Vasto leque de serviços para deixar a sua viatura o melhor possível</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="sub-item">
-                    <div class="icon">
-                        <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512">
-                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M256-.0078C260.7-.0081 265.2 1.008 269.4 2.913L457.7 82.79C479.7 92.12 496.2 113.8 496 139.1C495.5 239.2 454.7 420.7 282.4 503.2C265.7 511.1 246.3 511.1 229.6 503.2C57.25 420.7 16.49 239.2 15.1 139.1C15.87 113.8 32.32 92.12 54.3 82.79L242.7 2.913C246.8 1.008 251.4-.0081 256-.0078V-.0078zM256 444.8C393.1 378 431.1 230.1 432 141.4L256 66.77L256 444.8z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Proteções físicas e químicas</h3>
-                    <span>Ceras , Proteções cerâmicas ou PPF ( PAint Protection Film ) para garantir a segurança da
-                        sua viatura</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="sub-item">
-                    <div class="icon">
-                        <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M248.8 4.994C249.9 1.99 252.8 .0001 256 .0001C259.2 .0001 262.1 1.99 263.2 4.994L277.3 42.67L315 56.79C318 57.92 320 60.79 320 64C320 67.21 318 70.08 315 71.21L277.3 85.33L263.2 123C262.1 126 259.2 128 256 128C252.8 128 249.9 126 248.8 123L234.7 85.33L196.1 71.21C193.1 70.08 192 67.21 192 64C192 60.79 193.1 57.92 196.1 56.79L234.7 42.67L248.8 4.994zM427.4 14.06C446.2-4.686 476.6-4.686 495.3 14.06L529.9 48.64C548.6 67.38 548.6 97.78 529.9 116.5L148.5 497.9C129.8 516.6 99.38 516.6 80.64 497.9L46.06 463.3C27.31 444.6 27.31 414.2 46.06 395.4L427.4 14.06zM461.4 59.31L356.3 164.3L379.6 187.6L484.6 82.58L461.4 59.31zM7.491 117.2L64 96L85.19 39.49C86.88 34.98 91.19 32 96 32C100.8 32 105.1 34.98 106.8 39.49L128 96L184.5 117.2C189 118.9 192 123.2 192 128C192 132.8 189 137.1 184.5 138.8L128 160L106.8 216.5C105.1 221 100.8 224 96 224C91.19 224 86.88 221 85.19 216.5L64 160L7.491 138.8C2.985 137.1 0 132.8 0 128C0 123.2 2.985 118.9 7.491 117.2zM359.5 373.2L416 352L437.2 295.5C438.9 290.1 443.2 288 448 288C452.8 288 457.1 290.1 458.8 295.5L480 352L536.5 373.2C541 374.9 544 379.2 544 384C544 388.8 541 393.1 536.5 394.8L480 416L458.8 472.5C457.1 477 452.8 480 448 480C443.2 480 438.9 477 437.2 472.5L416 416L359.5 394.8C354.1 393.1 352 388.8 352 384C352 379.2 354.1 374.9 359.5 373.2z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Polimento</h3>
-                    <span>Polimentos comerciais ou correções para colocar a pintura como nova</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="sub-item">
-                    <div class="icon">
-                        <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z" />
-                        </svg>
-
-                    </div>
-                    <h3 class="title">Restauro</h3>
-                    <span>Botoes sem legendas , couro rasgado ou plásticos sem cor</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--====== SUB ITEM PART ENDS ======-->
-
-<!--====== ABOUT US PART START ======-->
-
-<section class="about-us-area pb-100" id="about-us">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5">
-                <div class="about-content">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <span>Sobre Nós</span>
-                    <h3 class="title">Obcecados pela perfeição </h3>
-                    <p>A nossa equipa é extremamente profissional e experiente, Com a ajuda dos melhores produtos
-                        vamos garantir que o teu carro fique a brilhar</p>
-                    <ul>
-                        <li>Equipa certificada</li>
-                        <li>Vários anos de experiência</li>
-                        <li>Produtos de excelência</li>
-                        <li>Serviço de Qualidade</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="about-thumb animated wow fadeInRight" data-wow-duration="3000ms" data-wow-delay="0ms">
-                    <img src="assets/images/abouth-thumb.jpg" alt="Colaborador a retirar a espuma do veículo">
-
-                    <ul>
-
-                        <li>
-                            <img src="assets/images/about-brand-2.png" alt="Google reviews">
-                            <span>Classificação: 4,6*</span>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </li>
-                        <li>
-                            <img src="assets/images/about-brand-3.png" alt="Facebook reviews">
-                            <span>Classificação: 4,9*</span>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--====== ABOUT US PART ENDS ======-->
-
-<!--====== SERVICE PART START ======-->
-
-<section class="service-area pb-100" id="services">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9">
-                <div class="section-title text-center">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <h3 class="title">Serviços</h3>
-                    <p>O nosso foco é entregar ao teu carro os serviços que ele merece.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <div class="icon">
-                        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path class="white"
-                                d="M93.13 257.7C71.25 275.1 53 313.5 38.63 355.1L99 333.1c5.75-2.125 10.62 4.749 6.625 9.499L11 454.7C3.75 486.1 0 510.2 0 510.2s206.6 13.62 266.6-34.12c60-47.87 76.63-150.1 76.63-150.1L256.5 216.7C256.5 216.7 153.1 209.1 93.13 257.7zM633.2 12.34c-10.84-13.91-30.91-16.45-44.91-5.624l-225.7 175.6l-34.99-44.06C322.5 131.9 312.5 133.1 309 140.5L283.8 194.1l86.75 109.2l58.75-12.5c8-1.625 11.38-11.12 6.375-17.5l-33.19-41.79l225.2-175.2C641.6 46.38 644.1 26.27 633.2 12.34z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Limpeza Interior</h3>
-                    <p>Aspiração , limpeza e hidratação do interior da sua viatura. </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="300ms">
-                    <div class="icon">
-                        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path class="white"
-                                d="M320 256c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C256 227.3 284.7 256 320 256zM160 288c-35.35 0-64 28.65-64 64c0 35.35 28.65 64 64 64h192c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64H160zM384 64c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32s-32 14.33-32 32C352 49.67 366.3 64 384 64zM208 96C234.5 96 256 74.51 256 48S234.5 0 208 0S160 21.49 160 48S181.5 96 208 96zM416 192c0 27.82-12.02 52.68-30.94 70.21C421.7 275.7 448 310.7 448 352c0 53.02-42.98 96-96 96H160c-53.02 0-96-42.98-96-96s42.98-96 96-96h88.91C233.6 238.1 224 216.7 224 192H96C42.98 192 0 234.1 0 288v128c0 53.02 42.98 96 96 96h320c53.02 0 96-42.98 96-96V288C512 234.1 469 192 416 192z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Lavagem Exterior</h3>
-                    <p>Desde uma lavagem simples às mais técnicas, garantimos o melhor resultado.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="600ms">
-                    <div class="icon">
-                        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path class="white"
-                                d="M248.8 4.994C249.9 1.99 252.8 .0001 256 .0001C259.2 .0001 262.1 1.99 263.2 4.994L277.3 42.67L315 56.79C318 57.92 320 60.79 320 64C320 67.21 318 70.08 315 71.21L277.3 85.33L263.2 123C262.1 126 259.2 128 256 128C252.8 128 249.9 126 248.8 123L234.7 85.33L196.1 71.21C193.1 70.08 192 67.21 192 64C192 60.79 193.1 57.92 196.1 56.79L234.7 42.67L248.8 4.994zM427.4 14.06C446.2-4.686 476.6-4.686 495.3 14.06L529.9 48.64C548.6 67.38 548.6 97.78 529.9 116.5L148.5 497.9C129.8 516.6 99.38 516.6 80.64 497.9L46.06 463.3C27.31 444.6 27.31 414.2 46.06 395.4L427.4 14.06zM461.4 59.31L356.3 164.3L379.6 187.6L484.6 82.58L461.4 59.31zM7.491 117.2L64 96L85.19 39.49C86.88 34.98 91.19 32 96 32C100.8 32 105.1 34.98 106.8 39.49L128 96L184.5 117.2C189 118.9 192 123.2 192 128C192 132.8 189 137.1 184.5 138.8L128 160L106.8 216.5C105.1 221 100.8 224 96 224C91.19 224 86.88 221 85.19 216.5L64 160L7.491 138.8C2.985 137.1 0 132.8 0 128C0 123.2 2.985 118.9 7.491 117.2zM359.5 373.2L416 352L437.2 295.5C438.9 290.1 443.2 288 448 288C452.8 288 457.1 290.1 458.8 295.5L480 352L536.5 373.2C541 374.9 544 379.2 544 384C544 388.8 541 393.1 536.5 394.8L480 416L458.8 472.5C457.1 477 452.8 480 448 480C443.2 480 438.9 477 437.2 472.5L416 416L359.5 394.8C354.1 393.1 352 388.8 352 384C352 379.2 354.1 374.9 359.5 373.2z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Polimento</h3>
-                    <p>Polimento Comercial para dar brilho ou Correção de pintura para o deixar perfeito.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <div class="icon">
-                        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path class="white"
-                                d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Restauro</h3>
-                    <p>Recuperar o esplendor da sua viatura aquando novo.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="300ms">
-                    <div class="icon">
-                        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path class="white"
-                                d="M96 32C96 14.33 110.3 0 128 0H192C209.7 0 224 14.33 224 32V128H96V32zM224 160C277 160 320 202.1 320 256V464C320 490.5 298.5 512 272 512H48C21.49 512 0 490.5 0 464V256C0 202.1 42.98 160 96 160H224zM160 416C204.2 416 240 380.2 240 336C240 291.8 204.2 256 160 256C115.8 256 80 291.8 80 336C80 380.2 115.8 416 160 416zM384 48C384 49.36 383 50.97 381.8 51.58L352 64L339.6 93.78C338.1 95 337.4 96 336 96C334.6 96 333 95 332.4 93.78L320 64L290.2 51.58C288.1 50.97 288 49.36 288 48C288 46.62 288.1 45.03 290.2 44.42L320 32L332.4 2.219C333 1 334.6 0 336 0C337.4 0 338.1 1 339.6 2.219L352 32L381.8 44.42C383 45.03 384 46.62 384 48zM460.4 93.78L448 64L418.2 51.58C416.1 50.97 416 49.36 416 48C416 46.62 416.1 45.03 418.2 44.42L448 32L460.4 2.219C461 1 462.6 0 464 0C465.4 0 466.1 1 467.6 2.219L480 32L509.8 44.42C511 45.03 512 46.62 512 48C512 49.36 511 50.97 509.8 51.58L480 64L467.6 93.78C466.1 95 465.4 96 464 96C462.6 96 461 95 460.4 93.78zM467.6 194.2L480 224L509.8 236.4C511 237 512 238.6 512 240C512 241.4 511 242.1 509.8 243.6L480 256L467.6 285.8C466.1 287 465.4 288 464 288C462.6 288 461 287 460.4 285.8L448 256L418.2 243.6C416.1 242.1 416 241.4 416 240C416 238.6 416.1 237 418.2 236.4L448 224L460.4 194.2C461 193 462.6 192 464 192C465.4 192 466.1 193 467.6 194.2zM448 144C448 145.4 447 146.1 445.8 147.6L416 160L403.6 189.8C402.1 191 401.4 192 400 192C398.6 192 397 191 396.4 189.8L384 160L354.2 147.6C352.1 146.1 352 145.4 352 144C352 142.6 352.1 141 354.2 140.4L384 128L396.4 98.22C397 97 398.6 96 400 96C401.4 96 402.1 97 403.6 98.22L416 128L445.8 140.4C447 141 448 142.6 448 144z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Desinfeção</h3>
-                    <p>Higienização interna , tratamento das condutas AC e muito mais…</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="600ms">
-                    <div class="icon">
-                        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path class="white"
-                                d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM269.8 218.3C266.2 239.2 250.4 252.1 228 257.7V268c0 11.03-8.953 20-20 20s-20-8.969-20-20V257.2c-8.682-1.922-17.3-4.723-25.06-7.512l-4.266-1.5C148.3 244.5 142.8 233.1 146.5 222.7c3.688-10.41 15.11-15.81 25.52-12.22l4.469 1.625c7.844 2.812 16.72 6 23.66 7.031C213.8 221.3 229 219.3 230.4 211.5C231.3 206.4 231.8 203.6 202.5 195.2L196.7 193.5c-17.33-5.094-57.92-17-50.52-59.84C149.8 112.8 165.6 98.76 188 93.99V84c0-11.03 8.953-20 20-20s20 8.969 20 20v10.63c5.453 1.195 11.34 2.789 18.56 5.273C257 103.5 262.5 114.9 258.9 125.4C255.3 135.8 243.8 141.3 233.4 137.7c-5.859-2.031-12-4-17.59-4.844C202.2 130.8 186.1 132.7 185.6 140.5C184.8 144.1 184.3 148.2 207.1 155.2L213.5 156.8C235.8 163.1 277.3 175 269.8 218.3zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z" />
-                        </svg>
-                    </div>
-                    <h3 class="title">Serviço por consulta</h3>
-                    <p>Cada carro é um carro , queremos o serviço o mais personalizado possível.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--====== SERVICE PART ENDS ======-->
-
-<!--====== PORTFOLIO PART START ======-->
-
-<section class="portfolio-area pb-130" id="portfolio">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9">
-                <div class="section-title text-center">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <h3 class="title">Portfólio</h3>
-                    <p>Estas são algumas das fotos que tirámos enquanto fazíamos o que mais amamos 😍. <br> ( Vê
-                        mais em: <a href="https://www.facebook.com/drivecleandetalheautomovel/">facebook</a>, <a
-                            href="https://www.instagram.com/drivecleandetalheauto/">instagram</a> e <a
-                            href="https://www.tiktok.com/@drivecleandetalheauto">tiktok</a> )</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid p-0">
-        <div class="row portfolio-active">
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-1.jpg" alt="Instalações da Driveclean">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0001</h4>
-                            <p>Instalações da Driveclean</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-46.jpg" alt="Moto Detail">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0002</h4>
-                            <p>Moto Detail</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-49.jpg" alt="Carro em detalhe">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0003</h4>
-                            <p>Carro em detalhe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-4.jpg" alt="Limpeza de jantes">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0004</h4>
-                            <p>Limpeza de jantes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-5.jpg" alt="Proteção com PPF">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0005</h4>
-                            <p>Proteção com PPF</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-6.jpg" alt="Lavagem de jantes">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0006</h4>
-                            <p>Lavagem de jantes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-7.jpg" alt="Pré lavagem a atuar">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0007</h4>
-                            <p>Pré lavagem a atuar</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-8.jpg" alt="Restauro de clássicos">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0008</h4>
-                            <p>Restauro de clássicos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/portfolio/gallery-28.jpg"
-                        alt="Produtos de excelência para venda ao público">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0009</h4>
-                            <p>Produtos de excelência para venda ao público</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-10.jpg" alt="Atenção extrema no serviço">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0010</h4>
-                            <p>Atenção extrema no serviço</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-11.jpg" alt="Full front PPF">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0011</h4>
-                            <p>Full front PPF</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-12.jpg" alt="Traseira detalhada">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0012</h4>
-                            <p>Traseira detalhada</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-29.jpg" alt="Limpeza sistema de ventilação">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0013</h4>
-                            <p>Limpeza sistema de ventilação</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-50.jpg" alt="Personalização de interiores">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0014</h4>
-                            <p>Personalização de interiores</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-48.jpg" alt=Restauro de pintura"">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0015</h4>
-                            <p>Restauro de pintura</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-30.jpg" alt="Lavagem do compartimento de motor">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0016</h4>
-                            <p>Lavagem do compartimento de motor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-40.jpg" alt="Processo de lavagem detalhada">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0017</h4>
-                            <p>Processo de lavagem detalhada</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-38.jpg" alt="Lavagem exterior">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0018</h4>
-                            <p>Lavagem exterior</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-19.jpg" alt="Detalhe">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0019</h4>
-                            <p>Detalhe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-20.jpg" alt="Jante em detalhe">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0020</h4>
-                            <p>Jante em detalhe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-21.jpg" alt="Processo de lavagem exterior">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0021</h4>
-                            <p>Processo de lavagem exterior</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-22.jpg" alt="Aplicação de espuma pré-lavagem">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0022</h4>
-                            <p>Aplicação de espuma pré-lavagem</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-23.jpg" alt="Enxaguamento">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0023</h4>
-                            <p>Enxaguamento</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-24.jpg" alt="Verificar todos os cantos da viatura">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0024</h4>
-                            <p>Verificar todos os cantos da viatura</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-47.jpg" alt="Polimento comercial">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0025</h4>
-                            <p>Polimento comercial</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-51.jpg" alt="Tratamento de Vinil ( CarWrap )">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0026</h4>
-                            <p>Tratamento de Vinil ( CarWrap )</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-52.jpg" alt="Recuperação de couro">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0027</h4>
-                            <p>Recuperação de couro</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-53.jpg" alt="Manutenção de tratamentos">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0028</h4>
-                            <p>Manutenção de tratamentos</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-54.jpg" alt="Full front PPF ao sol">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0029</h4>
-                            <p>Full front PPF ao sol</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-55.jpg"
-                        alt="Resultado final de uma intervenção de restauro">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0030</h4>
-                            <p>Resultado final de uma intervenção de restauro</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/portfolio/gallery-56.jpg" alt="Tratamento de plásticos Preto Piano">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">Foto #0031</h4>
-                            <p>Tratamento de plásticos Preto Piano</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!--====== PORTFOLIO PART ENDS ======-->
-
-<!--====== TESTIMONIAL PART START ======-->
-
-<section class="testimonial-area" id="testimonials">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9">
-                <div class="section-title section-title-2 text-center">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <h3 class="title">Testemunhos</h3>
-                    <h4 style="color: #fff;">A melhor publicidade é feita através de clientes satisfeitos.<h4>
-                </div>
-            </div>
-        </div>
-        <div class="row testimonial-active">
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Espetacular, um serviço de excelência. Vale mesmo a pena. Gente que trabalha com gosto.
-                    </p>
-                    <div class="info">
-                        <h5 class="title">Fernando Paiva</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Serviço de excelência! Qualidade superior!</p>
-                    <div class="info">
-                        <h5 class="title">Gonçalo vinagre</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Competência e profissionalismo. Recomendo</p>
-                    <div class="info">
-                        <h5 class="title">João Luis</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Limpeza e detalhes automóvel! 5*</p>
-                    <div class="info">
-                        <h5 class="title">Carlos Moreira</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Serviços: Polimento da ponteira de escape, Reparação de pintura <br>
-                        Positivo: Pontualidade, Preço/qualidade, Profissionalismo, Qualidade</p>
-                    <div class="info">
-                        <h5 class="title">Filipe Pereira</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Serviço espetacular.</p>
-                    <div class="info">
-                        <h5 class="title">Raul Lucas</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mt-30">
-                    <div class="quote">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
-                            <g data-name="Group 21" transform="translate(0 0)">
-                                <path data-name="Union 1"
-                                    d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
-                                    transform="translate(0 0)" />
-                            </g>
-                        </svg>
-                    </div>
-                    <p>Sou fã... <br>
-                        Porque tenho um bebé que o mantenho o mais possível personalizado a meu gosto.
-                        E acerca de voces, irei em breve solicitar o vosso serviços.
-                        Agora que encontrei aqui o vosso contacto e através do tik tok
-                        Parabéns a todos.</p>
-                    <div class="info">
-                        <h5 class="title">Pedro Roque</h5>
-                        <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i></span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!--====== TESTIMONIAL PART ENDS ======-->
-
-<!--====== OVERVIEW PART START ======-->
-
-<section class="overview-area pb-100" id="overview">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="overview-content">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <span>overview</span>
-                    <h2 class="title">Qualidade Suprema</h2>
-                    <p>Seja para fazer a manutenção externa , seja para fazer um extreme makeover , garantimos
-                        qualidade e a nossa equipa motivada para lhe entregar o melhor resultado possível</p>
-                    <a class="main-btn" href="contact.html">Pedir orçamento</a>
-                    <div class="brand-item d-flex align-items-center mt-70">
-                        <div class="item">
-                            <a href="#"><img src="assets/images/brand-1.png" alt="Stek logo"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img src="assets/images/brand-2.png" alt="Vonixx logo"></a>
-                        </div>
-                        <div class="item">
-                            <a href="#"><img src="assets/images/brand-3.png" alt="Sonax  logo"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="overview-counter-area">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="overview-counter-item mt-10 animated wow fadeInUp"
-                                data-wow-duration="3000ms" data-wow-delay="0ms">
-                                <div class="icon">
-                                    <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 448 512">
-                                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M352 111.1c22.09 0 40-17.88 40-39.97S352 0 352 0s-40 49.91-40 72S329.9 111.1 352 111.1zM224 111.1c22.09 0 40-17.88 40-39.97S224 0 224 0S184 49.91 184 72S201.9 111.1 224 111.1zM383.1 223.1L384 160c0-8.836-7.164-16-16-16h-32C327.2 144 320 151.2 320 160v64h-64V160c0-8.836-7.164-16-16-16h-32C199.2 144 192 151.2 192 160v64H128V160c0-8.836-7.164-16-16-16h-32C71.16 144 64 151.2 64 160v63.97c-35.35 0-64 28.65-64 63.1v68.7c9.814 6.102 21.39 11.33 32 11.33c20.64 0 45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C114.1 348.3 139.4 367.1 160 367.1s45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C242.1 348.3 267.4 367.1 288 367.1s45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C370.1 348.3 395.4 367.1 416 367.1c10.61 0 22.19-5.227 32-11.33V287.1C448 252.6 419.3 223.1 383.1 223.1zM352 373.3c-13.75 10.95-38.03 26.66-64 26.66s-50.25-15.7-64-26.66c-13.75 10.95-38.03 26.66-64 26.66s-50.25-15.7-64-26.66c-13.75 10.95-38.03 26.66-64 26.66c-11.27 0-22.09-3.121-32-7.377v87.38C0 497.7 14.33 512 32 512h384c17.67 0 32-14.33 32-32v-87.38c-9.91 4.256-20.73 7.377-32 7.377C390 399.1 365.8 384.3 352 373.3zM96 111.1c22.09 0 40-17.88 40-39.97S96 0 96 0S56 49.91 56 72S73.91 111.1 96 111.1z" />
-                                    </svg>
-                                </div>
-                                <h3 class="title count">7</h3>
-                                <span>Anos de Experiência</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="overview-counter-item mt-10 animated wow fadeInUp"
-                                data-wow-duration="3000ms" data-wow-delay="300ms">
-                                <div class="icon">
-                                    <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 384 512">
-                                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM96 392c-13.25 0-24-10.75-24-24S82.75 344 96 344s24 10.75 24 24S109.3 392 96 392zM96 296c-13.25 0-24-10.75-24-24S82.75 248 96 248S120 258.8 120 272S109.3 296 96 296zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM304 384h-128C167.2 384 160 376.8 160 368C160 359.2 167.2 352 176 352h128c8.801 0 16 7.199 16 16C320 376.8 312.8 384 304 384zM304 288h-128C167.2 288 160 280.8 160 272C160 263.2 167.2 256 176 256h128C312.8 256 320 263.2 320 272C320 280.8 312.8 288 304 288z" />
-                                    </svg>
-                                </div>
-                                <h3 class="title count plussign">2000</h3>
-                                <span>Serviços efetuados</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="overview-counter-item mt-30 animated wow fadeInUp"
-                                data-wow-duration="3000ms" data-wow-delay="600ms">
-                                <div class="icon">
-                                    <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 640 512">
-                                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M640 320V368C640 385.7 625.7 400 608 400H574.7C567.1 445.4 527.6 480 480 480C432.4 480 392.9 445.4 385.3 400H254.7C247.1 445.4 207.6 480 160 480C112.4 480 72.94 445.4 65.33 400H32C14.33 400 0 385.7 0 368V256C0 228.9 16.81 205.8 40.56 196.4L82.2 92.35C96.78 55.9 132.1 32 171.3 32H353.2C382.4 32 409.1 45.26 428.2 68.03L528.2 193C591.2 200.1 640 254.8 640 319.1V320zM171.3 96C158.2 96 146.5 103.1 141.6 116.1L111.3 192H224V96H171.3zM272 192H445.4L378.2 108C372.2 100.4 362.1 96 353.2 96H272V192zM525.3 400C527 394.1 528 389.6 528 384C528 357.5 506.5 336 480 336C453.5 336 432 357.5 432 384C432 389.6 432.1 394.1 434.7 400C441.3 418.6 459.1 432 480 432C500.9 432 518.7 418.6 525.3 400zM205.3 400C207 394.1 208 389.6 208 384C208 357.5 186.5 336 160 336C133.5 336 112 357.5 112 384C112 389.6 112.1 394.1 114.7 400C121.3 418.6 139.1 432 160 432C180.9 432 198.7 418.6 205.3 400z" />
-                                    </svg>
-                                </div>
-                                <h3 class="title count plussign">100</h3>
-                                <span>Modelos trabalhados</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="overview-counter-item mt-30 animated wow fadeInUp"
-                                data-wow-duration="3000ms" data-wow-delay="900ms">
-                                <div class="icon">
-                                    <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 448 512">
-                                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M416 127.1h-58.23l9.789-58.74c2.906-17.44-8.875-33.92-26.3-36.83c-17.53-2.875-33.92 8.891-36.83 26.3L292.9 127.1H197.8l9.789-58.74c2.906-17.44-8.875-33.92-26.3-36.83c-17.53-2.875-33.92 8.891-36.83 26.3L132.9 127.1H64c-17.67 0-32 14.33-32 32C32 177.7 46.33 191.1 64 191.1h58.23l-21.33 128H32c-17.67 0-32 14.33-32 32c0 17.67 14.33 31.1 32 31.1h58.23l-9.789 58.74c-2.906 17.44 8.875 33.92 26.3 36.83C108.5 479.9 110.3 480 112 480c15.36 0 28.92-11.09 31.53-26.73l11.54-69.27h95.12l-9.789 58.74c-2.906 17.44 8.875 33.92 26.3 36.83C268.5 479.9 270.3 480 272 480c15.36 0 28.92-11.09 31.53-26.73l11.54-69.27H384c17.67 0 32-14.33 32-31.1c0-17.67-14.33-32-32-32h-58.23l21.33-128H416c17.67 0 32-14.32 32-31.1C448 142.3 433.7 127.1 416 127.1zM260.9 319.1H165.8L187.1 191.1h95.12L260.9 319.1z" />
-                                    </svg>
-                                </div>
-                                <h3 class="title"><span class="count">3365</span></h3>
-                                <span>Seguidores Instagram</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--====== OVERVIEW PART ENDS ======-->
-
-<!--====== TEAM PART START ======-->
-
-<section class="team-area" id="facilities">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9">
-                <div class="section-title text-center">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <h3 class="title">O Espaço</h3>
-                    <p>As nossas instalações são jovens e modernas, e preparadas para efetuarmos os nossos serviços
-                        nas melhores condições.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--TEST-->
-    <div class="container-fluid p-0">
-        <div class="row portfolio-active">
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/espaco/1.jpg" alt="Instalações da Driveclean">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0001</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/2.jpg" alt="Moto Detail">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0002</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/3.jpg" alt="Carro em detalhe">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0003</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/4.jpg" alt="Limpeza de jantes">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0004</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/5.jpg" alt="Proteção com PPF">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0005</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/6.jpg" alt="Lavagem de jantes">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0006</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/7.jpg" alt="Pré lavagem a atuar">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0007</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/8.jpg" alt="Restauro de clássicos">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0008</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30 mb-30">
-                    <img src="assets/images/espaco/9.jpg"
-                        alt="Produtos de excelência para venda ao público">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0009</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="portfolio-item mt-30">
-                    <img src="assets/images/espaco/10.jpg" alt="Atenção extrema no serviço">
-                    <div class="portfolio-overlay">
-                        <div class="content">
-                            <img src="assets/images/hero-line-5.png" alt="line">
-                            <h4 class="title">#0010</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
-    </div>
-    <!--TEST-->
+<head>
     
-    <!--
-        
-    -->
-</section>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--====== TEAM PART ENDS ======-->
 
-<!--====== PRICING PART START ======-->
+    <!--====== Title ======-->
+    <title>DRIVECLEAN | Empresa de Detalhe Automóvel | Agualva</title>
+    
 
-<section class="pricing-area" id="pricing">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-9">
-                <div class="section-title section-title-2 text-center">
-                    <img src="assets/images/hero-line-5.png" alt="line">
-                    <h3 class="title">Planos</h3>
-                    <p>Entra em contacto connosco e criamos o plano ideal para ti.</p>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="DRIVECLEAN | Empresa de Detalhe Automóvel | Agualva">
+    <link rel="canonical" href="https://driveclean.pt/" />
+    <meta name="description"
+        content="Driveclean é uma empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015. Profissionais na área do detalhe e cuidado automóvel, estamos disponíveis para.">
+    <meta name="keywords"
+        content="Driveclean, driveclean, drive clean, driveclean detalhe, detalhe automóvel lisboa, detalhe automóvel, Car, Car detail, detailing, Lavagem de carros, limpeza interior automóvel, automóvel, Polimento, pintura automóvel, ppf, Paint protection film, restauro, desinfeção, proteção cerâmica ">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://driveclean.pt/">
+    <meta property="og:title" content="DRIVECLEAN | Car Detail Company">
+    <meta property="og:description"
+        content="Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos clientes nos seus projetos.">
+    <meta property="og:image" content="https://driveclean.pt/website-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://driveclean.pt/">
+    <meta property="twitter:title" content="DRIVECLEAN | Car Detail Company">
+    <meta property="twitter:description"
+        content="Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos clientes nos seus projetos.">
+    <meta property="twitter:image" content="https://driveclean.pt/website-preview.png">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    
+
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navigation">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+
+                                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
+                                        alt="logo"></a>
+                                <!-- logo -->
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                </button> <!-- navbar toggler -->
+
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
+                                                <li><a class="nav-link" href="index.html#portfolio">Portfólio </a></li>
+                                                <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                                </li>
+                                                <li><a class="nav-link" href="index.html#overview">Overview </a></li>
+                                                <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#services">Serviços </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#pricing">Preços </a>
+                                        </li>
+
+
+                                        <li class="nav-item">
+                                            <a class="nav-link">Social</a>
+                                            <ul class="sub-menu">
+                                                <li><a
+                                                        href="https://www.instagram.com/drivecleandetalheauto/">Instagram</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.facebook.com/drivecleandetalheautomovel/">Facebook</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop">Youtube</a>
+                                                </li>
+                                                <li><a href="https://www.tiktok.com/@drivecleandetalheauto">TikTok</a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </div> <!-- navbar collapse -->
+
+                                <div class="navbar-btn d-none d-sm-block">
+                                    <a class="main-btn" href="tel:+351965530081">965 530 081 / 214 335 387</a>
+                                </div>
+                            </nav>
+                        </div> <!-- navigation -->
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== HERO PART START ======-->
+
+    <section class="hero-area">
+        <div class="section__bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <h1 class="title animated wow fadeInLeft" data-wow-duration="3000ms" data-wow-delay="0ms">
+                            Driveclean<br>
+                            Especialistas no Detalhe Automóvel 
+                            
+                        </h1>
+                        <h2 style="color: #fff;" class="animated wow fadeInLeft" data-wow-duration="3000ms"
+                            data-wow-delay="300ms">Melhorar-Proteger-Manter</h2>
+                        <a class="main-btn main-btn-2 animated wow fadeInDown" data-wow-duration="2000ms"
+                            data-wow-delay="100ms" href="contact.html">Pedir orçamento</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-play">
+                        <a class="video-popup" href="https://www.youtube.com/watch?v=lwCwJ8u4DXQ"><i
+                                class="fas fa-play"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-9 order-1">
-                <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Lavagem de manutenção</h3>
-                    <span>€ 45</span>
-                    <p>(Ressalva de valor para viatura ligeira até 5 lugares)</p>
-                    <ul>
-                        <li>Limpeza e aspiração interior</li>
-                        <li>Lavagem exterior detalhada</li>
-                        <li>Lavagem do compartimento do motor</li>
-                        <li>Aplicação de WetCoat</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-9 order-3 order-lg-2">
-                <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Higienização interna</h3>
-                    <span>€ 120</span>
-                    <p>(Ressalva de valor para viatura ligeira até 5 lugares)</p>
-                    <ul>
-                        <li>Lavagem , limpeza e hidratação de todo o interior</li>
-                        <li>Lavagem de bancos</li>
-                        <li>Lavagem exterior detalhada</li>
-                        <li>Lavagem do compartimento do motor</li>
-                        <li>Aplicação de WetCoat</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Correção de pintura</h3>
-                    <span>€ SOB ORÇAMENTO</span>
-                    <p></p>
-                    <ul>
-                        <li>Pré- Lavagem e descontaminação química e mecânica da viatura</li>
-                        <li>Polimento Comercial (Correção para remover o máximo de imperfeições )</li>
-                        <li>Aplicação de proteção</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
+    </section>
 
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Polimento de carroçaria</h3>
-                    <span>€ SOB ORÇAMENTO</span>
-                    <p></p>
-                    <ul>
-                        <li>Pré- Lavagem e descontaminação química e mecânica da viatura</li>
-                        <li>Polimento Comercial ( Brilho )</li>
-                        <li>Aplicação de Cera ( Proteção até 12 meses )</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
+    <!--====== HERO PART ENDS ======-->
 
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Proteção Cerâmica</h3>
-                    <span>€ SOB ORÇAMENTO</span>
-                    <p></p>
-                    <ul>
-                        <li>Proteção química para ajudar na manutenção externa da viatura</li>
-                        <li>Proteção até 3 anos</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Aplicação de PPF</h3>
-                    <span>€ SOB ORÇAMENTO</span>
-                    <p></p>
-                    <ul>
-                        <li>Proteção física contra riscos e pedras</li>
-                        <li>Auto regenerativa ao sol</li>
-                        <li>Proteção até 8 anos</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Moto Detailing</h3>
-                    <span>€ SOB ORÇAMENTO</span>
-                    <p></p>
-                    <ul>
-                        <li>Lavagens de manutenção</li>
-                        <li>Detalhes completos</li>
-                        <li>Proteções</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Polimento de faróis</h3>
-                    <span>€ 100</span>
-                    <p></p>
-                    <ul>
-                        <li>Correção dos faróis</li>
-                        <li>Aplicação de PPF ( Proteção até 8 anos )</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
-                </div>
-            </div>
+    <!--====== SUB ITEM PART START ======-->
 
-            <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
-                    data-wow-delay="0ms">
-                    <h3 class="title">Restauros de interiores</h3>
-                    <span>€ SOB ORÇAMENTO</span>
-                    <p></p>
-                    <ul>
-                        <li>Recuperação de plásticos e couros</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
+    <section class="sub-item-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="sub-item">
+                        <div class="icon">
+                            <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M320 256c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C256 227.3 284.7 256 320 256zM160 288c-35.35 0-64 28.65-64 64c0 35.35 28.65 64 64 64h192c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64H160zM384 64c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32s-32 14.33-32 32C352 49.67 366.3 64 384 64zM208 96C234.5 96 256 74.51 256 48S234.5 0 208 0S160 21.49 160 48S181.5 96 208 96zM416 192c0 27.82-12.02 52.68-30.94 70.21C421.7 275.7 448 310.7 448 352c0 53.02-42.98 96-96 96H160c-53.02 0-96-42.98-96-96s42.98-96 96-96h88.91C233.6 238.1 224 216.7 224 192H96C42.98 192 0 234.1 0 288v128c0 53.02 42.98 96 96 96h320c53.02 0 96-42.98 96-96V288C512 234.1 469 192 416 192z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Tratamento & Cuidado Automóvel</h3>
+                        <span>Vasto leque de serviços para deixar a sua viatura o melhor possível</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="sub-item">
+                        <div class="icon">
+                            <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M256-.0078C260.7-.0081 265.2 1.008 269.4 2.913L457.7 82.79C479.7 92.12 496.2 113.8 496 139.1C495.5 239.2 454.7 420.7 282.4 503.2C265.7 511.1 246.3 511.1 229.6 503.2C57.25 420.7 16.49 239.2 15.1 139.1C15.87 113.8 32.32 92.12 54.3 82.79L242.7 2.913C246.8 1.008 251.4-.0081 256-.0078V-.0078zM256 444.8C393.1 378 431.1 230.1 432 141.4L256 66.77L256 444.8z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Proteções físicas e químicas</h3>
+                        <span>Ceras , Proteções cerâmicas ou PPF ( PAint Protection Film ) para garantir a segurança da
+                            sua viatura</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="sub-item">
+                        <div class="icon">
+                            <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M248.8 4.994C249.9 1.99 252.8 .0001 256 .0001C259.2 .0001 262.1 1.99 263.2 4.994L277.3 42.67L315 56.79C318 57.92 320 60.79 320 64C320 67.21 318 70.08 315 71.21L277.3 85.33L263.2 123C262.1 126 259.2 128 256 128C252.8 128 249.9 126 248.8 123L234.7 85.33L196.1 71.21C193.1 70.08 192 67.21 192 64C192 60.79 193.1 57.92 196.1 56.79L234.7 42.67L248.8 4.994zM427.4 14.06C446.2-4.686 476.6-4.686 495.3 14.06L529.9 48.64C548.6 67.38 548.6 97.78 529.9 116.5L148.5 497.9C129.8 516.6 99.38 516.6 80.64 497.9L46.06 463.3C27.31 444.6 27.31 414.2 46.06 395.4L427.4 14.06zM461.4 59.31L356.3 164.3L379.6 187.6L484.6 82.58L461.4 59.31zM7.491 117.2L64 96L85.19 39.49C86.88 34.98 91.19 32 96 32C100.8 32 105.1 34.98 106.8 39.49L128 96L184.5 117.2C189 118.9 192 123.2 192 128C192 132.8 189 137.1 184.5 138.8L128 160L106.8 216.5C105.1 221 100.8 224 96 224C91.19 224 86.88 221 85.19 216.5L64 160L7.491 138.8C2.985 137.1 0 132.8 0 128C0 123.2 2.985 118.9 7.491 117.2zM359.5 373.2L416 352L437.2 295.5C438.9 290.1 443.2 288 448 288C452.8 288 457.1 290.1 458.8 295.5L480 352L536.5 373.2C541 374.9 544 379.2 544 384C544 388.8 541 393.1 536.5 394.8L480 416L458.8 472.5C457.1 477 452.8 480 448 480C443.2 480 438.9 477 437.2 472.5L416 416L359.5 394.8C354.1 393.1 352 388.8 352 384C352 379.2 354.1 374.9 359.5 373.2z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Polimento</h3>
+                        <span>Polimentos comerciais ou correções para colocar a pintura como nova</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="sub-item">
+                        <div class="icon">
+                            <svg width="70" height="70" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z" />
+                            </svg>
+
+                        </div>
+                        <h3 class="title">Restauro</h3>
+                        <span>Botoes sem legendas , couro rasgado ou plásticos sem cor</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</section>
+    <!--====== SUB ITEM PART ENDS ======-->
 
-<!--====== PRICING PART ENDS ======-->
+    <!--====== ABOUT US PART START ======-->
 
-<section class="pricing-3-area pricing-page-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="pricing-3-content">
-                    <h3 class="title">Serviços externos que fornecemos :</h3>
-                    <div class="info">
+    <section class="about-us-area pb-100" id="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-content">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <span>Sobre Nós</span>
+                        <h3 class="title">Obcecados pela perfeição </h3>
+                        <p>A nossa equipa é extremamente profissional e experiente, Com a ajuda dos melhores produtos
+                            vamos garantir que o teu carro fique a brilhar</p>
                         <ul>
-                            <li><i class="fas fa-paper-plane"></i> geral@driveclean.pt</li>
-                            <li><i class="fas fa-phone"></i> 965 530 081</li>
-                            <li><i class="fas fa-phone-office"></i> 214 335 387</li>
+                            <li>Equipa certificada</li>
+                            <li>Vários anos de experiência</li>
+                            <li>Produtos de excelência</li>
+                            <li>Serviço de Qualidade</li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-lg-7">
+                    <div class="about-thumb animated wow fadeInRight" data-wow-duration="3000ms" data-wow-delay="0ms">
+                        <img src="assets/images/abouth-thumb.jpg" alt="Colaborador a retirar a espuma do veículo">
+
+                        <ul>
+
+                            <li>
+                                <img src="assets/images/about-brand-2.png" alt="Google reviews">
+                                <span>Classificação: 4,6*</span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                                <img src="assets/images/about-brand-3.png" alt="Facebook reviews">
+                                <span>Classificação: 4,9*</span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-5">
-                <div class="pricing-3-box animated wow fadeInRight" data-wow-duration="3000ms" data-wow-delay="0ms">
-                    <ul>
-                        <li><span><img src="assets/images/post-arrow.png" alt="Seta">Serviço de pintura e bate chapa
-                        </li>
-                        <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Serviço de estofador</li>
-                        <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Serviço de tira mossas sem
-                                pintar</li>
-                        <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Serviço de reparação de
-                                jantes
-                        </li>
-                        <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Loja física para venda de
-                                produtos</li>
-                        <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Damos formações de Detalhe
-                                Automóvel</li>
-                    </ul>
-                    <a class="main-btn" href="contact.html">Contactar</a>
+        </div>
+    </section>
+
+    <!--====== ABOUT US PART ENDS ======-->
+
+    <!--====== SERVICE PART START ======-->
+
+    <section class="service-area pb-100" id="services">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="section-title text-center">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <h3 class="title">Serviços</h3>
+                        <p>O nosso foco é entregar ao teu carro os serviços que ele merece.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <div class="icon">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path class="white"
+                                    d="M93.13 257.7C71.25 275.1 53 313.5 38.63 355.1L99 333.1c5.75-2.125 10.62 4.749 6.625 9.499L11 454.7C3.75 486.1 0 510.2 0 510.2s206.6 13.62 266.6-34.12c60-47.87 76.63-150.1 76.63-150.1L256.5 216.7C256.5 216.7 153.1 209.1 93.13 257.7zM633.2 12.34c-10.84-13.91-30.91-16.45-44.91-5.624l-225.7 175.6l-34.99-44.06C322.5 131.9 312.5 133.1 309 140.5L283.8 194.1l86.75 109.2l58.75-12.5c8-1.625 11.38-11.12 6.375-17.5l-33.19-41.79l225.2-175.2C641.6 46.38 644.1 26.27 633.2 12.34z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Limpeza Interior</h3>
+                        <p>Aspiração , limpeza e hidratação do interior da sua viatura. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="300ms">
+                        <div class="icon">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path class="white"
+                                    d="M320 256c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C256 227.3 284.7 256 320 256zM160 288c-35.35 0-64 28.65-64 64c0 35.35 28.65 64 64 64h192c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64H160zM384 64c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32s-32 14.33-32 32C352 49.67 366.3 64 384 64zM208 96C234.5 96 256 74.51 256 48S234.5 0 208 0S160 21.49 160 48S181.5 96 208 96zM416 192c0 27.82-12.02 52.68-30.94 70.21C421.7 275.7 448 310.7 448 352c0 53.02-42.98 96-96 96H160c-53.02 0-96-42.98-96-96s42.98-96 96-96h88.91C233.6 238.1 224 216.7 224 192H96C42.98 192 0 234.1 0 288v128c0 53.02 42.98 96 96 96h320c53.02 0 96-42.98 96-96V288C512 234.1 469 192 416 192z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Lavagem Exterior</h3>
+                        <p>Desde uma lavagem simples às mais técnicas, garantimos o melhor resultado.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="600ms">
+                        <div class="icon">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path class="white"
+                                    d="M248.8 4.994C249.9 1.99 252.8 .0001 256 .0001C259.2 .0001 262.1 1.99 263.2 4.994L277.3 42.67L315 56.79C318 57.92 320 60.79 320 64C320 67.21 318 70.08 315 71.21L277.3 85.33L263.2 123C262.1 126 259.2 128 256 128C252.8 128 249.9 126 248.8 123L234.7 85.33L196.1 71.21C193.1 70.08 192 67.21 192 64C192 60.79 193.1 57.92 196.1 56.79L234.7 42.67L248.8 4.994zM427.4 14.06C446.2-4.686 476.6-4.686 495.3 14.06L529.9 48.64C548.6 67.38 548.6 97.78 529.9 116.5L148.5 497.9C129.8 516.6 99.38 516.6 80.64 497.9L46.06 463.3C27.31 444.6 27.31 414.2 46.06 395.4L427.4 14.06zM461.4 59.31L356.3 164.3L379.6 187.6L484.6 82.58L461.4 59.31zM7.491 117.2L64 96L85.19 39.49C86.88 34.98 91.19 32 96 32C100.8 32 105.1 34.98 106.8 39.49L128 96L184.5 117.2C189 118.9 192 123.2 192 128C192 132.8 189 137.1 184.5 138.8L128 160L106.8 216.5C105.1 221 100.8 224 96 224C91.19 224 86.88 221 85.19 216.5L64 160L7.491 138.8C2.985 137.1 0 132.8 0 128C0 123.2 2.985 118.9 7.491 117.2zM359.5 373.2L416 352L437.2 295.5C438.9 290.1 443.2 288 448 288C452.8 288 457.1 290.1 458.8 295.5L480 352L536.5 373.2C541 374.9 544 379.2 544 384C544 388.8 541 393.1 536.5 394.8L480 416L458.8 472.5C457.1 477 452.8 480 448 480C443.2 480 438.9 477 437.2 472.5L416 416L359.5 394.8C354.1 393.1 352 388.8 352 384C352 379.2 354.1 374.9 359.5 373.2z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Polimento</h3>
+                        <p>Polimento Comercial para dar brilho ou Correção de pintura para o deixar perfeito.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <div class="icon">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path class="white"
+                                    d="M568.2 336.3c-13.12-17.81-38.14-21.66-55.93-8.469l-119.7 88.17h-120.6c-8.748 0-15.1-7.25-15.1-15.99c0-8.75 7.25-16 15.1-16h78.25c15.1 0 30.75-10.88 33.37-26.62c3.25-20-12.12-37.38-31.62-37.38H191.1c-26.1 0-53.12 9.25-74.12 26.25l-46.5 37.74L15.1 383.1C7.251 383.1 0 391.3 0 400v95.98C0 504.8 7.251 512 15.1 512h346.1c22.03 0 43.92-7.188 61.7-20.27l135.1-99.52C577.5 379.1 581.3 354.1 568.2 336.3zM160 176h64v64C224 248.8 231.2 256 240 256h64C312.8 256 320 248.8 320 240v-64h64c8.836 0 16-7.164 16-16V96c0-8.838-7.164-16-16-16h-64v-64C320 7.162 312.8 0 304 0h-64C231.2 0 224 7.162 224 16v64H160C151.2 80 144 87.16 144 96v64C144 168.8 151.2 176 160 176z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Restauro</h3>
+                        <p>Recuperar o esplendor da sua viatura aquando novo.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="300ms">
+                        <div class="icon">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path class="white"
+                                    d="M96 32C96 14.33 110.3 0 128 0H192C209.7 0 224 14.33 224 32V128H96V32zM224 160C277 160 320 202.1 320 256V464C320 490.5 298.5 512 272 512H48C21.49 512 0 490.5 0 464V256C0 202.1 42.98 160 96 160H224zM160 416C204.2 416 240 380.2 240 336C240 291.8 204.2 256 160 256C115.8 256 80 291.8 80 336C80 380.2 115.8 416 160 416zM384 48C384 49.36 383 50.97 381.8 51.58L352 64L339.6 93.78C338.1 95 337.4 96 336 96C334.6 96 333 95 332.4 93.78L320 64L290.2 51.58C288.1 50.97 288 49.36 288 48C288 46.62 288.1 45.03 290.2 44.42L320 32L332.4 2.219C333 1 334.6 0 336 0C337.4 0 338.1 1 339.6 2.219L352 32L381.8 44.42C383 45.03 384 46.62 384 48zM460.4 93.78L448 64L418.2 51.58C416.1 50.97 416 49.36 416 48C416 46.62 416.1 45.03 418.2 44.42L448 32L460.4 2.219C461 1 462.6 0 464 0C465.4 0 466.1 1 467.6 2.219L480 32L509.8 44.42C511 45.03 512 46.62 512 48C512 49.36 511 50.97 509.8 51.58L480 64L467.6 93.78C466.1 95 465.4 96 464 96C462.6 96 461 95 460.4 93.78zM467.6 194.2L480 224L509.8 236.4C511 237 512 238.6 512 240C512 241.4 511 242.1 509.8 243.6L480 256L467.6 285.8C466.1 287 465.4 288 464 288C462.6 288 461 287 460.4 285.8L448 256L418.2 243.6C416.1 242.1 416 241.4 416 240C416 238.6 416.1 237 418.2 236.4L448 224L460.4 194.2C461 193 462.6 192 464 192C465.4 192 466.1 193 467.6 194.2zM448 144C448 145.4 447 146.1 445.8 147.6L416 160L403.6 189.8C402.1 191 401.4 192 400 192C398.6 192 397 191 396.4 189.8L384 160L354.2 147.6C352.1 146.1 352 145.4 352 144C352 142.6 352.1 141 354.2 140.4L384 128L396.4 98.22C397 97 398.6 96 400 96C401.4 96 402.1 97 403.6 98.22L416 128L445.8 140.4C447 141 448 142.6 448 144z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Desinfeção</h3>
+                        <p>Higienização interna , tratamento das condutas AC e muito mais…</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="service-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="600ms">
+                        <div class="icon">
+                            <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path class="white"
+                                    d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM269.8 218.3C266.2 239.2 250.4 252.1 228 257.7V268c0 11.03-8.953 20-20 20s-20-8.969-20-20V257.2c-8.682-1.922-17.3-4.723-25.06-7.512l-4.266-1.5C148.3 244.5 142.8 233.1 146.5 222.7c3.688-10.41 15.11-15.81 25.52-12.22l4.469 1.625c7.844 2.812 16.72 6 23.66 7.031C213.8 221.3 229 219.3 230.4 211.5C231.3 206.4 231.8 203.6 202.5 195.2L196.7 193.5c-17.33-5.094-57.92-17-50.52-59.84C149.8 112.8 165.6 98.76 188 93.99V84c0-11.03 8.953-20 20-20s20 8.969 20 20v10.63c5.453 1.195 11.34 2.789 18.56 5.273C257 103.5 262.5 114.9 258.9 125.4C255.3 135.8 243.8 141.3 233.4 137.7c-5.859-2.031-12-4-17.59-4.844C202.2 130.8 186.1 132.7 185.6 140.5C184.8 144.1 184.3 148.2 207.1 155.2L213.5 156.8C235.8 163.1 277.3 175 269.8 218.3zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z" />
+                            </svg>
+                        </div>
+                        <h3 class="title">Serviço por consulta</h3>
+                        <p>Cada carro é um carro , queremos o serviço o mais personalizado possível.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== SERVICE PART ENDS ======-->
+
+    <!--====== PORTFOLIO PART START ======-->
+
+    <section class="portfolio-area pb-130" id="portfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="section-title text-center">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <h3 class="title">Portfólio</h3>
+                        <p>Estas são algumas das fotos que tirámos enquanto fazíamos o que mais amamos 😍. <br> ( Vê
+                            mais em: <a href="https://www.facebook.com/drivecleandetalheautomovel/">facebook</a>, <a
+                                href="https://www.instagram.com/drivecleandetalheauto/">instagram</a> e <a
+                                href="https://www.tiktok.com/@drivecleandetalheauto">tiktok</a> )</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row portfolio-active">
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-1.jpg" alt="Instalações da Driveclean">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0001</h4>
+                                <p>Instalações da Driveclean</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-46.jpg" alt="Moto Detail">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0002</h4>
+                                <p>Moto Detail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-49.jpg" alt="Carro em detalhe">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0003</h4>
+                                <p>Carro em detalhe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-4.jpg" alt="Limpeza de jantes">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0004</h4>
+                                <p>Limpeza de jantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-5.jpg" alt="Proteção com PPF">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0005</h4>
+                                <p>Proteção com PPF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-6.jpg" alt="Lavagem de jantes">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0006</h4>
+                                <p>Lavagem de jantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-7.jpg" alt="Pré lavagem a atuar">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0007</h4>
+                                <p>Pré lavagem a atuar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-8.jpg" alt="Restauro de clássicos">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0008</h4>
+                                <p>Restauro de clássicos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/portfolio/gallery-28.jpg"
+                            alt="Produtos de excelência para venda ao público">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0009</h4>
+                                <p>Produtos de excelência para venda ao público</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-10.jpg" alt="Atenção extrema no serviço">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0010</h4>
+                                <p>Atenção extrema no serviço</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-11.jpg" alt="Full front PPF">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0011</h4>
+                                <p>Full front PPF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-12.jpg" alt="Traseira detalhada">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0012</h4>
+                                <p>Traseira detalhada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-29.jpg" alt="Limpeza sistema de ventilação">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0013</h4>
+                                <p>Limpeza sistema de ventilação</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-50.jpg" alt="Personalização de interiores">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0014</h4>
+                                <p>Personalização de interiores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-48.jpg" alt=Restauro de pintura"">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0015</h4>
+                                <p>Restauro de pintura</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-30.jpg" alt="Lavagem do compartimento de motor">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0016</h4>
+                                <p>Lavagem do compartimento de motor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-40.jpg" alt="Processo de lavagem detalhada">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0017</h4>
+                                <p>Processo de lavagem detalhada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-38.jpg" alt="Lavagem exterior">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0018</h4>
+                                <p>Lavagem exterior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-19.jpg" alt="Detalhe">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0019</h4>
+                                <p>Detalhe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-20.jpg" alt="Jante em detalhe">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0020</h4>
+                                <p>Jante em detalhe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-21.jpg" alt="Processo de lavagem exterior">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0021</h4>
+                                <p>Processo de lavagem exterior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-22.jpg" alt="Aplicação de espuma pré-lavagem">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0022</h4>
+                                <p>Aplicação de espuma pré-lavagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-23.jpg" alt="Enxaguamento">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0023</h4>
+                                <p>Enxaguamento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-24.jpg" alt="Verificar todos os cantos da viatura">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0024</h4>
+                                <p>Verificar todos os cantos da viatura</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-47.jpg" alt="Polimento comercial">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0025</h4>
+                                <p>Polimento comercial</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-51.jpg" alt="Tratamento de Vinil ( CarWrap )">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0026</h4>
+                                <p>Tratamento de Vinil ( CarWrap )</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-52.jpg" alt="Recuperação de couro">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0027</h4>
+                                <p>Recuperação de couro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-53.jpg" alt="Manutenção de tratamentos">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0028</h4>
+                                <p>Manutenção de tratamentos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-54.jpg" alt="Full front PPF ao sol">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0029</h4>
+                                <p>Full front PPF ao sol</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-55.jpg"
+                            alt="Resultado final de uma intervenção de restauro">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0030</h4>
+                                <p>Resultado final de uma intervenção de restauro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/portfolio/gallery-56.jpg" alt="Tratamento de plásticos Preto Piano">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">Foto #0031</h4>
+                                <p>Tratamento de plásticos Preto Piano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--====== PORTFOLIO PART ENDS ======-->
+
+    <!--====== TESTIMONIAL PART START ======-->
+
+    <section class="testimonial-area" id="testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="section-title section-title-2 text-center">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <h3 class="title">Testemunhos</h3>
+                        <h4 style="color: #fff;">A melhor publicidade é feita através de clientes satisfeitos.<h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row testimonial-active">
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Espetacular, um serviço de excelência. Vale mesmo a pena. Gente que trabalha com gosto.
+                        </p>
+                        <div class="info">
+                            <h5 class="title">Fernando Paiva</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Serviço de excelência! Qualidade superior!</p>
+                        <div class="info">
+                            <h5 class="title">Gonçalo vinagre</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Competência e profissionalismo. Recomendo</p>
+                        <div class="info">
+                            <h5 class="title">João Luis</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Limpeza e detalhes automóvel! 5*</p>
+                        <div class="info">
+                            <h5 class="title">Carlos Moreira</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Serviços: Polimento da ponteira de escape, Reparação de pintura <br>
+                            Positivo: Pontualidade, Preço/qualidade, Profissionalismo, Qualidade</p>
+                        <div class="info">
+                            <h5 class="title">Filipe Pereira</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Serviço espetacular.</p>
+                        <div class="info">
+                            <h5 class="title">Raul Lucas</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-item mt-30">
+                        <div class="quote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="53.729" height="40" viewBox="0 0 53.729 40">
+                                <g data-name="Group 21" transform="translate(0 0)">
+                                    <path data-name="Union 1"
+                                        d="M47.055,40a1.21,1.21,0,0,1-1.018-.509L31.106,19.357A12.178,12.178,0,0,1,29.07,11.1,12.364,12.364,0,1,1,45.98,23.881l6.957,14.253A1.313,1.313,0,0,1,51.806,40ZM18.1,40a1.209,1.209,0,0,1-1.018-.509L2.149,19.357A12.77,12.77,0,0,1,.056,11.043,12.395,12.395,0,1,1,17.023,23.881L23.98,38.134A1.313,1.313,0,0,1,22.849,40Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Sou fã... <br>
+                            Porque tenho um bebé que o mantenho o mais possível personalizado a meu gosto.
+                            E acerca de voces, irei em breve solicitar o vosso serviços.
+                            Agora que encontrei aqui o vosso contacto e através do tik tok
+                            Parabéns a todos.</p>
+                        <div class="info">
+                            <h5 class="title">Pedro Roque</h5>
+                            <span style="color: #FFAB4A"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--====== TESTIMONIAL PART ENDS ======-->
+
+    <!--====== OVERVIEW PART START ======-->
+
+    <section class="overview-area pb-100" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="overview-content">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <span>overview</span>
+                        <h2 class="title">Qualidade Suprema</h2>
+                        <p>Seja para fazer a manutenção externa , seja para fazer um extreme makeover , garantimos
+                            qualidade e a nossa equipa motivada para lhe entregar o melhor resultado possível</p>
+                        <a class="main-btn" href="contact.html">Pedir orçamento</a>
+                        <div class="brand-item d-flex align-items-center mt-70">
+                            <div class="item">
+                                <a href="#"><img src="assets/images/brand-1.png" alt="Stek logo"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="assets/images/brand-2.png" alt="Vonixx logo"></a>
+                            </div>
+                            <div class="item">
+                                <a href="#"><img src="assets/images/brand-3.png" alt="Sonax  logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="overview-counter-area">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="overview-counter-item mt-10 animated wow fadeInUp"
+                                    data-wow-duration="3000ms" data-wow-delay="0ms">
+                                    <div class="icon">
+                                        <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M352 111.1c22.09 0 40-17.88 40-39.97S352 0 352 0s-40 49.91-40 72S329.9 111.1 352 111.1zM224 111.1c22.09 0 40-17.88 40-39.97S224 0 224 0S184 49.91 184 72S201.9 111.1 224 111.1zM383.1 223.1L384 160c0-8.836-7.164-16-16-16h-32C327.2 144 320 151.2 320 160v64h-64V160c0-8.836-7.164-16-16-16h-32C199.2 144 192 151.2 192 160v64H128V160c0-8.836-7.164-16-16-16h-32C71.16 144 64 151.2 64 160v63.97c-35.35 0-64 28.65-64 63.1v68.7c9.814 6.102 21.39 11.33 32 11.33c20.64 0 45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C114.1 348.3 139.4 367.1 160 367.1s45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C242.1 348.3 267.4 367.1 288 367.1s45.05-19.73 52.7-27.33c6.25-6.219 16.34-6.219 22.59 0C370.1 348.3 395.4 367.1 416 367.1c10.61 0 22.19-5.227 32-11.33V287.1C448 252.6 419.3 223.1 383.1 223.1zM352 373.3c-13.75 10.95-38.03 26.66-64 26.66s-50.25-15.7-64-26.66c-13.75 10.95-38.03 26.66-64 26.66s-50.25-15.7-64-26.66c-13.75 10.95-38.03 26.66-64 26.66c-11.27 0-22.09-3.121-32-7.377v87.38C0 497.7 14.33 512 32 512h384c17.67 0 32-14.33 32-32v-87.38c-9.91 4.256-20.73 7.377-32 7.377C390 399.1 365.8 384.3 352 373.3zM96 111.1c22.09 0 40-17.88 40-39.97S96 0 96 0S56 49.91 56 72S73.91 111.1 96 111.1z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="title count">7</h3>
+                                    <span>Anos de Experiência</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="overview-counter-item mt-10 animated wow fadeInUp"
+                                    data-wow-duration="3000ms" data-wow-delay="300ms">
+                                    <div class="icon">
+                                        <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM96 392c-13.25 0-24-10.75-24-24S82.75 344 96 344s24 10.75 24 24S109.3 392 96 392zM96 296c-13.25 0-24-10.75-24-24S82.75 248 96 248S120 258.8 120 272S109.3 296 96 296zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM304 384h-128C167.2 384 160 376.8 160 368C160 359.2 167.2 352 176 352h128c8.801 0 16 7.199 16 16C320 376.8 312.8 384 304 384zM304 288h-128C167.2 288 160 280.8 160 272C160 263.2 167.2 256 176 256h128C312.8 256 320 263.2 320 272C320 280.8 312.8 288 304 288z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="title count plussign">2000</h3>
+                                    <span>Serviços efetuados</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="overview-counter-item mt-30 animated wow fadeInUp"
+                                    data-wow-duration="3000ms" data-wow-delay="600ms">
+                                    <div class="icon">
+                                        <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 640 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M640 320V368C640 385.7 625.7 400 608 400H574.7C567.1 445.4 527.6 480 480 480C432.4 480 392.9 445.4 385.3 400H254.7C247.1 445.4 207.6 480 160 480C112.4 480 72.94 445.4 65.33 400H32C14.33 400 0 385.7 0 368V256C0 228.9 16.81 205.8 40.56 196.4L82.2 92.35C96.78 55.9 132.1 32 171.3 32H353.2C382.4 32 409.1 45.26 428.2 68.03L528.2 193C591.2 200.1 640 254.8 640 319.1V320zM171.3 96C158.2 96 146.5 103.1 141.6 116.1L111.3 192H224V96H171.3zM272 192H445.4L378.2 108C372.2 100.4 362.1 96 353.2 96H272V192zM525.3 400C527 394.1 528 389.6 528 384C528 357.5 506.5 336 480 336C453.5 336 432 357.5 432 384C432 389.6 432.1 394.1 434.7 400C441.3 418.6 459.1 432 480 432C500.9 432 518.7 418.6 525.3 400zM205.3 400C207 394.1 208 389.6 208 384C208 357.5 186.5 336 160 336C133.5 336 112 357.5 112 384C112 389.6 112.1 394.1 114.7 400C121.3 418.6 139.1 432 160 432C180.9 432 198.7 418.6 205.3 400z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="title count plussign">100</h3>
+                                    <span>Modelos trabalhados</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="overview-counter-item mt-30 animated wow fadeInUp"
+                                    data-wow-duration="3000ms" data-wow-delay="900ms">
+                                    <div class="icon">
+                                        <svg width="70" height="70" fill="#138b92" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M416 127.1h-58.23l9.789-58.74c2.906-17.44-8.875-33.92-26.3-36.83c-17.53-2.875-33.92 8.891-36.83 26.3L292.9 127.1H197.8l9.789-58.74c2.906-17.44-8.875-33.92-26.3-36.83c-17.53-2.875-33.92 8.891-36.83 26.3L132.9 127.1H64c-17.67 0-32 14.33-32 32C32 177.7 46.33 191.1 64 191.1h58.23l-21.33 128H32c-17.67 0-32 14.33-32 32c0 17.67 14.33 31.1 32 31.1h58.23l-9.789 58.74c-2.906 17.44 8.875 33.92 26.3 36.83C108.5 479.9 110.3 480 112 480c15.36 0 28.92-11.09 31.53-26.73l11.54-69.27h95.12l-9.789 58.74c-2.906 17.44 8.875 33.92 26.3 36.83C268.5 479.9 270.3 480 272 480c15.36 0 28.92-11.09 31.53-26.73l11.54-69.27H384c17.67 0 32-14.33 32-31.1c0-17.67-14.33-32-32-32h-58.23l21.33-128H416c17.67 0 32-14.32 32-31.1C448 142.3 433.7 127.1 416 127.1zM260.9 319.1H165.8L187.1 191.1h95.12L260.9 319.1z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="title"><span class="count">3365</span></h3>
+                                    <span>Seguidores Instagram</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== OVERVIEW PART ENDS ======-->
+
+    <!--====== TEAM PART START ======-->
+
+    <section class="team-area" id="facilities">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="section-title text-center">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <h3 class="title">O Espaço</h3>
+                        <p>As nossas instalações são jovens e modernas, e preparadas para efetuarmos os nossos serviços
+                            nas melhores condições.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--TEST-->
+        <div class="container-fluid p-0">
+            <div class="row portfolio-active">
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/espaco/1.jpg" alt="Instalações da Driveclean">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0001</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/2.jpg" alt="Moto Detail">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0002</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/3.jpg" alt="Carro em detalhe">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0003</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/4.jpg" alt="Limpeza de jantes">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0004</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/5.jpg" alt="Proteção com PPF">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0005</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/6.jpg" alt="Lavagem de jantes">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0006</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/7.jpg" alt="Pré lavagem a atuar">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0007</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/8.jpg" alt="Restauro de clássicos">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0008</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30 mb-30">
+                        <img src="assets/images/espaco/9.jpg"
+                            alt="Produtos de excelência para venda ao público">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0009</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="portfolio-item mt-30">
+                        <img src="assets/images/espaco/10.jpg" alt="Atenção extrema no serviço">
+                        <div class="portfolio-overlay">
+                            <div class="content">
+                                <img src="assets/images/hero-line-5.png" alt="line">
+                                <h4 class="title">#0010</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <!--TEST-->
+        
+        <!--
+            
+        -->
+    </section>
+
+    <!--====== TEAM PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-->
+
+    <section class="pricing-area" id="pricing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="section-title section-title-2 text-center">
+                        <img src="assets/images/hero-line-5.png" alt="line">
+                        <h3 class="title">Planos</h3>
+                        <p>Entra em contacto connosco e criamos o plano ideal para ti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-9 order-1">
+                    <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Lavagem de manutenção</h3>
+                        <span>€ 45</span>
+                        <p>(Ressalva de valor para viatura ligeira até 5 lugares)</p>
+                        <ul>
+                            <li>Limpeza e aspiração interior</li>
+                            <li>Lavagem exterior detalhada</li>
+                            <li>Lavagem do compartimento do motor</li>
+                            <li>Aplicação de WetCoat</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9 order-3 order-lg-2">
+                    <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Higienização interna</h3>
+                        <span>€ 120</span>
+                        <p>(Ressalva de valor para viatura ligeira até 5 lugares)</p>
+                        <ul>
+                            <li>Lavagem , limpeza e hidratação de todo o interior</li>
+                            <li>Lavagem de bancos</li>
+                            <li>Lavagem exterior detalhada</li>
+                            <li>Lavagem do compartimento do motor</li>
+                            <li>Aplicação de WetCoat</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Correção de pintura</h3>
+                        <span>€ SOB ORÇAMENTO</span>
+                        <p></p>
+                        <ul>
+                            <li>Pré- Lavagem e descontaminação química e mecânica da viatura</li>
+                            <li>Polimento Comercial (Correção para remover o máximo de imperfeições )</li>
+                            <li>Aplicação de proteção</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Polimento de carroçaria</h3>
+                        <span>€ SOB ORÇAMENTO</span>
+                        <p></p>
+                        <ul>
+                            <li>Pré- Lavagem e descontaminação química e mecânica da viatura</li>
+                            <li>Polimento Comercial ( Brilho )</li>
+                            <li>Aplicação de Cera ( Proteção até 12 meses )</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Proteção Cerâmica</h3>
+                        <span>€ SOB ORÇAMENTO</span>
+                        <p></p>
+                        <ul>
+                            <li>Proteção química para ajudar na manutenção externa da viatura</li>
+                            <li>Proteção até 3 anos</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Aplicação de PPF</h3>
+                        <span>€ SOB ORÇAMENTO</span>
+                        <p></p>
+                        <ul>
+                            <li>Proteção física contra riscos e pedras</li>
+                            <li>Auto regenerativa ao sol</li>
+                            <li>Proteção até 8 anos</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Moto Detailing</h3>
+                        <span>€ SOB ORÇAMENTO</span>
+                        <p></p>
+                        <ul>
+                            <li>Lavagens de manutenção</li>
+                            <li>Detalhes completos</li>
+                            <li>Proteções</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Polimento de faróis</h3>
+                        <span>€ 100</span>
+                        <p></p>
+                        <ul>
+                            <li>Correção dos faróis</li>
+                            <li>Aplicação de PPF ( Proteção até 8 anos )</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
+                    <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
+                        data-wow-delay="0ms">
+                        <h3 class="title">Restauros de interiores</h3>
+                        <span>€ SOB ORÇAMENTO</span>
+                        <p></p>
+                        <ul>
+                            <li>Recuperação de plásticos e couros</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--====== PRICING PART ENDS ======-->
+
+    <section class="pricing-3-area pricing-page-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pricing-3-content">
+                        <h3 class="title">Serviços externos que fornecemos :</h3>
+                        <div class="info">
+                            <ul>
+                                <li><i class="fas fa-paper-plane"></i> geral@driveclean.pt</li>
+                                <li><i class="fas fa-phone"></i> 965 530 081</li>
+                                <li><i class="fas fa-phone-office"></i> 214 335 387</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="pricing-3-box animated wow fadeInRight" data-wow-duration="3000ms" data-wow-delay="0ms">
+                        <ul>
+                            <li><span><img src="assets/images/post-arrow.png" alt="Seta">Serviço de pintura e bate chapa
+                            </li>
+                            <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Serviço de estofador</li>
+                            <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Serviço de tira mossas sem
+                                    pintar</li>
+                            <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Serviço de reparação de
+                                    jantes
+                            </li>
+                            <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Loja física para venda de
+                                    produtos</li>
+                            <li><span><img src="assets/images/pricing-arrow.png" alt="Seta">Damos formações de Detalhe
+                                    Automóvel</li>
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== SUBSCRIBE PART START ======-->
+
+    <div class="subscribe-area subscribe-9-area subscribe-13-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="subscribe-item">
+                        <h3 class="title">Amas carros? Amas detalhe?</h3>
+                        <span>Subscreve a nossa newsletter para estares a par de todas as novidades e promoções da
+                            Driveclean!</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="subscribe-form subscribe-9-form subscribe-13-form"
+                        action="https://formsubmit.co/geral@driveclean.pt" method="post">
+                        <input type="hidden" name="_next" value="https://driveclean.pt">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Novo email NEWSLETTER">
+                        <input type="text" name="NOVO EMAIL" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email"
+                            required>
+                        <button type="submit" class="main-btn">SUBSCREVER</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
-<!--====== SUBSCRIBE PART START ======-->
+    <!--====== SUBSCRIBE PART ENDS ======-->
 
-<div class="subscribe-area subscribe-9-area subscribe-13-area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="subscribe-item">
-                    <h3 class="title">Amas carros? Amas detalhe?</h3>
-                    <span>Subscreve a nossa newsletter para estares a par de todas as novidades e promoções da
-                        Driveclean!</span>
+    <!--====== FOOTER PART START ======-->
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
+                        <div class="footer-logo">
+                            <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/drivecleandetalheautomovel/"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/drivecleandetalheauto/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.tiktok.com/@drivecleandetalheauto"><svg
+                                            style="height: 1.1rem; fill: #fff; padding-bottom: 5px;"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <form class="subscribe-form subscribe-9-form subscribe-13-form"
-                    action="https://formsubmit.co/geral@driveclean.pt" method="post">
-                    <input type="hidden" name="_next" value="https://driveclean.pt">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Novo email NEWSLETTER">
-                    <input type="text" name="NOVO EMAIL" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email"
-                        required>
-                    <button type="submit" class="main-btn">SUBSCREVER</button>
-                </form>
+            <div class="footer-item">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about mt-30">
+                            <h4 class="title">Driveclean </h4>
+                            <p>Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais
+                                na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos
+                                clientes nos seus projetos.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-list mt-30 ml-95">
+                            <h4 class="title">links</h4>
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="index.html#about-us">Sobre nós</a></li>
+                                <li><a href="index.html#services">Serviços</a></li>
+                                <li><a href="index.html#portfolio">Portfólio</a></li>
+                                <li><a href="index.html#testimonials">Testemunhos</a></li>
+                                <li><a href="index.html#overview">Overview</a></li>
+                                <li><a href="index.html#facilities">Instalações</a></li>
+                                <li><a href="index.html#pricing">Planos</a></li>
+                                <li><a href="contact.html">Contactar</a></li>
+                                <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info mt-30">
+                            <h3 class="title">Contactos</h3>
+                            <ul>
+                                <li><i class="fal fa-map-marker-alt"></i>Rua da Tojeirinha nº2 <br>2735-177 Agualva</li>
+                                <li><i class="fal fa-phone"></i> 965 530 081 </li>
+                                <li><i class="fal fa-phone-office"></i> 214 335 387</li>
+                                <li><i class="fal fa-envelope"></i>
+                                    geral@driveclean.pt </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright">
+                        <p>Copyright @
+                            <script>document.write(new Date().getFullYear())</script>. Design by Squarebug
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </footer>
 
-<!--====== SUBSCRIBE PART ENDS ======-->
+    <!--====== FOOTER PART ENDS ======-->
 
+    <!--====== BACK TO TOP START ======-->
 
-  <section>
+    <a class="back-to-top">
+        <i class="fal fa-angle-up"></i>
+    </a>
 
-    <h3>Recent posts from the blog</h3>
-
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-  </section>
+    <!--====== BACK TO TOP ENDS ======-->
 
 
-{% include footer.html %}
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+   
+
+</body>
+
+</html>
