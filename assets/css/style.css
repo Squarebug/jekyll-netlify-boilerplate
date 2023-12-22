@@ -73,6 +73,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -89,6 +90,8 @@ body {
   line-height: 28px;
   color: #33415C;
   background: #FAFAFA;
+  overflow-x: hidden;
+  
 }
 body.home-2-bg {
   background: #F5F5F5;
@@ -784,6 +787,9 @@ p {
   .header-nav {
     padding: 15px 0;
     top: 0;
+  }
+  .navbar-brand img {
+    max-width: 60% !important;
   }
 }
 .header-nav.sticky {
@@ -2623,7 +2629,7 @@ p {
 .sub-item.active, .sub-item:hover {
   background: #e72c3d;
   color: #fff;
-  height: 318px;
+  height: fit-content;
 }
 .sub-item.active .title, .sub-item:hover .title {
   color: #fff;
@@ -4679,6 +4685,10 @@ p {
     margin-left: 50px;
     margin-top: -100px;
   }
+  .col-lg-4 {
+    flex: none !important;
+    max-width: 50% !important;
+  }
 }
 @media (max-width: 767px) {
   .about-2-thumb .thumb-2 {
@@ -6174,8 +6184,8 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c2233005), to(#000));
-  background: linear-gradient(#c2233005 0%, #000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c2233005), to(#00000085));
+  background: linear-gradient(#c2233005 0%, #00000085 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7281,7 +7291,6 @@ p {
 }
 .testimonial-item .info {
   position: relative;
-  padding-left: 70px;
   margin-top: 60px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -7834,6 +7843,9 @@ p {
   padding-top: 30px;
   margin-bottom: 6px;
 }
+.plussign::before {
+  content: "+";
+}
 .overview-counter-item > span {
   display: inline-block;
   font-size: 20px;
@@ -7849,7 +7861,7 @@ p {
 ===========================*/
 .team-area {
   padding-top: 88px;
-  padding-bottom: 38px;
+  padding-bottom: 88px;
   overflow: hidden;
 }
 .team-area .container-fluid .col-lg-3 {
@@ -8202,6 +8214,9 @@ p {
 }
 
 .pricing-item {
+  height: calc(100% - 44px);
+  display: flex;
+  flex-direction: column;
   background: #fff;
   padding: 44px 40px 40px;
   border-radius: 10px;
@@ -8224,7 +8239,7 @@ p {
 .pricing-item .title {
   color: #fff;
   margin-bottom: 4px;
-  font-size: 40px;
+  font-size: 1.5rem;
   line-height: 50px;
 }
 .pricing-item span {
@@ -8235,6 +8250,7 @@ p {
   padding-bottom: 64px;
 }
 .pricing-item ul {
+  flex: 1;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -8253,7 +8269,7 @@ p {
   position: absolute;
   content: "";
   left: 0;
-  top: 50%;
+  top: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   height: 8px;
@@ -8276,9 +8292,7 @@ p {
   color: #000;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .pricing-item.center {
-    display: none;
-  }
+  
 }
 .pricing-item.center::before {
   background: #c22330;
@@ -8646,9 +8660,9 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 73px;
+  height: 100%;
   width: 3px;
-  background: #564FFF;
+  background: #c22330;
 }
 .pricing-3-content .info ul {
   margin: 0;
@@ -8664,6 +8678,7 @@ p {
 .pricing-3-box {
   padding: 43px 40px 40px;
   background: #fff;
+  border-radius: 10px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-3-box {
@@ -8726,8 +8741,8 @@ p {
   width: 100%;
   padding: 0;
   line-height: 66px;
-  background: #FF564F;
-  border: 2px solid #FF564F;
+  background: #c22330;
+  border: 2px solid #c22330;
   color: #fff;
   text-transform: uppercase;
   font-size: 15px;
@@ -8735,11 +8750,12 @@ p {
   letter-spacing: 1px;
   border-radius: 0;
   margin-top: 40px;
+  border-radius: 5px;
 }
 .pricing-3-box a:hover {
-  background-color: #564FFF;
-  color: #fff;
-  border-color: #564FFF;
+  background-color: transparent;
+  color: #c22330;
+  border-color: #c22330;
 }
 
 .pricing-7-area {
@@ -9849,7 +9865,7 @@ p {
   font-family: "space_grotesk";
 }
 .subscribe-area.subscribe-13-area {
-  background: #FFAB4A;
+  background: #febf00;
 }
 .subscribe-area.subscribe-13-area .subscribe-item .title {
   font-family: "space_grotesk";
