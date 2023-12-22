@@ -65,7 +65,7 @@
                             </div> <!-- navbar collapse -->
 
                             <div class="navbar-btn d-none d-sm-block">
-                                <a class="main-btn" href="tel:+351965530081">{{ site.header.header.contact }}</a>
+                                <a class="main-btn" href="tel:+351965530081">{{ site.data.header.contact }}</a>
 
                                 {% for item in site.data.navigation.items %}
                                 <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url==item.link
@@ -73,6 +73,8 @@
                                     {{ item.name }}
                                 </a>
                                 {% endfor %}
+
+                                
 
 
                             </div>

@@ -1,5 +1,4 @@
-header:
-  - contact: teste
-    default_contact: "123"
+contact: teste
+default_contact: "123"
 
   
