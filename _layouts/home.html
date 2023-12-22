@@ -692,8 +692,8 @@
                             <div class="date">
                                 <h5 class="title">25</h5>
                                 <span>JUN</span>
-                                {% assign m = page.date | date: "%-m" %}
-                                {{ page.date | date: "%-d" }}
+                                {% assign m = post.date | date: "%-m" %}
+                                {{ post.date | date: "%-d" }}
                                 {% case m %}
                                 {% when '1' %}Januar
                                 {% when '2' %}Februar
@@ -708,7 +708,7 @@
                                 {% when '11' %}November
                                 {% when '12' %}Dezember
                                 {% endcase %}
-                                {{ page.date | date: "%Y" }}
+                                {{ post.date | date: "%Y" }}
                             </div>
                         </div>
                         <div class="article-content pl-25 pr-25 pt-25">
