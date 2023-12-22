@@ -12,7 +12,7 @@ publish_mode: editorial_workflow # Enable drafts
 collections: # A list of collections the CMS should be able to edit
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+    label: "Portfolio" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
@@ -51,3 +51,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+    #CABEÇALHO 
+  - name: "header"
+    label: "Cabeçalho"
+    folder: "header"
+    sort: "title:asc"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Contacto", name: "header", widget: "hidden", default: "page"}   
+      - {label: "Contacto", name: "contact", widget: "string"}   
