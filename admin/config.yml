@@ -70,7 +70,7 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
     files:
     - label: 'Contactos'
-      name: 'header'
+      name: 'footer'
       file: '_data/footer.yml'
       fields:
         - {label: "Morada", name: "adress", widget: "string"}
