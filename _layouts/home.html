@@ -690,7 +690,7 @@
                         <div class="article-thumb">
                             <a href="#"><img src="{{ post.galleryImages[0] }}" alt=""></a>
                             <div class="date">
-                                <h5 class="title">{{ page.date | date: "%-d" }}</h5>
+                                <h5 class="title">{{ post.date | date: "%-d" }}</h5>
                                 <span>{% assign m = post.date | date: "%-m" %}
                                     {% case m %}
                                     {% when '1' %}JAN
