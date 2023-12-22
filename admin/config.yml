@@ -59,6 +59,6 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     slug: "header"
     fields: 
-      - {label: "Contacto", name: "header", widget: "hidden", default: "page"}   
+      - {label: "Contacto", name: "header", widget: "hidden", default: "header"}   
       - {label: "Texto contacto", name: "contact", widget: "string"}
       - {label: "Contacto principal", name: "default contact", widget: "string"}
