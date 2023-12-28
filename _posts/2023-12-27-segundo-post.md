@@ -1,8 +1,11 @@
 ---
 layout: post
-title: Segundo Post
 meta_description: descrição de meta
 author: dan_urbanowicz
+title: Segundo Post
+tags:
+  - Pintura
+  - Polimento
 date: 2023-12-27 11:04:00
 intro_paragraph: Pequeno paragrafo de introdução
 categories: Cat1, cat2
