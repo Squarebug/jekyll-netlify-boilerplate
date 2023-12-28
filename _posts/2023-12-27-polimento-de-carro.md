@@ -2,6 +2,8 @@
 layout: post
 title: Polimento de carro
 author: dan_urbanowicz
+tags:
+  - Pintura2
 date: 2023-12-27 20:40:23
 image: /assets/img/uploads/agent-j-f6romjsomru-unsplash.jpg
 ---
