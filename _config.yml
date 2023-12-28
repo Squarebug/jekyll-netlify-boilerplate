@@ -23,7 +23,7 @@ url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & prot
 
 # Permalink format (/blog/ is ignored for pages)
 
-permalink: /blog/:title
+
 
 plugins:
   - jekyll-paginate
