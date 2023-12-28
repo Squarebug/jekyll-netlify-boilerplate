@@ -11,7 +11,7 @@
 
     <!--====== Title ======-->
     <title>{{ page.title }}</title>
-
+    
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
 
@@ -165,36 +165,31 @@
                     <div class="single-post-content mt-30">
                         <div class="single-post-topbar">
                             <ul>
-                                <li><img src="../assets/images/icon/post-icon-1.png" alt=""> {{ page.date | date: "%d"
-                                    }}
+                                <li><img src="../assets/images/icon/post-icon-1.png" alt=""> {{ page.date | date: "%d" }} 
                                     {% assign m = page.date | date: "%-m" %}
-                                    {% case m %}
-                                    {% when '1' %}JAN
-                                    {% when '2' %}FEV
-                                    {% when '3' %}MAR
-                                    {% when '4' %}ABR
-                                    {% when '5' %}MAI
-                                    {% when '6' %}JUN
-                                    {% when '7' %}JUL
-                                    {% when '8' %}AGO
-                                    {% when '9' %}SET
-                                    {% when '10' %}OUT
-                                    {% when '11' %}NOV
-                                    {% when '12' %}DEZ
-                                    {% endcase %}
-                                    {{ page.date | date: "%Y" }}
+                                        {% case m %}
+                                        {% when '1' %}JAN
+                                        {% when '2' %}FEV
+                                        {% when '3' %}MAR
+                                        {% when '4' %}ABR
+                                        {% when '5' %}MAI
+                                        {% when '6' %}JUN
+                                        {% when '7' %}JUL
+                                        {% when '8' %}AGO
+                                        {% when '9' %}SET
+                                        {% when '10' %}OUT
+                                        {% when '11' %}NOV
+                                        {% when '12' %}DEZ
+                                        {% endcase %}
+                                        {{ page.date | date: "%Y" }}
                                 </li>
                                 <li><img src="../assets/images/icon/post-icon-2.png" alt="">{{ page.categories }}</li>
                             </ul>
                             <div class="social">
                                 <ul>
-                                    <li><a href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url={{site.url}}{{ page.url }}"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://driveclean-teste.netlify.app/blog/primeiro-post&quote=Awesome%20Blog!"
-                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a
-                                            href="https://wa.me/?text=https://driveclean-teste.netlify.app/blog/primeiro-post"><i
-                                                class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url={{site.url}}{{ page.url }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://driveclean-teste.netlify.app/blog/primeiro-post&quote=Awesome%20Blog!" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://wa.me/?text=https://driveclean-teste.netlify.app/blog/primeiro-post"><i class="fab fa-whatsapp"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#"><i class="fal fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fal fa-bookmark"></i></a></li>
@@ -203,7 +198,7 @@
                             </div>
                         </div>
                         <div class="post-content">
-
+                            
                             {{ content }}
 
                             <div class="post-quote-item mt-30">
@@ -217,7 +212,7 @@
                                     <span>Founder at Seative Digital</span>
                                 </div>
                             </div>
-
+                           
                         </div>
                         <div class="post-next">
                             <div class="row">
@@ -282,31 +277,70 @@
                             <h4 class="title">Popular post</h4>
                             <div class="post-items">
 
-                                {% for post in site.posts limit:7 %}
+                                {% for post in site.posts limit:3 %}
                                 <div class="item mt-30">
                                     <div class="thumb">
                                         <img src="{{ post.image }}" alt="">
                                     </div>
                                     <div class="content">
-                                        <a href="{{ post.url }}">
-                                            <h5 class="title">{{ post.title }}</h5>
-                                        </a>
+                                        <a href="{{ post.url }}"><h5 class="title">{{ post.title }}</h5></a>
                                         <span>{{ post.date | date: "%-d" }}</h5>
                                             {% assign m = post.date | date: "%-m" %}
-                                            {% case m %}
-                                            {% when '1' %}Janeiro
-                                            {% when '2' %}Fevereiro
-                                            {% when '3' %}Março
-                                            {% when '4' %}Abril
-                                            {% when '5' %}Maio
-                                            {% when '6' %}Junho
-                                            {% when '7' %}Julho
-                                            {% when '8' %}Agosto
-                                            {% when '9' %}Setembro
-                                            {% when '10' %}Outubro
-                                            {% when '11' %}Novembro
-                                            {% when '12' %}Dezembro
-                                            {% endcase %}, {{ post.date | date: "%-d" }}</span>
+                                                {% case m %}
+                                                {% when '1' %}JAN
+                                                {% when '2' %}FEV
+                                                {% when '3' %}MAR
+                                                {% when '4' %}ABR
+                                                {% when '5' %}MAI
+                                                {% when '6' %}JUN
+                                                {% when '7' %}JUL
+                                                {% when '8' %}AGO
+                                                {% when '9' %}SET
+                                                {% when '10' %}OUT
+                                                {% when '11' %}NOV
+                                                {% when '12' %}DEZ
+                                                {% endcase %}</span>
+                                    </div>
+                                </div>
+                {% endfor %}
+
+
+
+                                
+                                <div class="item mt-30">
+                                    <div class="thumb">
+                                        <img src="../assets/images/popular-post-2.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#"><h5 class="title">What Gets in the Way Great Strategy?</h5></a>
+                                        <span>Jully 20, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="item mt-30">
+                                    <div class="thumb">
+                                        <img src="../assets/images/popular-post-3.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#"><h5 class="title">What Gets in the Way Great Strategy?</h5></a>
+                                        <span>Jully 20, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="item mt-30">
+                                    <div class="thumb">
+                                        <img src="../assets/images/popular-post-4.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#"><h5 class="title">What Gets in the Way Great Strategy?</h5></a>
+                                        <span>Jully 20, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="item mt-30">
+                                    <div class="thumb">
+                                        <img src="../assets/images/popular-post-5.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <a href="#"><h5 class="title">What Gets in the Way Great Strategy?</h5></a>
+                                        <span>Jully 20, 2020</span>
                                     </div>
                                 </div>
                                 {% endfor %}
