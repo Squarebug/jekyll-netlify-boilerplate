@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
+
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -36,14 +34,188 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="/../assets/css/style.css">
 
+    <style>
+        .blog-pagination {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .blog-pagination a {
+            background-color: gainsboro;
+            color: #383838;
+            min-width: 32px;
+            padding: 2px 5px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+
+        .blog-pagination .current-page,
+        .blog-pagination span {
+            background-color: #c22330;
+            color: #383838;
+            min-width: 32px;
+            padding: 2px 5px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+
+
 </head>
 
 <body>
-    {{ page.title }}
-    {{ page.description }}
 
-    {% assign filteredposts = site.posts | where_exp: "item", "item.tags contains page.title" %}
-{% for post in filteredposts limit:5 %}
+    <!-- LOADER -->
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navigation">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+
+                                <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.png"
+                                        alt=""></a>
+                                <!-- logo -->
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                </button> <!-- navbar toggler -->
+
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
+                                                <li><a class="nav-link" href="index.html#portfolio">Portfólio </a></li>
+                                                <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                                </li>
+                                                <li><a class="nav-link" href="index.html#overview">Overview </a></li>
+                                                <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#services">Serviços </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#pricing">Preços </a>
+                                        </li>
+
+
+                                        <li class="nav-item">
+                                            <a class="nav-link">Social</a>
+                                            <ul class="sub-menu">
+                                                <li><a
+                                                        href="https://www.instagram.com/drivecleandetalheauto/">Instagram</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.facebook.com/drivecleandetalheautomovel/">Facebook</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop">Youtube</a>
+                                                </li>
+                                                <li><a href="https://www.tiktok.com/@drivecleandetalheauto">TikTok</a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </div> <!-- navbar collapse -->
+
+                                <div class="navbar-btn d-none d-sm-block">
+                                    <a class="main-btn" href="tel:+351965530081">965 530 081 / 214 335 387</a>
+                                </div>
+                            </nav>
+                        </div> <!-- navigation -->
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== PAGE TITLE  PART START ======-->
+
+    <div class="page-title-area">
+        <div class="section__bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-title-content text-center">
+                        <h3 class="title">Blog</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">pricing</li>
+                            </ol>
+                        </nav>
+                        <div class="scroll-to-down">
+                            <a href="#portfolio-scroll"><i class="fal fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PAGE TITLE  PART ENDS ======-->
+
+
+    <!--====== ARTICAL PART START ======-->
+
+    <section class="article-page-area pt-70 pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-9">
+                    <div class="section-title text-center">
+                        <h3 class="title">Our Portfolio</h3>
+                        <div class="project-menu">
+                            <ul>
+                                {% for tag in site.tags %}
+
+
+
+                                <li data-filter="*" class="active">{{ tag.title }} 1</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+
+                {% assign filteredposts = site.posts | where_exp: "item", "item.tags contains page.title" %}
+                {% for post in filteredposts %}
                 <div class="col-lg-4 col-md-6 col-sm-9">
                     <div class="article-item mt-30">
                         <div class="article-top text-center">
@@ -79,6 +251,60 @@
                     </div>
                 </div>
                 {% endfor %}
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--====== ARTICAL PART ENDS ======-->
+
+
+    <!--====== BACK TO TOP START ======-->
+
+    <a class="back-to-top">
+        <i class="fal fa-angle-up"></i>
+    </a>
+
+    <!--====== BACK TO TOP ENDS ======-->
+
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="/../assets/js/bootstrap.min.js"></script>
+    <script src="/../assets/js/popper.min.js"></script>
+
+    <!--====== appear js ======-->
+    <script src="/../assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="/../assets/js/slick.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="/../assets/js/wow.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="/../assets/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="/../assets/js/main.js"></script>
+
 </body>
 
 </html>

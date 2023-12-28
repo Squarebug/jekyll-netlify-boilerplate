@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
     #teste tags
   - name: tags
     label: Tags
-    folder: "tags"
+    folder: "_tags"
     slug: "{{slug}}"
     create: true
     fields:
