@@ -84,8 +84,7 @@ exclude:
   - LICENSE.txt
   - netlify.toml
   - feed.xml
-  - Gemfile
-  - Gemfile.lock
+  
   - docker-compose.yml
   - node_modules
   - vendor/bundle/
