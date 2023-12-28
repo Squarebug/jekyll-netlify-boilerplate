@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Portfolio" # Used in the UI, ie.: "New Post"
     label_singular: "publicação"
-    description: "Entries sortable by Publish Date or title on 'Sort by' button"
+    description: "Entries sortable by Publish Date or title on 'Sort by' button teste"
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
@@ -30,17 +30,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titulo", name: "title", widget: "string", tagname: "h1"}
       - {label: "Descrição Meta", name: "meta_description", widget: "string", required: false}
-      - label: "Autor"
-        name: "author"
-        widget: "select"
-        options:
-          - { label: "Dan Urbanowicz", value: "dan_urbanowicz" }
-          - { label: "John Doe", value: "john_doe" }
+      - name: tags
+        label: Tags
+        widget: relation
+        collection: tags
+        search_fields: [title, description]
+        value_field: name
+        multiple: true
       - {label: "Data da Publicação", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Paragrafo de introdução", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Conteudo", name: "body", widget: "markdown", required: false}
       - {label: "Categorias", name: "categories", widget: "string", required: false}
       - {label: Imagem de capa, name: image, widget: image}
+    #teste tags
+  - name: tags
+    label: Tags
+    folder: "tags"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "tag"}
+      - {name: title, label: Nome}
+      - {name: description, label: descrição, widget: text}
     # PAGES
   - name: "page"
     label: "Page"
@@ -57,24 +68,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
     #CABEÇALHO 
-  - name: 'header'
-    label: 'Cabeçalho'
+  - name: 'site_settings'
+    label: 'Configurações do site'
     editor:
       preview: false
     files:
-    - label: 'Contacto'
+    - label: 'Cabeçalho'
       name: 'header'
       file: '_data/header.yml'
       fields:
         - {label: "Contactos", name: "contact", widget: "string"}
         - {label: "Contacto principal", name: "default_contact", widget: "string"}
-    #RODAPE 
-  - name: 'footer'
-    label: 'Rodapé'
-    editor:
-      preview: false
-    files:
-    - label: 'Contactos'
+    - label: 'Rodapé'
       name: 'footer'
       file: '_data/footer.yml'
       fields:
@@ -82,5 +87,4 @@ collections: # A list of collections the CMS should be able to edit
         - {label: "Nº Movel", name: "mobile_number", widget: "string"}
         - {label: "Nº Fixo", name: "office_number", widget: "string"}
         - {label: "Email", name: "email", widget: "string"}
-
     
