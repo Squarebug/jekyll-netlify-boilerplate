@@ -8850,6 +8850,8 @@ p {
 }
 .article-item .article-thumb img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .article-item .article-content {
   padding: 25px 25px 35px 25px;
@@ -11654,6 +11656,11 @@ p {
 .sidebar-post .post-items .item .thumb {
   min-width: 110px;
 }
+.sidebar-post .post-items .item .thumb img {
+  width: 110px;
+  height: 85px;
+  object-fit: cover;
+}
 .sidebar-post .post-items .item .content {
   padding-left: 20px;
 }
@@ -11946,6 +11953,18 @@ p {
   text-transform: uppercase;
   color: #FFAB4A;
   letter-spacing: 1px;
+}
+.post-next .prev-post .content {
+  font-family: "space_grotesk";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #383838;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .post-next .prev-post a {
   color: #000;

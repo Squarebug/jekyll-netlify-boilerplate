@@ -10,29 +10,29 @@
     <title>Blog | DRIVECLEAN | Empresa de Detalhe Automóvel</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
-    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" href="/../assets/images/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="/../assets/images/favicon.png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/../assets/css/font-awesome.min.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/../assets/css/magnific-popup.css">
 
     <!--====== animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="/../assets/css/animate.min.css">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="/../assets/css/slick.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="/../assets/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/../assets/css/style.css">
 
 
 </head>
@@ -59,7 +59,8 @@
                         <div class="navigation">
                             <nav class="navbar navbar-expand-lg navbar-light ">
 
-                                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                                <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.png"
+                                        alt=""></a>
                                 <!-- logo -->
 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -154,6 +155,31 @@
     </div>
 
     <!--====== PAGE TITLE  PART ENDS ======-->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+        {% else %}
+        <span>&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <em>{{ page }}</em>
+        {% elsif page == 1 %}
+        <a href="{{ '/' | relative_url }}">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+        {% else %}
+        <span>Next &raquo;</span>
+        {% endif %}
+    </div>
+    {% endif %}
 
     <!--====== ARTICAL PART START ======-->
 
@@ -161,7 +187,7 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                {% for post in site.posts %}
+                {% for post in paginator.posts %}
                 {% assign author = site.data.authors[post.author] %}
                 <div class="col-lg-4 col-md-6 col-sm-9">
                     <div class="article-item mt-30">
@@ -169,39 +195,35 @@
                             <a href="{{ post.url }}"><span>{{ post.title }}</span></a>
                         </div>
                         <div class="article-thumb">
-                            <a href="#"><img src="{{ post.galleryImages[0] }}" alt=""></a>
+                            <a href="#"><img src="{{ post.image }}" alt=""></a>
                             <div class="date">
-                                <h5 class="title">{{ post.date | date_to_string }}</h5>
-                                <span>JUN</span>
+                                <h5 class="title">{{ post.date | date: "%-d" }}</h5>
+                                <span>{% assign m = post.date | date: "%-m" %}
+                                    {% case m %}
+                                    {% when '1' %}JAN
+                                    {% when '2' %}FEV
+                                    {% when '3' %}MAR
+                                    {% when '4' %}ABR
+                                    {% when '5' %}MAI
+                                    {% when '6' %}JUN
+                                    {% when '7' %}JUL
+                                    {% when '8' %}AGO
+                                    {% when '9' %}SET
+                                    {% when '10' %}OUT
+                                    {% when '11' %}NOV
+                                    {% when '12' %}DEZ
+                                    {% endcase %}</span>
                             </div>
                         </div>
                         <div class="article-content pl-25 pr-25 pt-25">
-                            <p>{{ post.excerpt | strip_newlines | truncate: 180 }}</p>
-                            <a href="{{ post.url }}">READ MORE</a>
+                            <p>{{ post.excerpt | strip_newlines | truncate: 120 }}</p>
+                            <a href="{{ post.url }}">LER MAIS</a>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
 
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="article-item mt-30">
-                        <div class="article-top text-center">
-                            <a href="#"><span>The Clear Differene Between Cold Brew & Iced Coffee</span></a>
-                        </div>
-                        <div class="article-thumb">
-                            <a href="#"><img src="assets/images/article-1.jpg" alt=""></a>
-                            <div class="date">
-                                <h5 class="title">25</h5>
-                                <span>JUN</span>
-                            </div>
-                        </div>
-                        <div class="article-content pl-25 pr-25 pt-25">
-                            <p>DNP Installations can carry out all maintenance on phone and data and phone points in...
-                            </p>
-                            <a href="#">READ MORE</a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -227,33 +249,33 @@
 
 
     <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
+    <script src="/../assets/js/bootstrap.min.js"></script>
+    <script src="/../assets/js/popper.min.js"></script>
 
     <!--====== appear js ======-->
-    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="/../assets/js/jquery.appear.min.js"></script>
 
     <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="/../assets/js/slick.min.js"></script>
 
     <!--====== wow js ======-->
-    <script src="assets/js/wow.js"></script>
+    <script src="/../assets/js/wow.js"></script>
 
     <!--====== Isotope js ======-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="/../assets/js/isotope.pkgd.min.js"></script>
 
     <!--====== Images Loaded js ======-->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
 
     <!--====== Magnific Popup js ======-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+    <script src="/../assets/js/main.js"></script>
 
 </body>
 
