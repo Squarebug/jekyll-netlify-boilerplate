@@ -35,7 +35,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: relation
         collection: tags
         search_fields: [title, description]
-        value_field: name
+        value_field: title
         multiple: true
       - {label: "Data da Publicação", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Paragrafo de introdução", name: "intro_paragraph", widget: "markdown", required: false}
