@@ -223,6 +223,42 @@
                 </div>
                 {% endfor %}
 
+                {% for post in site.posts %}
+                {% assign author = site.data.authors[post.author] %}
+                <div class="col-lg-4 col-md-6 col-sm-9">
+                    <div class="article-item mt-30">
+                        <div class="article-top text-center">
+                            <a href="{{ post.url }}"><span>{{ post.title }}</span></a>
+                        </div>
+                        <div class="article-thumb">
+                            <a href="#"><img src="{{ post.image }}" alt=""></a>
+                            <div class="date">
+                                <h5 class="title">{{ post.date | date: "%-d" }}</h5>
+                                <span>{% assign m = post.date | date: "%-m" %}
+                                    {% case m %}
+                                    {% when '1' %}JAN
+                                    {% when '2' %}FEV
+                                    {% when '3' %}MAR
+                                    {% when '4' %}ABR
+                                    {% when '5' %}MAI
+                                    {% when '6' %}JUN
+                                    {% when '7' %}JUL
+                                    {% when '8' %}AGO
+                                    {% when '9' %}SET
+                                    {% when '10' %}OUT
+                                    {% when '11' %}NOV
+                                    {% when '12' %}DEZ
+                                    {% endcase %}</span>
+                            </div>
+                        </div>
+                        <div class="article-content pl-25 pr-25 pt-25">
+                            <p>{{ post.excerpt | strip_newlines | truncate: 120 }}</p>
+                            <a href="{{ post.url }}">LER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
                 
             </div>
         </div>
