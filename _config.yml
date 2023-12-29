@@ -32,6 +32,11 @@ plugins:
 paginate: 9
 paginate_path: "/blog/:num/"
 
+#teste para aceder a todas as tags
+collections:
+  tags:
+    output: true
+
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
 section: true

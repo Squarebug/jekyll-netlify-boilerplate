@@ -262,20 +262,11 @@
                         <div class="sidebar-categories mt-30">
                             <h4 class="title">Categories</h4>
                             <ul>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> COUNSALTING (2)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> MARKETING (6)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> STRATEGY (6)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> ANALYSIS (7)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> BUSINESS (9)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> FINANCE (3)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
-                                <li><a href="#"><img src="../assets/images/post-arrow.png" alt=""> NEWS (5) <span><img
-                                                src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
+                                {% for tag in site.tags %}
+                                <li><a href="../tags/{{tag.title}}"><img src="../assets/images/post-arrow.png" alt=""> {{tag.title | upcase}} (cont)
+                                    <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
+                                {% endfor %}
+
                             </ul>
                         </div>
                         <div class="sidebar-post mt-30">

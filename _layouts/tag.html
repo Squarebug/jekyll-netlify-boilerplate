@@ -1,3 +1,7 @@
+---
+title: {{page.title}}
+---
+
 <head>
 
     <!--====== Required meta tags ======-->
@@ -202,10 +206,11 @@
                         <div class="project-menu">
                             <ul>
                                 {% for tag in site.tags %}
-
-
-
-                                <li data-filter="*" class="active">{{ tag.title }} 1</li>
+                                {% if tag.title == page.title %}
+                                <li data-filter="*" class="active">{{ tag.title}}</li>
+                                {% else %}
+                                <li data-filter="">{{ tag.title}}</li>
+                                {% endif %}
                                 {% endfor %}
                             </ul>
                         </div>

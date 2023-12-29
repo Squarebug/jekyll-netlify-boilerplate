@@ -2,9 +2,9 @@
 layout: post
 meta_description: descrição de meta
 author: dan_urbanowicz
-title: Primeiro Post
 tags:
-  - Pintura2
+  - tag1
+title: Primeiro Post
 date: 2023-12-27 10:34:29
 intro_paragraph: Pequeno paragrafo de introdução
 categories: Cat1, cat2
