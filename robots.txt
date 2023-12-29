@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://driveclean.pt/sitemap.xml
+Sitemap: https://www.driveclean.pt/sitemap.xml

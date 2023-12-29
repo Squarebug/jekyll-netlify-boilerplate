@@ -73,7 +73,7 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
-    - label: 'Cabeçalho'
+    - label: 'Cabeçalh'
       name: 'header'
       file: '_data/header.yml'
       fields:
@@ -87,4 +87,12 @@ collections: # A list of collections the CMS should be able to edit
         - {label: "Nº Movel", name: "mobile_number", widget: "string"}
         - {label: "Nº Fixo", name: "office_number", widget: "string"}
         - {label: "Email", name: "email", widget: "string"}
+    - label: 'Overview'
+      name: 'overview'
+      file: '_data/overview.yml'
+      fields:
+        - {label: "Anos de Experiência", name: "experience", widget: "string"}
+        - {label: "Serviços efetuados", name: "services", widget: "string"}
+        - {label: "Modelos trabalhados", name: "models", widget: "string"}
+        - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
     
