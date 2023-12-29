@@ -44,7 +44,7 @@
             font-weight: 500;
             padding-right: 7px;
             margin-top: 16px;
-           
+
         }
 
         .post-content blockquote p {
@@ -224,19 +224,27 @@
                                     {% endcase %}
                                     {{ page.date | date: "%Y" }}
                                 </li>
-                                <li><img src="../assets/images/icon/post-icon-2.png" alt="">{{ page.categories }}</li>
+                                <li><img src="../assets/images/icon/post-icon-2.png" alt="">
+                                    {% for tag in page.tags limit: 3 %}
+                                    {%if forloop.last%}
+                                    {{tag}}
+                                    {% else %}
+                                    {{tag}},
+                                    {% endif %}
+                                    
+                                    {% endfor %}
+                                </li>
                             </ul>
                             <div class="social">
                                 <ul>
                                     <li><a href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url={{site.url}}{{ page.url }}"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                            target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://driveclean-teste.netlify.app/blog/primeiro-post&quote=Awesome%20Blog!"
                                             target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a
                                             href="https://wa.me/?text=https://driveclean-teste.netlify.app/blog/primeiro-post"><i
                                                 class="fab fa-whatsapp"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fal fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fal fa-bookmark"></i></a></li>
                                     <li><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
                                 </ul>
