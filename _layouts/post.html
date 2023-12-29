@@ -36,6 +36,46 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="../assets/css/style.css">
 
+    <style>
+        .post-content blockquote {
+            position: relative;
+            padding-left: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            padding-right: 7px;
+            margin-top: 16px;
+           
+        }
+
+        .post-content blockquote p {
+            padding: 10px 0 10px 10px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+
+        @media (max-width: 767px) {
+            .post-content blockquote {
+                font-size: 15px;
+                padding-left: 20px;
+                padding-right: 0;
+            }
+        }
+
+        .post-content blockquote::before {
+            position: absolute;
+            content: "";
+            content: "";
+            left: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 5px;
+            height: 100%;
+            border-radius: 2px;
+            background: #FFAB4A;
+        }
+    </style>
+
 
 </head>
 
@@ -218,7 +258,8 @@
                                 </div>
                             </div>
                             <blockquote>
-                                <p>I must av explain to you how all this mistake idea denouncing pleasure and praising pain
+                                <p>I must av explain to you how all this mistake idea denouncing pleasure and praising
+                                    pain
                                     was born and I will give you a complete account of the system, and expound the
                                     actual teachings of the great explorer of the truth, the master-builder of human
                                     happiness.</p>
@@ -269,8 +310,9 @@
                             <h4 class="title">Tags</h4>
                             <ul>
                                 {% for tag in site.tags %}
-                                <li><a href="../tags/{{tag.title}}"><img src="../assets/images/post-arrow.png" alt=""> {{tag.title | upcase}} (cont)
-                                    <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
+                                <li><a href="../tags/{{tag.title}}"><img src="../assets/images/post-arrow.png" alt="">
+                                        {{tag.title | upcase}} (cont)
+                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
                                 {% endfor %}
 
                             </ul>
