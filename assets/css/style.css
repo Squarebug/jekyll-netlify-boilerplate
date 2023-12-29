@@ -11859,7 +11859,33 @@ p {
 .post-content ul li:nth-child(2) {
   text-decoration: underline;
 }
+blockquote {
+  background-color: red;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 .post-content .post-quote-item {
+  position: relative;
+  padding-left: 38px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 7px;
+  margin-top: 55px;
+}
+.post-content blockquote {
   position: relative;
   padding-left: 38px;
   font-size: 18px;
@@ -11873,8 +11899,25 @@ p {
     padding-left: 20px;
     padding-right: 0;
   }
+  .post-content blockquote {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 0;
+  }
 }
 .post-content .post-quote-item::before {
+  position: absolute;
+  content: "";
+  content: "";
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+  height: 100%;
+  background: #FFAB4A;
+}
+.post-content blockquote::before {
   position: absolute;
   content: "";
   content: "";

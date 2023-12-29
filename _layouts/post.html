@@ -217,6 +217,12 @@
                                     <span>Founder at Seative Digital</span>
                                 </div>
                             </div>
+                            <blockquote>
+                                <p>I must av explain to you how all this mistake idea denouncing pleasure and praising pain
+                                    was born and I will give you a complete account of the system, and expound the
+                                    actual teachings of the great explorer of the truth, the master-builder of human
+                                    happiness.</p>
+                            </blockquote>
 
                         </div>
                         <div class="post-next">
@@ -260,7 +266,7 @@
                             </form>
                         </div>
                         <div class="sidebar-categories mt-30">
-                            <h4 class="title">Categories</h4>
+                            <h4 class="title">Tags</h4>
                             <ul>
                                 {% for tag in site.tags %}
                                 <li><a href="../tags/{{tag.title}}"><img src="../assets/images/post-arrow.png" alt=""> {{tag.title | upcase}} (cont)
@@ -270,7 +276,7 @@
                             </ul>
                         </div>
                         <div class="sidebar-post mt-30">
-                            <h4 class="title">Popular post</h4>
+                            <h4 class="title">Artigos recentes</h4>
                             <div class="post-items">
 
                                 {% for post in site.posts limit:3 %}
@@ -282,22 +288,22 @@
                                         <a href="{{ post.url }}">
                                             <h5 class="title">{{ post.title }}</h5>
                                         </a>
-                                        <span>{{ post.date | date: "%-d" }}</h5>
+                                        <span>{{ post.date | date: "%-d" }} de
                                             {% assign m = post.date | date: "%-m" %}
                                             {% case m %}
-                                            {% when '1' %}JAN
-                                            {% when '2' %}FEV
-                                            {% when '3' %}MAR
-                                            {% when '4' %}ABR
-                                            {% when '5' %}MAI
-                                            {% when '6' %}JUN
-                                            {% when '7' %}JUL
-                                            {% when '8' %}AGO
-                                            {% when '9' %}SET
-                                            {% when '10' %}OUT
-                                            {% when '11' %}NOV
-                                            {% when '12' %}DEZ
-                                            {% endcase %}</span>
+                                            {% when '1' %}janeiro
+                                            {% when '2' %}fevereiro
+                                            {% when '3' %}março
+                                            {% when '4' %}abril
+                                            {% when '5' %}maio
+                                            {% when '6' %}junho
+                                            {% when '7' %}julho
+                                            {% when '8' %}agosto
+                                            {% when '9' %}setembro
+                                            {% when '10' %}outubro
+                                            {% when '11' %}novembro
+                                            {% when '12' %}dezembro
+                                            {% endcase %}, {{ post.date | date: "%-Y" }}</span>
                                     </div>
                                 </div>
                                 {% endfor %}
