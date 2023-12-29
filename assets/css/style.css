@@ -11583,7 +11583,7 @@ p {
           transform: translateY(-50%);
   width: 5px;
   height: 30px;
-  background: #FFAB4A;
+  background: #c22330;
 }
 .sidebar-categories ul {
   margin: 0;
@@ -11612,7 +11612,7 @@ p {
   width: 28px;
   text-align: center;
   line-height: 20px;
-  background: #FFAB4A;
+  background: #c22330;
   border-radius: 50%;
   opacity: 0;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -11622,7 +11622,7 @@ p {
   padding-right: 15px;
 }
 .sidebar-categories ul li a:hover {
-  color: #FFAB4A;
+  color: #c22330;
 }
 .sidebar-categories ul li a:hover span {
   opacity: 1;
@@ -11643,7 +11643,7 @@ p {
           transform: translateY(-50%);
   width: 5px;
   height: 30px;
-  background: #FFAB4A;
+  background: #c22330;
 }
 .sidebar-post .post-items .item {
   display: -webkit-box;

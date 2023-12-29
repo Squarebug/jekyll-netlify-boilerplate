@@ -72,7 +72,7 @@
             width: 5px;
             height: 100%;
             border-radius: 2px;
-            background: #FFAB4A;
+            background: #c22330;
         }
     </style>
 
@@ -172,19 +172,21 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== PAGE TITLE  PART START ======-->
-
+    
     <div class="page-title-area page-title-2-area">
         <div class="section__bg" style="background-image: url({{ page.image }});"></div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
+                <div class="col-lg-9">
                     <div class="page-title-content page-title-content-2 text-center">
                         <h3 class="title">{{ page.title }}</h3>
-                        <div class="info">
-                            <img src="../assets/images/page-info.png" alt="">
-                            <h5 class="title">Subash Chandra</h5>
-                            <span>Co-author</span>
-                        </div>
+                        <nav class="pb-15" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="../blog">blog</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+                            </ol>
+                        </nav>
                         <div class="scroll-to-down">
                             <a href="#"><i class="fal fa-arrow-down"></i></a>
                         </div>
@@ -193,7 +195,7 @@
             </div>
         </div>
     </div>
-
+    
     <!--====== PAGE TITLE  PART ENDS ======-->
 
     <!--====== SINGLE POST PART START ======-->
@@ -251,25 +253,6 @@
 
                             {{ content }}
 
-                            <div class="post-quote-item mt-30">
-                                <p>I must explain to you how all this mistake idea denouncing pleasure and praising pain
-                                    was born and I will give you a complete account of the system, and expound the
-                                    actual teachings of the great explorer of the truth, the master-builder of human
-                                    happiness.</p>
-                                <div class="info">
-                                    <img src="../assets/images/page-info.png" alt="">
-                                    <h4 class="title">Subash Chandra</h4>
-                                    <span>Founder at Seative Digital</span>
-                                </div>
-                            </div>
-                            <blockquote>
-                                <p>I must av explain to you how all this mistake idea denouncing pleasure and praising
-                                    pain
-                                    was born and I will give you a complete account of the system, and expound the
-                                    actual teachings of the great explorer of the truth, the master-builder of human
-                                    happiness.</p>
-                            </blockquote>
-
                         </div>
                         <div class="post-next">
                             <div class="row">
@@ -303,19 +286,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-post-sidebar mt-30">
-                        <div class="sidebar-search">
-                            <form action="#">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Search here">
-                                    <button><i class="far fa-search"></i></button>
-                                </div>
-                            </form>
-                        </div>
                         <div class="sidebar-categories mt-30">
                             <h4 class="title">Tags</h4>
                             <ul>
                                 {% for tag in site.tags %}
-                                <li><a href="../tags/{{tag.title}}"><img src="../assets/images/post-arrow.png" alt="">
+                                <li><a href="../tags/{{tag.title}}"><img src="../assets/images/pricing-arrow.png" alt="">
                                         {{tag.title | upcase}} (cont)
                                         <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
                                 {% endfor %}
@@ -355,89 +330,18 @@
                                 </div>
                                 {% endfor %}
 
-
-
-
-                                <div class="item mt-30">
-                                    <div class="thumb">
-                                        <img src="../assets/images/popular-post-2.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <a href="#">
-                                            <h5 class="title">What Gets in the Way Great Strategy?</h5>
-                                        </a>
-                                        <span>Jully 20, 2020</span>
-                                    </div>
-                                </div>
-                                <div class="item mt-30">
-                                    <div class="thumb">
-                                        <img src="../assets/images/popular-post-3.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <a href="#">
-                                            <h5 class="title">What Gets in the Way Great Strategy?</h5>
-                                        </a>
-                                        <span>Jully 20, 2020</span>
-                                    </div>
-                                </div>
-                                <div class="item mt-30">
-                                    <div class="thumb">
-                                        <img src="../assets/images/popular-post-4.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <a href="#">
-                                            <h5 class="title">What Gets in the Way Great Strategy?</h5>
-                                        </a>
-                                        <span>Jully 20, 2020</span>
-                                    </div>
-                                </div>
-                                <div class="item mt-30">
-                                    <div class="thumb">
-                                        <img src="../assets/images/popular-post-5.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <a href="#">
-                                            <h5 class="title">What Gets in the Way Great Strategy?</h5>
-                                        </a>
-                                        <span>Jully 20, 2020</span>
-                                    </div>
-                                </div>
-
-
-
-
-
-
                             </div>
-                        </div>
-                        <div class="sidebar-gallery mt-30">
-                            <h3 class="title">Gallery</h3>
-                            <ul>
-                                <li><a href="#"><img src="../assets/images/gallery-1.png" alt=""></a></li>
-                                <li><a href="#"><img src="../assets/images/gallery-2.png" alt=""></a></li>
-                                <li><a href="#"><img src="../assets/images/gallery-3.png" alt=""></a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#"><img src="../assets/images/gallery-4.png" alt=""></a></li>
-                                <li><a href="#"><img src="../assets/images/gallery-5.png" alt=""></a></li>
-                                <li><a href="#"><img src="../assets/images/gallery-6.png" alt=""></a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#"><img src="../assets/images/gallery-7.png" alt=""></a></li>
-                                <li><a href="#"><img src="../assets/images/gallery-8.png" alt=""></a></li>
-                                <li><a href="#"><img src="../assets/images/gallery-9.png" alt=""></a></li>
-                            </ul>
                         </div>
                         <div class="sidebar-newsletter">
                             <div class="footer-newsletter-item mt-60">
                                 <div class="dot">
                                     <img src="../assets/images/icon/footer-newsletter-dot.png" alt="">
                                 </div>
-                                <h3 class="title">Subscribe to our newsletter to receive exclusive offers. </h3>
+                                <h3 class="title">Subscreve a nossa newsletter para estares a par de todas as novidades e promoções da Driveclean!</h3>
                                 <form action="#">
                                     <div class="input-box">
-                                        <input type="text" placeholder="Enter email…">
-                                        <button class="main-btn-3" type="button">Join us</button>
+                                        <input type="text" placeholder="Email">
+                                        <button class="main-btn-3" type="button">Subscrever</button>
                                     </div>
                                 </form>
                             </div>
@@ -450,269 +354,95 @@
 
     <!--====== SINGLE POST PART ENDS ======-->
 
-    <!--====== ARTICLE POST PART START ======-->
+   
 
-    <section class="article-post-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="article-post-title text-center">
-                        <h3 class="title">Related Articles</h3>
+  <!--====== FOOTER PART START ======-->
+
+  <footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
+                    <div class="footer-logo">
+                        <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
                     </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="article-2-item article-post-item mt-30">
-                        <div class="article-thumb">
-                            <img src="../assets/images/article-4.png" alt="">
-                        </div>
-                        <div class="article-content">
-                            <div class="date">
-                                <div class="item">
-                                    <h5 class="title">23</h5>
-                                    <span>JUN</span>
-                                </div>
-                                <span>Financial</span>
-                            </div>
-                            <h3 class="title"><a href="#">The Start-Up Ultimate Guide to Make Press Journal.</a></h3>
-                            <a href="#">
-                                Learn more
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.196" height="12.663"
-                                        viewBox="0 0 10.196 12.663">
-                                        <path data-name="Path 18155"
-                                            d="M32.324,974.539,28.2,978.448a.731.731,0,0,0-.052.947.678.678,0,0,0,.948,0l3.027-2.864v9.346a.652.652,0,1,0,1.3,0v-9.346l3.027,2.864a.664.664,0,0,0,.948,0,.714.714,0,0,0-.052-.947l-4.126-3.909A.661.661,0,0,0,32.324,974.539Z"
-                                            transform="translate(-27.676 -974.112)" fill="#fff" stroke="#fff"
-                                            stroke-width="0.5"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="article-2-item article-post-item mt-30">
-                        <div class="article-thumb">
-                            <img src="../assets/images/article-5.png" alt="">
-                        </div>
-                        <div class="article-content">
-                            <div class="date">
-                                <div class="item">
-                                    <h5 class="title">23</h5>
-                                    <span>JUN</span>
-                                </div>
-                                <span>Financial</span>
-                            </div>
-                            <h3 class="title"><a href="#">YOUR SMALL BUSINESS Success Form MARKETING</a></h3>
-                            <a href="#">
-                                Learn more
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.196" height="12.663"
-                                        viewBox="0 0 10.196 12.663">
-                                        <path data-name="Path 18155"
-                                            d="M32.324,974.539,28.2,978.448a.731.731,0,0,0-.052.947.678.678,0,0,0,.948,0l3.027-2.864v9.346a.652.652,0,1,0,1.3,0v-9.346l3.027,2.864a.664.664,0,0,0,.948,0,.714.714,0,0,0-.052-.947l-4.126-3.909A.661.661,0,0,0,32.324,974.539Z"
-                                            transform="translate(-27.676 -974.112)" fill="#fff" stroke="#fff"
-                                            stroke-width="0.5"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="article-2-item article-post-item mt-30 item-3">
-                        <div class="article-thumb">
-                            <img src="../assets/images/article-6.png" alt="">
-                        </div>
-                        <div class="article-content">
-                            <div class="date">
-                                <div class="item">
-                                    <h5 class="title">23</h5>
-                                    <span>JUN</span>
-                                </div>
-                                <span>Financial</span>
-                            </div>
-                            <h3 class="title"><a href="#">The clear difference between cold brew and iced coffee</a>
-                            </h3>
-                            <a href="#">
-                                Learn more
-                                <span class="icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.196" height="12.663"
-                                        viewBox="0 0 10.196 12.663">
-                                        <path data-name="Path 18155"
-                                            d="M32.324,974.539,28.2,978.448a.731.731,0,0,0-.052.947.678.678,0,0,0,.948,0l3.027-2.864v9.346a.652.652,0,1,0,1.3,0v-9.346l3.027,2.864a.664.664,0,0,0,.948,0,.714.714,0,0,0-.052-.947l-4.126-3.909A.661.661,0,0,0,32.324,974.539Z"
-                                            transform="translate(-27.676 -974.112)" fill="#fff" stroke="#fff"
-                                            stroke-width="0.5"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/drivecleandetalheautomovel/"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/drivecleandetalheauto/"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@drivecleandetalheauto"><svg
+                                        style="height: 1.1rem; fill: #fff; padding-bottom: 5px;"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                    </svg></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!--====== ARTICLE POST PART ENDS ======-->
-
-    <!--====== POST FORM PART START ======-->
-
-    <div class="post-form-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="post-form-title">
-                        <h3 class="title">Leave an opinion</h3>
+        <div class="footer-item">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-about mt-30">
+                        <h4 class="title">Driveclean </h4>
+                        <p>Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais
+                            na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos
+                            clientes nos seus projetos.</p>
                     </div>
-                    <div class="post-form-item">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="input-box mt-30">
-                                        <input type="text" placeholder="Full name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="input-box mt-30">
-                                        <input type="email" placeholder="Email address">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="input-box mt-30">
-                                        <textarea name="#" id="#" cols="30" rows="10"
-                                            placeholder="Tell us about your opinion…"></textarea>
-                                        <button type="submit" class="main-btn mt-20">POST OPINION</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer-list mt-30 ml-95">
+                        <h4 class="title">links</h4>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="index.html#about-us">Sobre nós</a></li>
+                            <li><a href="index.html#services">Serviços</a></li>
+                            <li><a href="index.html#portfolio">Portfólio</a></li>
+                            <li><a href="index.html#testimonials">Testemunhos</a></li>
+                            <li><a href="index.html#overview">Overview</a></li>
+                            <li><a href="index.html#facilities">Instalações</a></li>
+                            <li><a href="index.html#pricing">Planos</a></li>
+                            <li><a href="contact.html">Contactar</a></li>
+                            <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
+                        </ul>
                     </div>
-                    <div class="post-news">
-                        <div class="post-news-title">
-                            <h3 class="title">Our latest news</h3>
-                        </div>
-                        <div class="post-news-items">
-                            <div class="item mt-20">
-                                <img src="../assets/images/post-news-1.png" alt="">
-                                <span>Subash Chandra</span>
-                                <p>We’ve invested every aspect of how we serve our users over the past Pellenesque
-                                    rutrum ante in nulla suscipit, vel posuere leo tristique.</p>
-                                <a href="#">Reply</a>
-                            </div>
-                            <div class="item mt-20">
-                                <img src="../assets/images/post-news-2.png" alt="">
-                                <span>Subash Chandra</span>
-                                <p>We’ve invested every aspect of how we serve our users over the past Pellenesque
-                                    rutrum ante in nulla suscipit, vel posuere leo tristique.</p>
-                                <a href="#">Reply</a>
-                            </div>
-                            <div class="item mt-20 pl-30 item-2">
-                                <img src="../assets/images/post-news-3.png" alt="">
-                                <span>Subash Chandra</span>
-                                <p>We’ve invested every aspect of how we serve our users over the past Pellentesque
-                                    rutrum ante in nulla suscipit, vel posuere leo tristique.</p>
-                                <a href="#">Reply</a>
-                            </div>
-                            <div class="item mt-20 item-4">
-                                <img src="../assets/images/post-news-4.png" alt="">
-                                <span>Subash Chandra</span>
-                                <p>We’ve invested every aspect of how we serve our users over the past Pellenesque
-                                    rutrum ante in nulla suscipit, vel posuere leo tristique.</p>
-                                <a href="#">Reply</a>
-                            </div>
-                            <a class="main-btn mt-15" href="#">LOAD MORE</a>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-info mt-30">
+                        <h3 class="title">Contactos</h3>
+                        <ul>
+                            <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
+                            <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
+                            <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>
+                            <li><i class="fal fa-envelope"></i>
+                              {{ site.data.footer.email }} </li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-copyright">
+                    <p>Copyright @
+                        <script>document.write(new Date().getFullYear())</script>. Design by Squarebug
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+</footer>
 
-    <!--====== POST FORM PART ENDS ======-->
-
-
-
-
-
-
-
-    <!--====== FOOTER PART START ======-->
-
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
-                        <div class="footer-logo">
-                            <a href="#"><img src="../assets/images/logo.png" alt=""></a>
-                        </div>
-                        <div class="footer-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-item">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-about mt-30">
-                            <h4 class="title">Company</h4>
-                            <p>DNP Installations can carry out all maintenance on phone and data and phone points in DNP
-                                Installations can carry out all maintenance on phone and data and phone.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-list mt-30 ml-95">
-                            <h4 class="title">Quick links</h4>
-                            <ul>
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">General</a></li>
-                                <li><a href="#">Insights</a></li>
-                                <li><a href="#">Tech</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-list mt-30">
-                            <h4 class="title">Categories</h4>
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-info mt-30">
-                            <h3 class="title">Categories</h3>
-                            <ul>
-                                <li><i class="fal fa-map-marker-alt"></i> 445 Main Street, New York CA-12325, USA </li>
-                                <li><i class="fal fa-phone"></i> +00 125 456 888 </li>
-                                <li><i class="fal fa-envelope"></i> contact@aball.com </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-copyright">
-                        <p>Copyright @ 2020. Design by Seative.Digital</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--====== FOOTER PART ENDS ======-->
+<!--====== FOOTER PART ENDS ======-->
 
     <!--====== BACK TO TOP START ======-->
 
