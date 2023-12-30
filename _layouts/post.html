@@ -13,28 +13,28 @@
     <title>{{ page.title }}</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
 
     <!--====== animate css ======-->
-    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <style>
         .post-content blockquote {
@@ -101,7 +101,7 @@
                         <div class="navigation">
                             <nav class="navbar navbar-expand-lg navbar-light ">
 
-                                <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.png"
+                                <a class="navbar-brand" href="/index.html"><img src="/assets/images/logo.png"
                                         alt=""></a> <!-- logo -->
 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -115,25 +115,25 @@
                                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home</a>
+                                            <a class="nav-link" href="/index.html">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
-                                                <li><a class="nav-link" href="index.html#portfolio">Portfólio </a></li>
-                                                <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                                <li><a class="nav-link" href="/index.html#about-us">Sobre Nós </a></li>
+                                                <li><a class="nav-link" href="/index.html#portfolio">Portfólio </a></li>
+                                                <li><a class="nav-link" href="/index.html#testimonials">Testemunhos </a>
                                                 </li>
-                                                <li><a class="nav-link" href="index.html#overview">Overview </a></li>
-                                                <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                                <li><a class="nav-link" href="/index.html#overview">Overview </a></li>
+                                                <li><a class="nav-link" href="/index.html#facilities">Instalações </a>
                                                 </li>
                                             </ul>
 
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html#services">Serviços </a>
+                                            <a class="nav-link" href="/index.html#services">Serviços </a>
 
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html#pricing">Preços </a>
+                                            <a class="nav-link" href="/index.html#pricing">Preços </a>
                                         </li>
 
 
@@ -174,7 +174,7 @@
     <!--====== PAGE TITLE  PART START ======-->
     
     <div class="page-title-area page-title-2-area">
-        <div class="section__bg" style="background-image: url({{ page.image }});"></div>
+        <div class="section__bg" style="background-image: url({{ page.image }})"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
@@ -182,8 +182,8 @@
                         <h3 class="title">{{ page.title }}</h3>
                         <nav class="pb-15" aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="../blog">blog</a></li>
+                                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="../portfolio">Portfólio</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
                             </ol>
                         </nav>
@@ -207,7 +207,7 @@
                     <div class="single-post-content mt-30">
                         <div class="single-post-topbar">
                             <ul>
-                                <li><img src="../assets/images/icon/post-icon-1.png" alt=""> {{ page.date | date: "%d"
+                                <li><img src="/assets/images/icon/post-icon-1.png" alt=""> {{ page.date | date: "%d"
                                     }}
                                     {% assign m = page.date | date: "%-m" %}
                                     {% case m %}
@@ -226,15 +226,19 @@
                                     {% endcase %}
                                     {{ page.date | date: "%Y" }}
                                 </li>
-                                <li><img src="../assets/images/icon/post-icon-2.png" alt="">
+                                <li><img src="/assets/images/icon/post-icon-2.png" alt="">
                                     {% for tag in page.tags limit: 3 %}
                                     {%if forloop.last%}
+                                    {% if page.tags.size > 3 %}
+                                    {{tag}}...
+                                    {% else %}
                                     {{tag}}
+                                    {% endif %}
                                     {% else %}
                                     {{tag}},
                                     {% endif %}
-                                    
                                     {% endfor %}
+                                    
                                 </li>
                             </ul>
                             <div class="social">
@@ -289,10 +293,13 @@
                         <div class="sidebar-categories mt-30">
                             <h4 class="title">Tags</h4>
                             <ul>
+                               
                                 {% for tag in site.tags %}
-                                <li><a href="../tags/{{tag.title}}"><img src="../assets/images/pricing-arrow.png" alt="">
-                                        {{tag.title | upcase}} (cont)
-                                        <span><img src="../assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
+                                {% assign tagcounter= site.posts | where_exp: "item", "item.tags contains tag.title" %}
+                
+                                <li><a href="{{tag.url}}"><img src="/assets/images/pricing-arrow.png" alt="">
+                                        {{tag.title | upcase}} ({{ tagcounter | size}})
+                                        <span><img src="/assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
                                 {% endfor %}
 
                             </ul>
@@ -301,7 +308,7 @@
                             <h4 class="title">Artigos recentes</h4>
                             <div class="post-items">
 
-                                {% for post in site.posts limit:3 %}
+                                {% for post in site.posts limit:6 %}
                                 <div class="item mt-30">
                                     <div class="thumb">
                                         <img src="{{ post.image }}" alt="">
@@ -335,7 +342,7 @@
                         <div class="sidebar-newsletter">
                             <div class="footer-newsletter-item mt-60">
                                 <div class="dot">
-                                    <img src="../assets/images/icon/footer-newsletter-dot.png" alt="">
+                                    <img src="/assets/images/icon/footer-newsletter-dot.png" alt="">
                                 </div>
                                 <h3 class="title">Subscreve a nossa newsletter para estares a par de todas as novidades e promoções da Driveclean!</h3>
                                 <form action="#">
@@ -364,7 +371,7 @@
             <div class="col-lg-12">
                 <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
                     <div class="footer-logo">
-                        <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
+                        <a href="/index.html"><img src="/assets/images/logo.png" alt="Logo"></a>
                     </div>
                     <div class="footer-social">
                         <ul>
@@ -400,15 +407,15 @@
                     <div class="footer-list mt-30 ml-95">
                         <h4 class="title">links</h4>
                         <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="index.html#about-us">Sobre nós</a></li>
-                            <li><a href="index.html#services">Serviços</a></li>
-                            <li><a href="index.html#portfolio">Portfólio</a></li>
-                            <li><a href="index.html#testimonials">Testemunhos</a></li>
-                            <li><a href="index.html#overview">Overview</a></li>
-                            <li><a href="index.html#facilities">Instalações</a></li>
-                            <li><a href="index.html#pricing">Planos</a></li>
-                            <li><a href="contact.html">Contactar</a></li>
+                            <li><a href="/index.html">HOME</a></li>
+                            <li><a href="/index.html#about-us">Sobre nós</a></li>
+                            <li><a href="/index.html#services">Serviços</a></li>
+                            <li><a href="/index.html#portfolio">Portfólio</a></li>
+                            <li><a href="/index.html#testimonials">Testemunhos</a></li>
+                            <li><a href="/index.html#overview">Overview</a></li>
+                            <li><a href="/index.html#facilities">Instalações</a></li>
+                            <li><a href="/index.html#pricing">Planos</a></li>
+                            <li><a href="/contact.html">Contactar</a></li>
                             <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
                         </ul>
                     </div>
@@ -460,33 +467,33 @@
 
 
     <!--====== jquery js ======-->
-    <script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
 
     <!--====== appear js ======-->
-    <script src="../assets/js/jquery.appear.min.js"></script>
+    <script src="/assets/js/jquery.appear.min.js"></script>
 
     <!--====== Slick js ======-->
-    <script src="../assets/js/slick.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
 
     <!--====== wow js ======-->
-    <script src="../assets/js/wow.js"></script>
+    <script src="/assets/js/wow.js"></script>
 
     <!--====== Isotope js ======-->
-    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
 
     <!--====== Images Loaded js ======-->
-    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
 
     <!--====== Magnific Popup js ======-->
-    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="../assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

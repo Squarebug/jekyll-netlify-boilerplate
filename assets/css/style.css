@@ -212,8 +212,8 @@ p {
 }
 .main-btn.main-btn-3 {
   background-position: center;
-  background: -webkit-gradient(linear, left top, right top, from(#fad029), color-stop(50%, #ff564f), to(#fad029));
-  background: linear-gradient(to right, #fad029 0%, #ff564f 50%, #fad029 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#febf00), color-stop(50%, #c22330), to(#febf00));
+  background: linear-gradient(to right, #febf00 0%, #c22330 50%, #febf00 100%);
   background-size: auto;
   background-size: 200% auto;
   border: 0;
@@ -11660,6 +11660,7 @@ p {
   width: 110px;
   height: 85px;
   object-fit: cover;
+  border-radius: 5px;
 }
 .sidebar-post .post-items .item .content {
   padding-left: 20px;

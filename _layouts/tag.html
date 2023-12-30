@@ -1,6 +1,6 @@
----
-title: {{page.title}}
----
+
+<!doctype html>
+<html lang="en">
 
 <head>
 
@@ -14,35 +14,35 @@ title: {{page.title}}
     <title>Blog | Driveclean | Empresa de Detalhe Automóvel</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="/../assets/images/favicon.ico" type="image/png">
-    <link rel="apple-touch-icon" href="/../assets/images/favicon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="/../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="/../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
 
     <!--====== animate css ======-->
-    <link rel="stylesheet" href="/../assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="/../assets/css/slick.css">
+    <link rel="stylesheet" href="/assets/css/slick.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="/../assets/css/default.css">
+    <link rel="stylesheet" href="/assets/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="/../assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <style>
         .blog-pagination {
             display: flex;
             justify-content: center;
-            margin-bottom: 50px;
+            margin-top: 67px;
         }
 
         .blog-pagination a {
@@ -75,7 +75,7 @@ title: {{page.title}}
 
 </head>
 
-<body>
+<body class="bg-white">
 
     <!-- LOADER -->
     <div class="preloader">
@@ -86,7 +86,7 @@ title: {{page.title}}
         </div>
     </div>
     <!-- END LOADER -->
-
+   
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
@@ -97,7 +97,7 @@ title: {{page.title}}
                         <div class="navigation">
                             <nav class="navbar navbar-expand-lg navbar-light ">
 
-                                <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.png"
+                                <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.png"
                                         alt=""></a>
                                 <!-- logo -->
 
@@ -112,25 +112,25 @@ title: {{page.title}}
                                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home</a>
+                                            <a class="nav-link" href="/index.html">Home</a>
                                             <ul class="sub-menu">
-                                                <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
-                                                <li><a class="nav-link" href="index.html#portfolio">Portfólio </a></li>
-                                                <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                                <li><a class="nav-link" href="/index.html#about-us">Sobre Nós </a></li>
+                                                <li><a class="nav-link" href="/index.html#portfolio">Portfólio </a></li>
+                                                <li><a class="nav-link" href="/index.html#testimonials">Testemunhos </a>
                                                 </li>
-                                                <li><a class="nav-link" href="index.html#overview">Overview </a></li>
-                                                <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                                <li><a class="nav-link" href="/index.html#overview">Overview </a></li>
+                                                <li><a class="nav-link" href="/index.html#facilities">Instalações </a>
                                                 </li>
                                             </ul>
 
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html#services">Serviços </a>
+                                            <a class="nav-link" href="/index.html#services">Serviços </a>
 
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="index.html#pricing">Preços </a>
+                                            <a class="nav-link" href="/index.html#pricing">Preços </a>
                                         </li>
 
 
@@ -169,18 +169,19 @@ title: {{page.title}}
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== PAGE TITLE  PART START ======-->
-
+    
     <div class="page-title-area">
         <div class="section__bg"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-title-content text-center">
-                        <h3 class="title">Blog</h3>
+                        <h3 class="title">{{ page.title }}</h3>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">pricing</li>
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item">Tags</li>
+                                <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
                             </ol>
                         </nav>
                         <div class="scroll-to-down">
@@ -191,167 +192,131 @@ title: {{page.title}}
             </div>
         </div>
     </div>
-
+    
     <!--====== PAGE TITLE  PART ENDS ======-->
 
-
-    <!--====== ARTICAL PART START ======-->
-
-    <section class="article-page-area pt-70 pb-100">
+    <!--====== PORTFOLIO STYLE 4 PART START ======-->
+    
+    <section class="portfolio-style-4-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-9">
                     <div class="section-title text-center">
-                        <h3 class="title">Our Portfolio</h3>
-                        <div class="project-menu">
-                            <ul>
-                                {% for tag in site.tags %}
-                                {% if tag.title == page.title %}
-                                <li data-filter="*" class="active">{{ tag.title}}</li>
-                                {% else %}
-                                <li data-filter="">{{ tag.title}}</li>
-                                {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </div>
+                        <p>{{ page.description }}</p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-
+            <div class="row grid">
                 {% assign filteredposts = site.posts | where_exp: "item", "item.tags contains page.title" %}
                 {% for post in filteredposts %}
-                <div class="col-lg-4 col-md-6 col-sm-9">
-                    <div class="article-item mt-30">
-                        <div class="article-top text-center">
-                            <a href="{{ post.url }}"><span>{{ post.title }}</span></a>
+                <div class="col-lg-4 col-md-6 {% for tag in post.tags%}
+                {{tag}}
+               {% endfor %} cat-2">
+                    <div class="portfolio-style-4-item mt-30">
+                        <div class="portfolio-thumb">
+                            <img src="{{ post.image }}" alt="" style="height: {% cycle '400px', '450px' %}; object-fit: cover;">
+                            <a href="{{ post.url }}">Ver detalhes <span><img src="/assets/images/icon/portfolio-arrow-2.png" alt=""></span></a>
                         </div>
-                        <div class="article-thumb">
-                            <a href="{{ post.url }}"><img src="{{ post.image }}" alt=""></a>
-                            <div class="date">
-                                <h5 class="title">{{ post.date | date: "%-d" }}</h5>
-                                <span>{% assign m = post.date | date: "%-m" %}
-                                    {% case m %}
-                                    {% when '1' %}JAN
-                                    {% when '2' %}FEV
-                                    {% when '3' %}MAR
-                                    {% when '4' %}ABR
-                                    {% when '5' %}MAI
-                                    {% when '6' %}JUN
-                                    {% when '7' %}JUL
-                                    {% when '8' %}AGO
-                                    {% when '9' %}SET
-                                    {% when '10' %}OUT
-                                    {% when '11' %}NOV
-                                    {% when '12' %}DEZ
-                                    {% endcase %}</span>
-                            </div>
-                        </div>
-                        <div class="article-content pl-25 pr-25 pt-25">
-                            {{post.tags}}
-                            <p>{{ post.excerpt | strip_newlines | truncate: 120 }}
-                            </p>
-                            <a href="{{ post.url }}">LER MAIS</a>
+                        <div class="portfolio-content">
+                            <h5 class="title">{{ post.title }}</h5>
+                            <span>{% for tag in post.tags limit: 3 %}
+                                {%if forloop.last%}
+                                {{tag}}
+                                {% else %}
+                                {{tag}},
+                                {% endif %}
+                                
+                                {% endfor %}</span>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
 
-
+                
             </div>
         </div>
+    
     </section>
+    
+    <!--====== PORTFOLIO STYLE 4 PART ENDS ======-->
 
-    <!--====== ARTICAL PART ENDS ======-->
+    
 
-      <!--====== FOOTER PART START ======-->
-
-  <footer class="footer-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
-                    <div class="footer-logo">
-                        <a href="#"><img src="assets/images/logo.png" alt="Logo"></a>
-                    </div>
-                    <div class="footer-social">
-                        <ul>
-                            <li><a href="https://www.facebook.com/drivecleandetalheautomovel/"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop"><i
-                                        class="fab fa-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/drivecleandetalheauto/"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.tiktok.com/@drivecleandetalheauto"><svg
-                                        style="height: 1.1rem; fill: #fff; padding-bottom: 5px;"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-item">
+    <!--====== FOOTER PART START ======-->
+    
+    <footer class="footer-area">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-about mt-30">
-                        <h4 class="title">Driveclean </h4>
-                        <p>Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais
-                            na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos
-                            clientes nos seus projetos.</p>
+                <div class="col-lg-12">
+                    <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
+                        <div class="footer-logo">
+                            <a href="#"><img src="/assets/images/logo.png" alt=""></a>
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-list mt-30 ml-95">
-                        <h4 class="title">links</h4>
-                        <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="index.html#about-us">Sobre nós</a></li>
-                            <li><a href="index.html#services">Serviços</a></li>
-                            <li><a href="index.html#portfolio">Portfólio</a></li>
-                            <li><a href="index.html#testimonials">Testemunhos</a></li>
-                            <li><a href="index.html#overview">Overview</a></li>
-                            <li><a href="index.html#facilities">Instalações</a></li>
-                            <li><a href="index.html#pricing">Planos</a></li>
-                            <li><a href="contact.html">Contactar</a></li>
-                            <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
-                        </ul>
+            </div>
+            <div class="footer-item">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about mt-30">
+                            <h4 class="title">Company</h4>
+                            <p>DNP Installations can carry out all maintenance on phone and data and phone points in DNP Installations can carry out all maintenance on phone and data and phone.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-list mt-30 ml-95">
+                            <h4 class="title">Quick links</h4>
+                            <ul>
+                                <li><a href="#">Creative</a></li>
+                                <li><a href="#">General</a></li>
+                                <li><a href="#">Insights</a></li>
+                                <li><a href="#">Tech</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-list mt-30">
+                            <h4 class="title">Categories</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info mt-30">
+                            <h3 class="title">Categories</h3>
+                            <ul>
+                                <li><i class="fal fa-map-marker-alt"></i> 445 Main Street, New York CA-12325, USA </li>
+                                <li><i class="fal fa-phone"></i> +00 125 456 888 </li>
+                                <li><i class="fal fa-envelope"></i> contact@aball.com </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-info mt-30">
-                        <h3 class="title">Contactos</h3>
-                        <ul>
-                            <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
-                            <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
-                            <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>
-                            <li><i class="fal fa-envelope"></i>
-                              {{ site.data.footer.email }} </li>
-                        </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright">
+                        <p>Copyright @ 2020. Design by Seative.Digital</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-copyright">
-                    <p>Copyright @
-                        <script>document.write(new Date().getFullYear())</script>. Design by Squarebug
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!--====== FOOTER PART ENDS ======-->
-
+    </footer>
+    
+    <!--====== FOOTER PART ENDS ======-->
 
     <!--====== BACK TO TOP START ======-->
 
@@ -366,37 +331,37 @@ title: {{page.title}}
 
 
 
-
-
-
+    
+    
+    
     <!--====== jquery js ======-->
-    <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="/../assets/js/bootstrap.min.js"></script>
-    <script src="/../assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
 
     <!--====== appear js ======-->
-    <script src="/../assets/js/jquery.appear.min.js"></script>
+    <script src="/assets/js/jquery.appear.min.js"></script>
 
     <!--====== Slick js ======-->
-    <script src="/../assets/js/slick.min.js"></script>
+    <script src="/assets/js/slick.min.js"></script>
 
     <!--====== wow js ======-->
-    <script src="/../assets/js/wow.js"></script>
+    <script src="/assets/js/wow.js"></script>
 
     <!--====== Isotope js ======-->
-    <script src="/../assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
 
     <!--====== Images Loaded js ======-->
-    <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
 
     <!--====== Magnific Popup js ======-->
-    <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="/../assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

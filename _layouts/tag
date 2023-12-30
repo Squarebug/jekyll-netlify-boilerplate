@@ -1,3 +1,7 @@
+---
+title: {{page.title}}
+---
+
 <head>
 
     <!--====== Required meta tags ======-->
@@ -175,8 +179,8 @@
                         <h3 class="title">Blog</h3>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">pricing</li>
                             </ol>
                         </nav>
                         <div class="scroll-to-down">
@@ -197,14 +201,15 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                {% for post in paginator.posts %}
+                {% assign filteredposts = site.posts | where_exp: "item", "item.tags contains page.title" %}
+                {% for post in filteredposts %}
                 <div class="col-lg-4 col-md-6 col-sm-9">
                     <div class="article-item mt-30">
                         <div class="article-top text-center">
                             <a href="{{ post.url }}"><span>{{ post.title }}</span></a>
                         </div>
                         <div class="article-thumb">
-                            <a href="#"><img src="{{ post.image }}" alt=""></a>
+                            <a href="{{ post.url }}"><img src="{{ post.image }}" alt=""></a>
                             <div class="date">
                                 <h5 class="title">{{ post.date | date: "%-d" }}</h5>
                                 <span>{% assign m = post.date | date: "%-m" %}
@@ -225,7 +230,9 @@
                             </div>
                         </div>
                         <div class="article-content pl-25 pr-25 pt-25">
-                            <p>{{ post.excerpt | strip_newlines | truncate: 120 }}</p>
+                            {{post.tags}}
+                            <p>{{ post.excerpt | strip_newlines | truncate: 120 }}
+                            </p>
                             <a href="{{ post.url }}">LER MAIS</a>
                         </div>
                     </div>
@@ -238,96 +245,8 @@
     </section>
 
     <!--====== ARTICAL PART ENDS ======-->
-    {% assign offsetvalue = paginator.page | minus: 3 %}
-    {% assign lastpages = paginator.total_pages | minus: 2 %}
-    {% assign lastpagesoffset = lastpages | minus: 3 %}
-        
-    {% if paginator.page == lastpages %}
-    true
-    {% endif %}
 
-    <!-- pagination -->
-
-    {% if paginator.total_pages > 1 %}
-    {% if paginator.page >= 4 and paginator.page < lastpages %} <div class="blog-pagination">
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-        {% else %}
-        <span>&laquo;</span>
-        {% endif %}
-
-        {% for page in (1..paginator.total_pages) limit: 5 offset: offsetvalue %}
-        {% if page == paginator.page %}
-        <span class="current-page">{{ page }}</span>
-        {% elsif page == 1 %}
-        <a href="/blog">{{ page }}</a>
-        {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page
-            }}</a>
-        {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-        {% else %}
-        <span>&raquo;</span>
-        {% endif %}
-        </div>
-        {% elsif paginator.page >= lastpages %}
-        <div class="blog-pagination">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-            {% else %}
-            <span>&laquo;</span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) limit: 5 offset: lastpagesoffset %}
-            {% if page == paginator.page %}
-            <span class="current-page">{{ page }}</span>
-            {% elsif page == 1 %}
-            <a href="/blog">{{ page }}</a>
-            {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
-                page
-                }}</a>
-            {% endif %}
-            {% endfor %}
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-            {% else %}
-            <span>&raquo;</span>
-            {% endif %}
-        </div>
-        {% else %}
-        <div class="blog-pagination">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-            {% else %}
-            <span>&laquo;</span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) limit: 5 %}
-            {% if page == paginator.page %}
-            <span class="current-page">{{ page }}</span>
-            {% elsif page == 1 %}
-            <a href="/blog">{{ page }}</a>
-            {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
-                page
-                }}</a>
-            {% endif %}
-            {% endfor %}
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-            {% else %}
-            <span>&raquo;</span>
-            {% endif %}
-        </div>
-        {% endif %}
-        {% endif %}
-
-
-
-          <!--====== FOOTER PART START ======-->
+      <!--====== FOOTER PART START ======-->
 
   <footer class="footer-area">
     <div class="container">
@@ -415,50 +334,51 @@
 
 <!--====== FOOTER PART ENDS ======-->
 
-        <!--====== BACK TO TOP START ======-->
 
-        <a class="back-to-top">
-            <i class="fal fa-angle-up"></i>
-        </a>
+    <!--====== BACK TO TOP START ======-->
 
-        <!--====== BACK TO TOP ENDS ======-->
+    <a class="back-to-top">
+        <i class="fal fa-angle-up"></i>
+    </a>
 
-
-
+    <!--====== BACK TO TOP ENDS ======-->
 
 
 
 
 
 
-        <!--====== jquery js ======-->
-        <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
 
-        <!--====== Bootstrap js ======-->
-        <script src="/../assets/js/bootstrap.min.js"></script>
-        <script src="/../assets/js/popper.min.js"></script>
 
-        <!--====== appear js ======-->
-        <script src="/../assets/js/jquery.appear.min.js"></script>
 
-        <!--====== Slick js ======-->
-        <script src="/../assets/js/slick.min.js"></script>
+    <!--====== jquery js ======-->
+    <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
 
-        <!--====== wow js ======-->
-        <script src="/../assets/js/wow.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="/../assets/js/bootstrap.min.js"></script>
+    <script src="/../assets/js/popper.min.js"></script>
 
-        <!--====== Isotope js ======-->
-        <script src="/../assets/js/isotope.pkgd.min.js"></script>
+    <!--====== appear js ======-->
+    <script src="/../assets/js/jquery.appear.min.js"></script>
 
-        <!--====== Images Loaded js ======-->
-        <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
+    <!--====== Slick js ======-->
+    <script src="/../assets/js/slick.min.js"></script>
 
-        <!--====== Magnific Popup js ======-->
-        <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
+    <!--====== wow js ======-->
+    <script src="/../assets/js/wow.js"></script>
 
-        <!--====== Main js ======-->
-        <script src="/../assets/js/main.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="/../assets/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="/../assets/js/main.js"></script>
 
 </body>
 
