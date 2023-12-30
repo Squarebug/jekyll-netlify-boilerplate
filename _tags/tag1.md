@@ -1,5 +1,5 @@
 ---
 layout: tag
-title: tag1
-description: tag1
+title: Pintura
+description: Pintura
 ---
