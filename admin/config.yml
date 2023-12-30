@@ -15,17 +15,36 @@ logo_url: https://driveclean.pt/assets/images/favicon.png
 
 locale: 'pt'
 
+media_library:
+  folder_support: true
+
 collections: # A list of collections the CMS should be able to edit
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Portfolio" # Used in the UI, ie.: "New Post"
     label_singular: "publicação"
-    description: "Entries sortable by Publish Date or title on 'Sort by' button teste"
+    description: "Entries sortable by Publish Date or title on 'Sort by' button teste2"
     folder: "_posts" # The path to the folder where the documents are stored
-    sort: "date:asc" # Default is title:asc
+    sort: "date:dsc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{date | date('DD-yyyy')}} - {{title}}"
+    summary_fields:
+      - title
+      - date
+      - tags
+    sortable_fields:
+      fields:
+        - title
+        - date
+      default:
+        field: date
+        direction: Descending
+    view_groups:
+      - label: Year
+        field: date
+        pattern: '\d{4}'
+      - label: Tags
+        field: tags
     preview_path: portfolio/{{title}}
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
@@ -38,7 +57,7 @@ collections: # A list of collections the CMS should be able to edit
         search_fields: [title, description]
         value_field: title
         multiple: true
-      - {label: "Data da Publicação", name: "date", widget: "datetime", format: "yyyy-MM-DD HH:mm:ss"}
+      - {label: "Data da Publicação", name: "date", widget: "datetime", format: "yyyy-MM-dd hh:mm:ss"}
       - {label: "Paragrafo de introdução", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Conteudo", name: "body", widget: "markdown", required: false}
       - {label: "Categorias", name: "categories", widget: "string", required: false}
