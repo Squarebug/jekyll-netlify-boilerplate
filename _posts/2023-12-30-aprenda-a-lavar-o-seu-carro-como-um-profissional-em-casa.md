@@ -9,7 +9,7 @@ tags:
   - Polimento
 date: 2023-12-30 17:01:06
 intro_paragraph: ""
-image: https://www.realsimple.com/thmb/z39pSX8kkxLZwP88wsrkkWNNIc4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/soapy-car-mirror_0-0b2c86804c564d0d92fb532320036189.jpg
+image: /assets/img/uploads/towfiqu-barbhuiya-5m5418ng6t8-unsplash.jpg
 ---
 # Aprenda a Lavar o Seu Carro Como um Profissional em Casa
 
