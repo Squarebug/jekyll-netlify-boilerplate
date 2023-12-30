@@ -8,7 +8,7 @@ tags:
   - Polimento
   - Lavagem Interior
 date: 2023-12-30 21:14:24
-image: /assets/img/uploads/deniz-demirci-dljelfmdpoc-unsplash.jpg
+image: /assets/img/uploads/Pasta 1/website-preview.jpg
 ---
 # Titulo H1
 
