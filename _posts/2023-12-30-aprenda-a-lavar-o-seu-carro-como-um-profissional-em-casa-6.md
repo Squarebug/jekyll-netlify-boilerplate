@@ -6,7 +6,7 @@ tags:
   - Lavagem Interior
 date: 2023-12-30 18:28:42
 intro_paragraph: ""
-image: /assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg
+image: /assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg
 ---
 # Aprenda a Lavar o Seu Carro Como um Profissional em Casa
 
