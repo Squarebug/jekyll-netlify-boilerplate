@@ -9,12 +9,12 @@
   <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^3.0.0/dist/main.css" />
+  <!--====== Conver markdown to html ======-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <style>
- 
-
     aside a span svg {
       display: none !important;
     }
@@ -74,6 +74,47 @@
       data: "https://squoosh.app/",
     });
 
+
+
+    var converter = new showdown.Converter()
+ 
+
+    var stringToHTML = function (str) {
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(str, 'text/html');
+      return doc.body;
+    };
+
+    function convertToHtml(str) {
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(str, 'text/html');
+      return doc.body;
+    }
+
+    stringToHTML("<h1>teste</h1>");
+    convertToHTML("<h1>teste</h1>");
+
+    const PostPreview = ({ widgetFor, entry, collection, fields }) => {
+      const imageField = useMemo(() => fields.find(field => field.name === 'image'), [fields]);
+      const imageUrl = useMediaAsset(entry.data.image, collection, imageField, entry);
+
+      console.log(entry)
+
+      return h(
+        'div',
+        {},
+        h('h1', {}, entry.data.title),
+        h('h1', {}, entry.data.tags),
+        h('img', { src: imageUrl }),
+        h('div', { className: 'text' }, converter.makeHtml(entry.data.body)),
+      );
+    };
+
+    CMS.registerPreviewTemplate('post', PostPreview);
+
+
+
+   
   </script>
 </body>
 

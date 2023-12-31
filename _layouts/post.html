@@ -60,7 +60,12 @@
                 padding-right: 0;
             }
         }
-
+        .post-content img {
+            max-width: 100%;
+        }
+        .post-content ul {
+            padding-top: 0px;
+        }
         .post-content blockquote::before {
             position: absolute;
             content: "";
@@ -73,6 +78,66 @@
             height: 100%;
             border-radius: 2px;
             background: #c22330;
+        }
+
+        table {
+            border-spacing: 1;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        table * {
+            position: relative
+        }
+
+        table td,
+        table th {
+            padding-left: 8px;
+
+        }
+
+        table thead tr {
+            height: 60px;
+            background: #36304a;
+            color: #fff !important;
+        }
+
+        table tbody tr {
+            height: 50px
+        }
+
+        table tbody tr:last-child {
+            border: 0
+        }
+
+        table td,
+        table th {
+            text-align: left
+        }
+
+
+
+        tbody tr:nth-child(even) {
+            background-color: #f5f5f5
+        }
+
+        tbody tr {
+            font-size: 15px;
+            color: gray;
+            line-height: 1.2;
+            font-weight: unset
+        }
+
+        table img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
         }
     </style>
 
@@ -172,7 +237,7 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== PAGE TITLE  PART START ======-->
-    
+
     <div class="page-title-area page-title-2-area">
         <div class="section__bg" style="background-image: url({{ page.image }})"></div>
         <div class="container">
@@ -183,7 +248,8 @@
                         <nav class="pb-15" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="../portfolio">Portfólio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a
+                                        href="../portfolio">Portfólio</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
                             </ol>
                         </nav>
@@ -195,7 +261,7 @@
             </div>
         </div>
     </div>
-    
+
     <!--====== PAGE TITLE  PART ENDS ======-->
 
     <!--====== SINGLE POST PART START ======-->
@@ -238,7 +304,7 @@
                                     {{tag}},
                                     {% endif %}
                                     {% endfor %}
-                                    
+
                                 </li>
                             </ul>
                             <div class="social">
@@ -247,8 +313,7 @@
                                             target="_blank"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{ page.url }}"
                                             target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a
-                                            href="https://wa.me/?text={{site.url}}{{ page.url }}"><i
+                                    <li><a href="https://wa.me/?text={{site.url}}{{ page.url }}"><i
                                                 class="fab fa-whatsapp"></i></a></li>
                                 </ul>
                             </div>
@@ -293,10 +358,10 @@
                         <div class="sidebar-categories mt-30">
                             <h4 class="title">Tags</h4>
                             <ul>
-                               
+
                                 {% for tag in site.tags %}
                                 {% assign tagcounter= site.posts | where_exp: "item", "item.tags contains tag.title" %}
-                
+
                                 <li><a href="{{tag.url}}"><img src="/assets/images/pricing-arrow.png" alt="">
                                         {{tag.title | upcase}} ({{ tagcounter | size}})
                                         <span><img src="/assets/images/icon/hero-icon-2.png" alt=""></span></a></li>
@@ -344,7 +409,8 @@
                                 <div class="dot">
                                     <img src="/assets/images/icon/footer-newsletter-dot.png" alt="">
                                 </div>
-                                <h3 class="title">Subscreve a nossa newsletter para estares a par de todas as novidades e promoções da Driveclean!</h3>
+                                <h3 class="title">Subscreve a nossa newsletter para estares a par de todas as novidades
+                                    e promoções da Driveclean!</h3>
                                 <form action="#">
                                     <div class="input-box">
                                         <input type="text" placeholder="Email">
@@ -361,95 +427,95 @@
 
     <!--====== SINGLE POST PART ENDS ======-->
 
-   
 
-  <!--====== FOOTER PART START ======-->
 
-  <footer class="footer-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
-                    <div class="footer-logo">
-                        <a href="/index.html"><img src="/assets/images/logo.png" alt="Logo"></a>
-                    </div>
-                    <div class="footer-social">
-                        <ul>
-                            <li><a href="https://www.facebook.com/drivecleandetalheautomovel/"><i
-                                        class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop"><i
-                                        class="fab fa-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/drivecleandetalheauto/"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.tiktok.com/@drivecleandetalheauto"><svg
-                                        style="height: 1.1rem; fill: #fff; padding-bottom: 5px;"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                                        <path
-                                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-item">
+    <!--====== FOOTER PART START ======-->
+
+    <footer class="footer-area">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-about mt-30">
-                        <h4 class="title">Driveclean </h4>
-                        <p>Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais
-                            na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos
-                            clientes nos seus projetos.</p>
+                <div class="col-lg-12">
+                    <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
+                        <div class="footer-logo">
+                            <a href="/index.html"><img src="/assets/images/logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/drivecleandetalheautomovel/"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/drivecleandetalheauto/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.tiktok.com/@drivecleandetalheauto"><svg
+                                            style="height: 1.1rem; fill: #fff; padding-bottom: 5px;"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                            <path
+                                                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                        </svg></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="footer-list mt-30 ml-95">
-                        <h4 class="title">links</h4>
-                        <ul>
-                            <li><a href="/index.html">HOME</a></li>
-                            <li><a href="/index.html#about-us">Sobre nós</a></li>
-                            <li><a href="/index.html#services">Serviços</a></li>
-                            <li><a href="/index.html#portfolio">Portfólio</a></li>
-                            <li><a href="/index.html#testimonials">Testemunhos</a></li>
-                            <li><a href="/index.html#overview">Overview</a></li>
-                            <li><a href="/index.html#facilities">Instalações</a></li>
-                            <li><a href="/index.html#pricing">Planos</a></li>
-                            <li><a href="/contact.html">Contactar</a></li>
-                            <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
-                        </ul>
+            </div>
+            <div class="footer-item">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about mt-30">
+                            <h4 class="title">Driveclean </h4>
+                            <p>Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais
+                                na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos
+                                clientes nos seus projetos.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-list mt-30 ml-95">
+                            <h4 class="title">links</h4>
+                            <ul>
+                                <li><a href="/index.html">HOME</a></li>
+                                <li><a href="/index.html#about-us">Sobre nós</a></li>
+                                <li><a href="/index.html#services">Serviços</a></li>
+                                <li><a href="/index.html#portfolio">Portfólio</a></li>
+                                <li><a href="/index.html#testimonials">Testemunhos</a></li>
+                                <li><a href="/index.html#overview">Overview</a></li>
+                                <li><a href="/index.html#facilities">Instalações</a></li>
+                                <li><a href="/index.html#pricing">Planos</a></li>
+                                <li><a href="/contact.html">Contactar</a></li>
+                                <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
 
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info mt-30">
+                            <h3 class="title">Contactos</h3>
+                            <ul>
+                                <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
+                                <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
+                                <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>
+                                <li><i class="fal fa-envelope"></i>
+                                    {{ site.data.footer.email }} </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-info mt-30">
-                        <h3 class="title">Contactos</h3>
-                        <ul>
-                            <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
-                            <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
-                            <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>
-                            <li><i class="fal fa-envelope"></i>
-                              {{ site.data.footer.email }} </li>
-                        </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright">
+                        <p>Copyright @
+                            <script>document.write(new Date().getFullYear())</script>. Design by Squarebug
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer-copyright">
-                    <p>Copyright @
-                        <script>document.write(new Date().getFullYear())</script>. Design by Squarebug
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<!--====== FOOTER PART ENDS ======-->
+    <!--====== FOOTER PART ENDS ======-->
 
     <!--====== BACK TO TOP START ======-->
 
