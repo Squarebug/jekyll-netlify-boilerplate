@@ -7,7 +7,8 @@ tags:
   - Pintura
   - Polimento
   - Lavagem Interior
-date: 2023-12-30 21:14:24
+date: 2023-12-31 01:02:31
+intro_paragraph: "\n\n\n"
 image: /assets/img/uploads/website-preview.jpg
 ---
 # Titulo H1
@@ -22,35 +23,41 @@ image: /assets/img/uploads/website-preview.jpg
 
 ###### Titulo h6
 
-Texto normal de paragrafo 
+Texto normal de paragrafo
 
 **Texto a negrito**
 
-***Texto a negrito e italico***
+~~Texto traçado~~
 
-**`Texto que não sei o que é`**
+~~***Texto a negrito e italico e traçado***~~
+
+
+
+
+
+|Tabela |Titulo 1|Titulo 2|Titulo 3|
+|---|---|---|---|
+|Item 1|1|2|3|
+|Item 2|1|2|3|
+|item 3|1|2|3|
+
+`**Texto que não sei o que é**`
 
 > Texto de citação
 
-
-
 Lista por pontos:
 
-* Lista 1
-* Lista 1
-* Lista 3
-* Lista 4
-
-
+- Lista 1
+- Lista 1
+- Lista 3
+- Lista 4
 
 Lista ordenada:
 
-* Lista 1
-* Lista 1
-* Lista 3
-* Lista 4
-
-
+- Lista 1
+- Lista 1
+- Lista 3
+- Lista 4
 
 ![](/assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg)
 
