@@ -9,7 +9,7 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 
 publish_mode: editorial_workflow # Enable drafts
 
-display_url: https://driveclean.pt/
+display_url: https://driveclean-teste.netlify.app
 
 logo_url: https://driveclean.pt/assets/images/favicon.png
 
@@ -28,6 +28,8 @@ collections: # A list of collections the CMS should be able to edit
     sort: "date:dsc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      size: 'half'
     summary_fields:
       - title
       - date
@@ -72,21 +74,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "tag"}
       - {name: title, label: Nome}
       - {name: description, label: descrição, widget: text}
-    # PAGES
-  - name: "page"
-    label: "Page"
-    folder: "pages"
-    sort: "title:asc"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Meta Description", name: "meta_description", widget: "string", required: false}
-      - {label: "Permalink", name: "permalink", widget: "hidden"}
-      - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
-      - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
     #CABEÇALHO 
   - name: 'site_settings'
     label: 'Configurações do site'

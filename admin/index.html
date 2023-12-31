@@ -9,13 +9,51 @@
   <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/png">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^3.0.0/dist/main.css" />
-  <!--====== Mobile css ======-->
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <style>
-    .css-bn4qgs-CollectionTopNewButton-button-default-gray,
-    .css-1nq8ny8-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray,
-    .css-3x8bm8-StyledDropdownButton-button-default-caret-caretDown {
-      background-color: #c22330 !important;
+ 
+
+    aside a span svg {
+      display: none !important;
+    }
+
+    aside a span:first-child {
+      text-align: center;
+    }
+
+    aside a span::before {
+      font-family: "Font Awesome 5 Free";
+      font-size: 1rem;
+      /* Regular (400) only includes some icons. Solid (900) has the rest of the free ones */
+      font-weight: 900;
+      text-align: center;
+
+    }
+
+    aside a[href="#/collections/post"] span:first-child::before {
+      content: "\f15c"
+    }
+
+    aside a[href="#/collections/tags"] span:first-child::before {
+      content: "\f02c";
+    }
+
+    aside a[href="#/collections/site_settings"] span:first-child::before {
+      content: "\f013";
+    }
+
+    aside a[href="https://squoosh.app/"] span:first-child::before {
+      content: "\f1c6";
+    }
+
+    aside a[href="#/collections/people"] span:first-child::before {
+      content: "\f2b9";
+    }
+
+    aside a[href="#/media"] span:first-child::before {
+      content: "\f03e";
     }
   </style>
 </head>
@@ -25,8 +63,18 @@
   <script>
     CMS.init()
 
+    CMS.registerAdditionalLink({
+      id: 'custom-page',
+      title: 'squoosh.app',
+      data: "https://squoosh.app/",
+    });
+    CMS.registerAdditionalLink({
+      id: 'custom-page2',
+      title: 'squoosh.app',
+      data: "https://squoosh.app/",
+    });
+
   </script>
-  <script src="preview-templates/index.js"></script>
 </body>
 
 </html>
