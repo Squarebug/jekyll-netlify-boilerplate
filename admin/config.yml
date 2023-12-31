@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
         pattern: '\d{4}'
       - label: Tags
         field: tags
-    preview_path: portfolio/{{title}}
+    preview_path: "/portfolio/{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titulo", name: "title", widget: "string", tagname: "h1"}
