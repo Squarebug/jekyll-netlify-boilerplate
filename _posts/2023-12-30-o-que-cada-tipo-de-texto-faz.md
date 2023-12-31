@@ -31,15 +31,19 @@ Texto normal de paragrafo
 
 ~~***Texto a negrito e italico e traçado***~~
 
-
-
-
-
-|Tabela |Titulo 1|Titulo 2|Titulo 3|
+|Tabela|Titulo 1|Titulo 2|Titulo 3|
 |---|---|---|---|
 |Item 1|1|2|3|
 |Item 2|1|2|3|
 |item 3|1|2|3|
+
+
+
+
+
+|![](/assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg)|![](/assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg)|
+|---|---|
+| | |
 
 `**Texto que não sei o que é**`
 
