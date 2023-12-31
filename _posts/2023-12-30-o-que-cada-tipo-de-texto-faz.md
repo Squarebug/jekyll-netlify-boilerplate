@@ -37,13 +37,9 @@ Texto normal de paragrafo
 |Item 2|1|2|3|
 |item 3|1|2|3|
 
-
-
-
-
-|![](/assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg)|![](/assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg)|
-|---|---|
-| | |
+| | | |
+|---|---|---|
+|![](/assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg)|![](/assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg)|![](/assets/img/uploads/deniz-demirci-dljelfmdpoc-unsplash.jpg)|
 
 `**Texto que não sei o que é**`
 
