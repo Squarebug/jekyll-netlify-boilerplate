@@ -20,20 +20,20 @@ Use o nosso guia para praticamente guiá-lo enquanto o orientamos passo a passo 
 
 ## O Que Precisa:
 
-* Aspirador úmido-seco com função de sopro
-* Escova de dentes
-* Panos de microfibra
-* Produto de limpeza para carro (para couro, vinil e plástico)
-* Chamois e/ou panos de algodão
-* Detergente para roupa
-* Limpa-vidros em espuma
-* Mangueira de água
-* Dois baldes de 2 litros
-* Sabonete específico para carros
-* Dois luvas ou esponjas de lavagem de carros
-* Escova para rodas (opcional)
-* Cera para carros
-* Kit de renovação ou restauração de faróis (opcional)
+- Aspirador úmido-seco com função de sopro
+- Escova de dentes
+- Panos de microfibra
+- Produto de limpeza para carro (para couro, vinil e plástico)
+- Chamois e/ou panos de algodão
+- Detergente para roupa
+- Limpa-vidros em espuma
+- Mangueira de água
+- Dois baldes de 2 litros
+- Sabonete específico para carros
+- Dois luvas ou esponjas de lavagem de carros
+- Escova para rodas (opcional)
+- Cera para carros
+- Kit de renovação ou restauração de faróis (opcional)
 
 ## Como Lavar o Seu Carro em Casa
 
@@ -105,6 +105,10 @@ Com os tapetes no lugar, certifique-se de que todas as portas e janelas estão f
 
 Molhe todo o carro, prestando especial atenção aos pneus (e às partes atrás deles), onde se acumula sujeira e pó de travões.
 
+Pode ainda fazer uma pré lavagem, para isso veja o nosso video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c0fOrqTg6sI?si=YB-yWJR9T2DgJgPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Passo 10: Ensaboar e Esfregar
 
 ![](https://www.realsimple.com/thmb/SwnhivdTtTBqO-wNx4wk0exldAg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/washing-mustang-washing-sid-56a68f813df78cf7728efde0.jpg)
@@ -131,7 +135,7 @@ Mulher a polir carro com pano
 
 ![](https://www.realsimple.com/thmb/Cnf32gsXEKFoDukS7cG9y89zjUA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/woman-waxing-car-b10b22bb447344249960abebdd6ed056.jpg)
 
-Quando o carro estiver completamente seco, aplica cera como o Pro To The Max ($29; turtlewax.com) para adicionar uma camada brilhante e protetora. Usa um pano limpo e segue as instruções da etiqueta. Uma aplicação dura cerca de três meses.
+Quando o carro estiver completamente seco, aplica cera como o Pro To The Max ($29; [turtlewax.com](turtlewax.com)) para adicionar uma camada brilhante e protetora. Usa um pano limpo e segue as instruções da etiqueta. Uma aplicação dura cerca de três meses.
 
 ### Passo 14: Revitalizar os Faróis
 
