@@ -1,6 +1,6 @@
 items:
   - name: Home
-    link: /
+    link: teste
   - name: About
     link: /about.html
   - name: Blog
