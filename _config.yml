@@ -34,6 +34,8 @@ paginate_path: "/portfolio/:num/"
 
 #teste para aceder a todas as tags
 collections:
+  planos:
+    output: false
   tags:
     output: true
 
