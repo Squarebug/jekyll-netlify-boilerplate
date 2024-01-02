@@ -4,7 +4,7 @@ title: " Aprenda a Lavar o Seu Carro Como um Profissional em Casa"
 tags:
   - Polimento
 date: 2023-12-30 18:27:58
-intro_paragraph: ""
+intro_paragraph: "Dos faróis às tampas das rodas, aqui está uma instrução de limpeza de cima a baixo, por dentro e por fora."
 image: /assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg
 ---
 # Aprenda a Lavar o Seu Carro Como um Profissional em Casa

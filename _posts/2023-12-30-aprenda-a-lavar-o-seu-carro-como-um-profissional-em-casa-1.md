@@ -5,7 +5,7 @@ tags:
   - Lavagem Exterior
   - Restauro
 date: 2023-12-30 17:59:24
-intro_paragraph: ""
+intro_paragraph: "Dos faróis às tampas das rodas, aqui está uma instrução de limpeza de cima a baixo, por dentro e por fora."
 image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
 ---
 # Aprenda a Lavar o Seu Carro Como um Profissional em Casa

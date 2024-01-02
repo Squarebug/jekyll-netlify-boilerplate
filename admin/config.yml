@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Portfolio" # Used in the UI, ie.: "New Post"
     label_singular: "publicação"
-    description: "Entries sortable by Publish Date or title on 'Sort by' button teste2"
+    description: "Aqui aparecem as publicações que estao no portfolio, pode adicionar uma nova clicando no botão -Novo(a) publicação-. Tambem pode ordenar por titulo/data de publicação ou agrupar por Ano/Tags"
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:dsc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
@@ -51,7 +51,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Titulo", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Descrição Meta", name: "meta_description", widget: "string", required: false}
+      - {label: "Descrição Meta", name: "meta_description", widget: "string"}
       - name: tags
         label: Tags
         widget: relation
@@ -60,13 +60,13 @@ collections: # A list of collections the CMS should be able to edit
         value_field: title
         multiple: true
       - {label: "Data da Publicação", name: "date", widget: "datetime", format: "yyyy-MM-dd hh:mm:ss"}
-      - {label: "Paragrafo de introdução", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Conteudo", name: "body", widget: "markdown", required: false}
-      - {label: "Categorias", name: "categories", widget: "string", required: false}
+      - {label: "Paragrafo de introdução", name: "intro_paragraph", widget: "string"}
+      - {label: "Conteudo", name: "body", widget: "markdown"}
       - {label: Imagem de capa, name: image, widget: image}
     #teste tags
   - name: tags
     label: Tags
+    description: "Aqui pode adicionar/alterar as Tags que aparecem para selecionar nas publicações"
     folder: "_tags"
     slug: "{{slug}}"
     create: true

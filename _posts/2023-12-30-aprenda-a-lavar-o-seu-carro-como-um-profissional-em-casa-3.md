@@ -4,7 +4,7 @@ title: " Aprenda a Lavar o Seu Carro Como um Profissional em Casa"
 tags:
   - Lavagem Exterior
 date: 2023-12-30 18:26:28
-intro_paragraph: ""
+intro_paragraph: "Dos faróis às tampas das rodas, aqui está uma instrução de limpeza de cima a baixo, por dentro e por fora."
 image: /assets/img/uploads/agent-j-f6romjsomru-unsplash.jpg
 ---
 # Aprenda a Lavar o Seu Carro Como um Profissional em Casa

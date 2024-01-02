@@ -8,7 +8,7 @@ tags:
   - Lavagem Interior
   - Polimento
 date: 2023-12-30 17:01:06
-intro_paragraph: ""
+intro_paragraph: "Dos faróis às tampas das rodas, aqui está uma instrução de limpeza de cima a baixo, por dentro e por fora."
 image: /assets/img/uploads/towfiqu-barbhuiya-5m5418ng6t8-unsplash.jpg
 ---
 # Aprenda a Lavar o Seu Carro Como um Profissional em Casa

@@ -8,7 +8,7 @@ tags:
   - Polimento
   - Lavagem Interior
 date: 2023-12-31 01:02:31
-intro_paragraph: "\n\n\n"
+intro_paragraph: "Nesta publicaçao pode ver os varios exemplos de texto"
 image: /assets/img/uploads/website-preview.jpg
 ---
 # Titulo H1
