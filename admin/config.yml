@@ -113,7 +113,14 @@ collections: # A list of collections the CMS should be able to edit
       - {name: title, label: Titulo}
       - {name: description, label: Descrição, widget: text}
       - {name: value, label: Valor, widget: text}
-      - {name: items, label: Itens, widget: list}
+      - name: items
+        label: Itens
+        widget: list
+        fields:
+          - label: Nome
+            name: name
+            widget: string
+
      
              
       

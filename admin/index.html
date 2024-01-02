@@ -68,43 +68,7 @@
       title: 'squoosh.app',
       data: "https://squoosh.app/",
     });
-    
-
-
-    var converter = new showdown.Converter()
- 
-
-    var stringToHTML = function (str) {
-      var parser = new DOMParser();
-      var doc = parser.parseFromString(str, 'text/html');
-      return doc.body;
-    };
-
-    function convertToHtml(str) {
-      var parser = new DOMParser();
-      var doc = parser.parseFromString(str, 'text/html');
-      return doc.body;
-    }
-
-    stringToHTML("<h1>teste</h1>");
-
-    const PostPreview = ({ widgetFor, entry, collection, fields }) => {
-      const imageField = useMemo(() => fields.find(field => field.name === 'image'), [fields]);
-      const imageUrl = useMediaAsset(entry.data.image, collection, imageField, entry);
-
-      console.log(entry)
-
-      return h(
-        'div',
-        {},
-        h('h1', {}, entry.data.title),
-        h('h1', {}, entry.data.tags),
-        h('img', { src: imageUrl }),
-        h('div', { className: 'text' }, converter.makeHtml(entry.data.body)),
-      );
-    };
-
-    CMS.registerPreviewTemplate('post', PostPreview);
+   
 
 
 
