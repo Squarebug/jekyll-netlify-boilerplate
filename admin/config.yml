@@ -66,7 +66,7 @@ collections: # A list of collections the CMS should be able to edit
     #teste tags
   - name: tags
     label: Tags
-    description: "Aqui pode adicionar/alterar as Tags que aparecem para selecionar nas publicações"
+    description: "Aqui pode adicionar/alterar as Tags que aparecem para selecionar nas publicaçõe"
     folder: "_tags"
     slug: "{{slug}}"
     create: true
@@ -111,23 +111,10 @@ collections: # A list of collections the CMS should be able to edit
         frame: false
         size: half
       fields:
-        - label: Titulo
-          name: title
-          widget: string
-        - label: Valor
-          name: valor
-          widget: string
-        - label: URL
-          name: url
-          widget: string
-          condition:
-            field: type
-            value: external
-        - label: Descrição
-          name: Descrição
-          widget: string
-        - name: Serviços
-          label: Serviços
-          widget: list
+        - {label: "Anos de Experiência", name: "experience", widget: "string"}
+        - {label: "Serviços efetuados", name: "services", widget: "string"}
+        - {label: "Modelos trabalhados", name: "models", widget: "string"}
+        - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
+     
              
       
