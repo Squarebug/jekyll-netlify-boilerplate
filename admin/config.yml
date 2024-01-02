@@ -103,15 +103,6 @@ collections: # A list of collections the CMS should be able to edit
         - {label: "Modelos trabalhados", name: "models", widget: "string"}
         - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
       #Planos
-    - name: planos
-      label: Planos
-      folder: _planos
-      create: true
-      fields:
-        - {label: "Anos de Experiência", name: "experience", widget: "string"}
-        - {label: "Serviços efetuados", name: "services", widget: "string"}
-        - {label: "Modelos trabalhados", name: "models", widget: "string"}
-        - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
      
              
       
