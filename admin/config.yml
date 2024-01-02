@@ -107,9 +107,6 @@ collections: # A list of collections the CMS should be able to edit
       label: Planos
       folder: _planos
       create: true
-      editor:
-        frame: false
-        size: half
       fields:
         - {label: "Anos de Experiência", name: "experience", widget: "string"}
         - {label: "Serviços efetuados", name: "services", widget: "string"}
