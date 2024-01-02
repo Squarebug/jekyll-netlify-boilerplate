@@ -102,4 +102,32 @@ collections: # A list of collections the CMS should be able to edit
         - {label: "Serviços efetuados", name: "services", widget: "string"}
         - {label: "Modelos trabalhados", name: "models", widget: "string"}
         - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
-    
+      #Planos
+    - name: planos
+      label: Planos
+      folder: _planos
+      create: true
+      editor:
+        frame: false
+        size: half
+      fields:
+        - label: Titulo
+          name: title
+          widget: string
+        - label: Valor
+          name: valor
+          widget: string
+        - label: URL
+          name: url
+          widget: string
+          condition:
+            field: type
+            value: external
+        - label: Descrição
+          name: Descrição
+          widget: string
+        - name: Serviços
+          label: Serviços
+          widget: list
+             
+      
