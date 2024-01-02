@@ -1297,6 +1297,10 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+                {{ site.planos }}
+                {% for plano in site.planos %}
+                {{ plano.title }}
+                {% endfor %}
                 <div class="col-lg-4 col-md-6 col-sm-9 order-1">
                     <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
                         data-wow-delay="0ms">
