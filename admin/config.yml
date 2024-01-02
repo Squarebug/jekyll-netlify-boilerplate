@@ -111,7 +111,9 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - {name: title, label: Titulo}
-      - {name: description, label: descrição, widget: text}
+      - {name: description, label: Descrição, widget: text}
+      - {name: value, label: Valor, widget: text}
+      - {name: items, label: Itens, widget: list}
      
              
       
