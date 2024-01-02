@@ -1297,140 +1297,26 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                
-                
+                {% for plano in site.planos %}
                 <div class="col-lg-4 col-md-6 col-sm-9 order-1">
                     <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
                         data-wow-delay="0ms">
-                        <h3 class="title">Lavagem de manutenção</h3>
-                        <span>€ 45</span>
-                        <p>(Ressalva de valor para viatura ligeira até 5 lugares)</p>
-                        {{ site.planos }} t
-                {% for plano in site.planos %}
-                {{ site.planos.title }}
+                        <h3 class="title">{{ plano.title }}</h3>
+                        <span>{{ plano.value }}</span>
+                        <p>{{ plano.description }}</p>
+                        
+                        <ul>
+                            {% for item in plano.items %}
+                            <li>{{item}}</li>
+                            {% endfor %}
+                        </ul>
+                        <a class="main-btn" href="contact.html">Contactar</a>
+                    </div>
+                </div>
                 {% endfor %}
-                        <ul>
-                            <li>Limpeza e aspiração interior</li>
-                            <li>Lavagem exterior detalhada</li>
-                            <li>Lavagem do compartimento do motor</li>
-                            <li>Aplicação de WetCoat</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9 order-3 order-lg-2">
-                    <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Higienização interna</h3>
-                        <span>€ 120</span>
-                        <p>(Ressalva de valor para viatura ligeira até 5 lugares)</p>
-                        <ul>
-                            <li>Lavagem , limpeza e hidratação de todo o interior</li>
-                            <li>Lavagem de bancos</li>
-                            <li>Lavagem exterior detalhada</li>
-                            <li>Lavagem do compartimento do motor</li>
-                            <li>Aplicação de WetCoat</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Correção de pintura</h3>
-                        <span>€ SOB ORÇAMENTO</span>
-                        <p></p>
-                        <ul>
-                            <li>Pré- Lavagem e descontaminação química e mecânica da viatura</li>
-                            <li>Polimento Comercial (Correção para remover o máximo de imperfeições )</li>
-                            <li>Aplicação de proteção</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Polimento de carroçaria</h3>
-                        <span>€ SOB ORÇAMENTO</span>
-                        <p></p>
-                        <ul>
-                            <li>Pré- Lavagem e descontaminação química e mecânica da viatura</li>
-                            <li>Polimento Comercial ( Brilho )</li>
-                            <li>Aplicação de Cera ( Proteção até 12 meses )</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Proteção Cerâmica</h3>
-                        <span>€ SOB ORÇAMENTO</span>
-                        <p></p>
-                        <ul>
-                            <li>Proteção química para ajudar na manutenção externa da viatura</li>
-                            <li>Proteção até 3 anos</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Aplicação de PPF</h3>
-                        <span>€ SOB ORÇAMENTO</span>
-                        <p></p>
-                        <ul>
-                            <li>Proteção física contra riscos e pedras</li>
-                            <li>Auto regenerativa ao sol</li>
-                            <li>Proteção até 8 anos</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInLeft" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Moto Detailing</h3>
-                        <span>€ SOB ORÇAMENTO</span>
-                        <p></p>
-                        <ul>
-                            <li>Lavagens de manutenção</li>
-                            <li>Detalhes completos</li>
-                            <li>Proteções</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInUp" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Polimento de faróis</h3>
-                        <span>€ 100</span>
-                        <p></p>
-                        <ul>
-                            <li>Correção dos faróis</li>
-                            <li>Aplicação de PPF ( Proteção até 8 anos )</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-9 order-2 order-lg-3">
-                    <div class="pricing-item mt-30 animated wow fadeInRight" data-wow-duration="1000ms"
-                        data-wow-delay="0ms">
-                        <h3 class="title">Restauros de interiores</h3>
-                        <span>€ SOB ORÇAMENTO</span>
-                        <p></p>
-                        <ul>
-                            <li>Recuperação de plásticos e couros</li>
-                        </ul>
-                        <a class="main-btn" href="contact.html">Contactar</a>
-                    </div>
-                </div>
+                
+                
+                
             </div>
 
         </div>
