@@ -106,7 +106,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: planos
     label: Planos
     description: "Alerar o conteudo da secçao Planos"
-    folder: "_planos"
+    folder: "planos"
     slug: "{{slug}}"
     create: true
     fields:
