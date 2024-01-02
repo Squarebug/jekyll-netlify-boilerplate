@@ -103,14 +103,14 @@ collections: # A list of collections the CMS should be able to edit
         - {label: "Modelos trabalhados", name: "models", widget: "string"}
         - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
     #Planos
-  - name: Planos
-    label: Tags
+  - name: planos
+    label: Planos
     description: "Alerar o conteudo da secçao Planos"
-    folder: "_Planos"
+    folder: "_planos"
     slug: "{{slug}}"
     create: true
     fields:
-      - {name: title, label: Nome}
+      - {name: title, label: Titulo}
       - {name: description, label: descrição, widget: text}
      
              
