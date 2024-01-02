@@ -103,23 +103,21 @@ collections: # A list of collections the CMS should be able to edit
         - {label: "Modelos trabalhados", name: "models", widget: "string"}
         - {label: "Seguidores Instagram", name: "instagram", widget: "string"}
     #Planos
-  - name: planos
-    label: Planos
-    description: "Alerar o conteudo da secçao Planos"
-    folder: "planos"
-    slug: "{{slug}}"
-    create: true
-    fields:
-      - {name: title, label: Titulo}
-      - {name: description, label: Descrição, widget: text}
-      - {name: value, label: Valor, widget: text}
-      - name: items
-        label: Itens
-        widget: list
+  - name: 'config'
+    label: 'Config'
+    editor:
+      preview: false
+    files:
+      - label: 'Navigation'
+        name: 'navigation'
+        file: '_data/navigation.yml'
         fields:
-          - label: Nome
-            name: name
-            widget: string
+          - label: 'Navigation Items'
+            name: 'items'
+            widget: 'list'
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }
 
      
              
