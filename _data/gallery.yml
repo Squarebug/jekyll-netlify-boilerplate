@@ -1,0 +1,13 @@
+Titulo: Galeria
+Descrição: >
+  Estas são algumas das fotos que tirámos enquanto fazíamos o que mais amamos
+  😍.
+
+  ( Vê mais em: [facebook](https://www.facebook.com/drivecleandetalheautomovel/), [instagram](https://www.instagram.com/drivecleandetalheauto/) e [tiktok](https://www.tiktok.com/@drivecleandetalheauto) )
+images:
+  - name: "FOTO #0001"
+    description: Descrição foto 1
+    image: /assets/img/uploads/agent-j-f6romjsomru-unsplash.jpg
+  - name: "Foto #0002"
+    description: Descrição
+    image: /assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg
