@@ -11,3 +11,15 @@ images:
   - name: "Foto #0002"
     description: Descrição
     image: /assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg
+  - name: "FOTO #0003"
+    image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
+    description: "FOTO #0003"
+  - name: "FOTO #0003"
+    image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
+    description: "FOTO #0003"
+  - name: "FOTO #0003"
+    image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
+    description: "FOTO #0003"
+  - name: "FOTO #0003"
+    image: /assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg
+    description: "FOTO #0003"
