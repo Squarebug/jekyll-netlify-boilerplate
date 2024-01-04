@@ -9,3 +9,24 @@ Testemunhos:
   - author: Pedro Roque
     comment: Comentario
     stars: 3
+testemunhos:
+  - author: Autor
+    comment: |
+      Comentario
+    stars: 5
+  - author: Autor 2
+    comment: |
+      Comentario
+    stars: 4
+  - author: Autor 3
+    comment: |
+      Comentario
+    stars: 3
+  - author: Autor3
+    comment: |
+      Comentario
+    stars: 5
+  - author: Autor 4
+    comment: |
+      Comentario
+    stars: 2
