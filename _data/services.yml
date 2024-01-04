@@ -1,0 +1,21 @@
+title: Serviços
+description: O nosso foco é entregar ao teu carro os serviços que ele merece.
+vroom:
+  title: Limpeza Interior
+  description: Aspiração , limpeza e hidratação do interior da sua viatura.
+soap:
+  title: Lavagem Exterior
+  description: Desde uma lavagem simples às mais técnicas, garantimos o melhor resultado.
+stick:
+  title: Polimento
+  description: Polimento Comercial para dar brilho ou Correção de pintura para o
+    deixar perfeito.
+care:
+  title: Restauro
+  description: Recuperar o esplendor da sua viatura aquando novo.
+spray:
+  title: Desinfeção
+  description: Higienização interna , tratamento das condutas AC e muito mais…
+chat:
+  title: Serviço por consulta
+  description: Cada carro é um carro , queremos o serviço o mais personalizado possível.
