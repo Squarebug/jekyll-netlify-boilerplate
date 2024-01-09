@@ -7,7 +7,7 @@ backend:
 
 media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 
-publish_mode: editorial_workflow # Enable drafts
+publish_mode: editorial_workflow
 
 display_url: https://driveclean-teste.netlify.app
 
@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Portfolio" # Used in the UI, ie.: "New Post"
     label_singular: "publicação"
-    description: "Aqui aparecem as publicações que estao no portfolio, pode adicionar uma nova clicando no botão -Novo(a) publicação-. Tambem pode ordenar por titulo/data de publicação ou agrupar por Ano/Tags"
+    description: "Aqui pode ver as publicações que estão no portefólio. Pode adicionar uma nova publicação clicando no botão -Nova publicação-. Também pode ordenar por título/data de publicação ou agrupar por ano/identificadores."
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:dsc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
@@ -42,16 +42,24 @@ collections: # A list of collections the CMS should be able to edit
         field: date
         direction: Descending
     view_groups:
-      - label: Year
-        field: date
-        pattern: '\d{4}'
-      - label: Tags
-        field: tags
+      groups:
+        - label: Ano
+          name: year
+          field: date
+          pattern: \d{4}
+        - label: Tags
+          name: tags
+          field: tags
     preview_path: "/portfolio/{{slug}}"
     fields: # The fields each document in this collection have
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Titulo", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Descrição Meta", name: "meta_description", widget: "string" }
+      - { label: "Descrição Meta (Aparece nas buscas do Google)", name: "meta_description", widget: "string" }
+      - {
+          label: "Paragrafo de introdução",
+          name: "intro_paragraph",
+          widget: "string",
+        }
       - name: tags
         label: Tags
         widget: relation
@@ -65,17 +73,12 @@ collections: # A list of collections the CMS should be able to edit
           widget: "datetime",
           format: "yyyy-MM-dd hh:mm:ss",
         }
-      - {
-          label: "Paragrafo de introdução",
-          name: "intro_paragraph",
-          widget: "string",
-        }
-      - { label: "Conteudo", name: "body", widget: "markdown" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
       - { label: Imagem de capa, name: image, widget: image }
     #teste tags
   - name: tags
     label: Tags
-    description: "Aqui pode adicionar/alterar as Tags que aparecem para selecionar nas publicaçõe"
+    description: "Aqui pode adicionar/alterar as Tags que aparecem para selecionar nas publicações"
     folder: "_tags"
     slug: "{{slug}}"
     create: true
@@ -83,9 +86,10 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Layout", name: "layout", widget: "hidden", default: "tag" }
       - { name: title, label: Nome }
       - { name: description, label: descrição, widget: text }
-    #CABEÇALHO
+    #SITE_SETTINGS
   - name: "site_settings"
     label: "Configurações do site"
+    description: "Selecione a secção do site que pretende alterar o conteúdo"
     editor:
       preview: false
     files:
@@ -95,19 +99,195 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Contactos", name: "contact", widget: "string" }
           - {
-              label: "Contacto principal",
+              label: "Contacto principal (Contacto pré-defenido para ligar)",
               name: "default_contact",
               widget: "string",
             }
-      - label: "Rodapé"
-        name: "footer"
-        file: "_data/footer.yml"
+      - label: "Banner"
+        name: hero
+        file: "_data/hero.yml"
         fields:
-          - { label: "Morada", name: "adress", widget: "string" }
-          - { label: "Nº Movel", name: "mobile_number", widget: "string" }
-          - { label: "Nº Fixo", name: "office_number", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Descrição", name: "description", widget: text }
+          - { label: "Titulo", name: "title", widget: "text" }
+          - { label: "Slogan", name: "slogan", widget: "string" }
+          - { label: "Link do video", name: "video", widget: "string" }      
+          - { label: "Imagem de Fundo", name: "vimage", widget: "image" }
+          - label: "Caixa com icon Sabão"
+            name: soap
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Escudo"
+            name: shield
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Varinha"
+            name: stick
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Cuidado"
+            name: care
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+      - label: "Sobre nós"
+        name: aboutus
+        file: "_data/aboutus.yml"
+        fields:
+          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "markdown" }
+          - { label: "Imagem", name: "backgroundimage", widget: "image" }
+          - name: classification
+            label: Clacificações
+            widget: list
+            fields:
+              - label: Imagem
+                name: image
+                widget: image
+                choose_url: true
+              - label: Descrição
+                name: description
+                widget: string
+              - label: Estrelas
+                name: stars
+                widget: select
+                options:
+                  - 1
+                  - 2
+                  - 3
+                  - 4
+                  - 5
+      - label: "Serviços"
+        name: services
+        file: "_data/services.yml"
+        fields:
+          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "text" }
+          - label: "Caixa com icon Vassoura"
+            name: vroom
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Sabão"
+            name: soap
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Varinha"
+            name: stick
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Cuidado"
+            name: care
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Spray"
+            name: spray
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - label: "Caixa com icon Chat"
+            name: chat
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+      - label: "Galeria"
+        name: gallery
+        file: "_data/gallery.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "description", name: "description", widget: "markdown" }
+          - name: images
+            label: Imagens
+            widget: list
+            fields:
+              - label: Nome
+                name: name
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+              - label: Imagem
+                name: image
+                widget: image
+      - label: "Testemunhos"
+        name: testemunhos
+        file: "_data/testemunhos.yml"
+        fields:
+          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "string" }
+          - name: testemunhos
+            label: Testemunhos
+            widget: list
+            fields:
+              - label: Autor
+                name: author
+                widget: string
+              - label: Comentario
+                name: comment
+                widget: markdown
+              - label: Estrelas
+                name: stars
+                widget: select
+                options:
+                  - 1
+                  - 2
+                  - 3
+                  - 4
+                  - 5
       - label: "Overview"
         name: "overview"
         file: "_data/overview.yml"
@@ -126,6 +306,47 @@ collections: # A list of collections the CMS should be able to edit
               name: "instagram",
               widget: "string",
             }
+      - label: "O espaço"
+        name: space
+        file: "_data/space.yml"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "description", name: "description", widget: "markdown" }
+          - name: images
+            label: Imagens
+            widget: list
+            fields:
+              - label: Nome
+                name: name
+                widget: string
+              - label: Imagem
+                name: image
+                widget: image
+      - label: "Serviços externos"
+        name: external
+        file: "_data/external.yml"
+        fields:
+          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Nº Movel", name: "mobile", widget: "string" }
+          - { label: "Nº Fixo", name: "phone", widget: "string" }
+          - label: "Serviços"
+            name: "services"
+            widget: "list"
+            fields:
+            - label: Nome
+              name: name
+              widget: string
+      - label: "Rodapé"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - { label: "Morada", name: "adress", widget: "string" }
+          - { label: "Nº Movel", name: "mobile_number", widget: "string" }
+          - { label: "Nº Fixo", name: "office_number", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Descrição", name: "description", widget: text }      
+      
     #Planos
   - name: planos
     label: Planos
@@ -144,249 +365,3 @@ collections: # A list of collections the CMS should be able to edit
           - label: Nome
             name: name
             widget: string
-    #Gallery
-  - name: gallery
-    label: Galeria
-    description: "Alerar o conteudo da secçao Galeria"
-    files:
-    - label: "Galerry"
-      name: gallery
-      file: "_data/gallery.yml"
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "description", name: "description", widget: "markdown" }
-        - name: images
-          label: Imagens
-          widget: list
-          fields:
-            - label: Nome
-              name: name
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-            - label: Imagem
-              name: image
-              widget: image
-    #Testemunhos
-  - name: testemunhos
-    label: Testemunhos
-    description: "Alerar o conteudo da secçao Testemunhos"
-    files:
-    - label: "Testemunhos"
-      name: testemunhos
-      file: "_data/testemunhos.yml"
-      fields:
-        - { label: "Titulo", name: "title", widget: "string" }
-        - { label: "Descrição", name: "description", widget: "string" }
-        - name: testemunhos
-          label: Testemunhos
-          widget: list
-          fields:
-            - label: Autor
-              name: author
-              widget: string
-            - label: Comentario
-              name: comment
-              widget: markdown
-            - label: Estrelas
-              name: stars
-              widget: select
-              options:
-                - 1
-                - 2
-                - 3
-                - 4
-                - 5
-  - name: space
-    label: O espaço
-    description: "Alerar o conteudo da secçao O espaço"
-    files:
-    - label: "O espaço"
-      name: space
-      file: "_data/space.yml"
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "description", name: "description", widget: "markdown" }
-        - name: images
-          label: Imagens
-          widget: list
-          fields:
-            - label: Nome
-              name: name
-              widget: string
-            - label: Imagem
-              name: image
-              widget: image
-  - name: aboutus
-    label: "Sobre nós"
-    description: "Alerar o conteudo da secçao sobre nós"
-    files:
-    - label: "Sobre nós"
-      name: aboutus
-      file: "_data/aboutus.yml"
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "description", name: "description", widget: "markdown" }
-        - { label: "Imagem", name: "backgroundimage", widget: "image" }
-        - name: classification
-          label: Clacificações
-          widget: list
-          fields:
-            - label: Imagem
-              name: image
-              widget: image
-              choose_url: true
-            - label: Descrição
-              name: description
-              widget: string
-            - label: Estrelas
-              name: stars
-              widget: select
-              options:
-                - 1
-                - 2
-                - 3
-                - 4
-                - 5
-  - name: hero
-    label: "Hero"
-    description: "Alerar o conteudo da secçao Hero"
-    files:
-    - label: "Hero"
-      name: hero
-      file: "_data/hero.yml"
-      fields:
-        - { label: "Title", name: "title", widget: "text" }
-        - { label: "Slogan", name: "slogan", widget: "string" }
-        - { label: "Link do video", name: "video", widget: "string" }      
-        - { label: "Imagem de Fundo", name: "vimage", widget: "image" }
-        - label: Sabão
-          name: soap
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Escudo
-          name: shield
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Varinha
-          name: stick
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Cuidado
-          name: care
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-  - name: services
-    label: "Serviços"
-    description: "Alerar o conteudo da secçao Serviços"
-    files:
-    - label: "Serviços"
-      name: services
-      file: "_data/services.yml"
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Descrição", name: "description", widget: "text" }
-        - label: Vassoura
-          name: vroom
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Sabão
-          name: soap
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Varinha
-          name: stick
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Cuidado
-          name: care
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Spray
-          name: spray
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-        - label: Chat
-          name: chat
-          widget: object
-          fields:
-            - label: Titulo
-              name: title
-              widget: string
-            - label: Descrição
-              name: description
-              widget: string
-  - name: external
-    label: "Serviços externos"
-    description: "Alerar o conteudo da secçao Serviços externos"
-    files:
-    - label: "Serviços externos"
-      name: external
-      file: "_data/external.yml"
-      fields:
-        - { label: "Titulo", name: "title", widget: "string" }
-        - { label: "Email", name: "email", widget: "string" }
-        - { label: "Nº Movel", name: "mobile", widget: "string" }
-        - { label: "Nº Fixo", name: "phone", widget: "string" }
-        - label: "Serviços"
-          name: "services"
-          widget: "list"
-          fields:
-           - label: Nome
-             name: name
-             widget: string
