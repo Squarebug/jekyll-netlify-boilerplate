@@ -107,6 +107,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Nº Movel", name: "mobile_number", widget: "string" }
           - { label: "Nº Fixo", name: "office_number", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
+          - { label: "Descrição", name: "description", widget: text }
       - label: "Overview"
         name: "overview"
         file: "_data/overview.yml"
@@ -370,3 +371,22 @@ collections: # A list of collections the CMS should be able to edit
             - label: Descrição
               name: description
               widget: string
+  - name: external
+    label: "Serviços externos"
+    description: "Alerar o conteudo da secçao Serviços externos"
+    files:
+    - label: "Serviços externos"
+      name: external
+      file: "_data/external.yml"
+      fields:
+        - { label: "Titulo", name: "title", widget: "string" }
+        - { label: "Email", name: "email", widget: "string" }
+        - { label: "Nº Movel", name: "mobile", widget: "string" }
+        - { label: "Nº Fixo", name: "phone", widget: "string" }
+        - label: "Serviços"
+          name: "services"
+          widget: "list"
+          fields:
+           - label: Nome
+             name: name
+             widget: string
