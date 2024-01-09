@@ -899,15 +899,13 @@
 
     <!--====== SUBSCRIBE PART ENDS ======-->
 
-    <!--====== FOOTER PART START ======-->
-
     <footer class="footer-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
                         <div class="footer-logo">
-                            <a href="#"><img src="/assets/images/logo.png" alt="Logo"></a>
+                            <a href="/index.html"><img src="/assets/images/logo.png" alt="Logo"></a>
                         </div>
                         <div class="footer-social">
                             <ul>
@@ -934,9 +932,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-about mt-30">
                             <h4 class="title">Driveclean </h4>
-                            <p>Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais
-                                na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos
-                                clientes nos seus projetos.</p>
+                            <p>{{ site.data.footer.description }}</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -963,11 +959,11 @@
                         <div class="footer-info mt-30">
                             <h3 class="title">Contactos</h3>
                             <ul>
-                                <li><i class="fal fa-map-marker-alt"></i>Rua da Tojeirinha nº2 <br>2735-177 Agualva</li>
-                                <li><i class="fal fa-phone"></i> 965 530 081 </li>
-                                <li><i class="fal fa-phone-office"></i> 214 335 387</li>
+                                <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
+                                <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
+                                <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>
                                 <li><i class="fal fa-envelope"></i>
-                                    geral@driveclean.pt </li>
+                                    {{ site.data.footer.email }} </li>
                             </ul>
                         </div>
                     </div>
